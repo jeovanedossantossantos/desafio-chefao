@@ -24,6 +24,7 @@
 
         "openmobile": "node ./node_modules/openmobile/ip.js"
 <p>Logo depois de roda a sua aplicação, execulte a seguinte linha.</p>
+        
         yarn openmobile
 
 

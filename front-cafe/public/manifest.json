@@ -1,6 +1,13 @@
+
+
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "Coffe",
+  "short_name": "Coffe",
+  "theme_color": "#5e3c2b",
+  "background_color": "#f6fcfc",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +15,15 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./img/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "./img/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }
+

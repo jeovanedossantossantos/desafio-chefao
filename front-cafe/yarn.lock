@@ -6105,6 +6105,13 @@ open@^8.0.9, open@^8.4.0:
     is-docker "^2.1.1"
     is-wsl "^2.2.0"
 
+openmobile@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/openmobile/-/openmobile-1.0.0.tgz#2c54d6cdc59d9e0011d8b3209c10bcca3704a5d5"
+  integrity sha512-95xWLRNlv/AXLz/kdu6U5b1rABP33/dZZYp6F+zXYyCuSBEKD7OnVlry1/FIzvxz4qBjNwSe/i1E+edvNFwuDA==
+  dependencies:
+    qrcode-terminal "^0.12.0"
+
 optionator@^0.8.1:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.8.3.tgz#84fa1d036fe9d3c7e21d99884b601167ec8fb495"
@@ -6942,6 +6949,11 @@ q@^1.1.2:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
+
+qrcode-terminal@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/qrcode-terminal/-/qrcode-terminal-0.12.0.tgz#bb5b699ef7f9f0505092a3748be4464fe71b5819"
+  integrity sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ==
 
 qs@6.9.7:
   version "6.9.7"

@@ -10,4 +10,5 @@
 <li>yarn add sequelize</li>
 <li>yarn add mysql2</li>
 <li>yarn add dotenv</li>
+<li>yarn add cors</li>
 </ol>

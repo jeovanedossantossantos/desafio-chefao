@@ -24,3 +24,9 @@
         PASWORD=coloque_sua_senha
   
   Apos essas configurações rode sua aplicação
+  
+  <h3>Mudando de Branch e Mesclando com outra Branch</h3>
+  Para mais informações <a href="https://git-scm.com/book/pt-br/v2/Branches-no-Git-O-b%C3%A1sico-de-Ramifica%C3%A7%C3%A3o-Branch-e-Mesclagem-Merge">Clique aqui</a>
+  
+         git checkout master ou main
+         git merge <nome_da_branch_que_vai_ter_suas_alterções_mandadas_para_a_main>

@@ -1,13 +1,21 @@
 const db = require('../db')
 const {DataTypes} = require("sequelize")
 const Regiao = require('./Regiao')
+
 const Cafe = db.db.define("cafe",{
     id:{
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
     },
+    nome:{
+        type: DataTypes.STRING,
+    },
     foto_cafe:{
+        type: DataTypes.STRING,
+    },foto_cafe_1:{
+        type: DataTypes.STRING,
+    },foto_cafe_2:{
         type: DataTypes.STRING,
     },
     safra:{

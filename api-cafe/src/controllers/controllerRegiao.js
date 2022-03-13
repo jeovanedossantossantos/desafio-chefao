@@ -107,12 +107,12 @@ const controllerRegiao = {
 
             if (resultadDeBuscaPais.length) {
                 // res.status(201).json(resultadDeBuscaPais)
-                console.log("Pais")
+                // console.log("Pais")
                 listaPesuisa.push(resultadDeBuscaPais)
             }
             if (resultadDeBuscaDes.length) {
                 // res.status(201).json(resultadDeBuscaDes)
-                console.log("Desc")
+                // console.log("Desc")
                 listaPesuisa.push(resultadDeBuscaDes)
 
             }

@@ -10,5 +10,7 @@ route.put("/atualiza/:id", controllerRegiao.atualizarRegiao)
 route.get("/search", controllerRegiao.pesquisaRegioes)
 
 route.post("/cadastra-cafe",controllerCafe.cadastrarCafe)
+route.get('/cafes', controllerCafe.listarCafes)
+route.get('/cafes-por-regiao/:regiao_id', controllerCafe.listarCafesPorRegiao)
 
 module.exports =route

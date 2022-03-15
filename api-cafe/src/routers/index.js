@@ -12,5 +12,6 @@ route.get("/search", controllerRegiao.pesquisaRegioes)
 route.post("/cadastra-cafe",controllerCafe.cadastrarCafe)
 route.get('/cafes', controllerCafe.listarCafes)
 route.get('/cafes-por-regiao/:regiao_id', controllerCafe.listarCafesPorRegiao)
-
+route.delete("/cafe-delete/:id", controllerCafe.deletarCafe)
+route.put("/cafe-put/:id", controllerCafe.atualizarCafe)
 module.exports =route

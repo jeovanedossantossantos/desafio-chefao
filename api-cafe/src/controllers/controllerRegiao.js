@@ -78,8 +78,6 @@ const controllerRegiao = {
         // 
         try {
             const { valorDaPesquisa } = req.query
-            // const {pais, descricao} = req.query]
-            console.log(valorDaPesquisa)
 
             const resultadDeBuscaPais = await Regiao.findAll({
                 where: {
@@ -88,7 +86,6 @@ const controllerRegiao = {
                     }
                 }
             },
-
                 // || // alguem que manja me diz se isso é aplicavel aquikkk
                 // kkkkkkkkkk acredito que não deve funcionar do jeito que você imagina 
             )
@@ -102,17 +99,13 @@ const controllerRegiao = {
                 }
 
             })
-            // console.log(json(resultadDeBuscaDes))
-            // res.status(201).json(resultadDeBuscaDes)
-
+           
             if (resultadDeBuscaPais.length) {
-                // res.status(201).json(resultadDeBuscaPais)
-                // console.log("Pais")
+              
                 listaPesuisa.push(resultadDeBuscaPais)
             }
             if (resultadDeBuscaDes.length) {
-                // res.status(201).json(resultadDeBuscaDes)
-                // console.log("Desc")
+                
                 listaPesuisa.push(resultadDeBuscaDes)
 
             }

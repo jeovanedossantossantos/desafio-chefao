@@ -56,7 +56,6 @@ const controllerAcidez = {
     },
     async atualizarAcidez(req, res) { 
         const {nome, descricao} = req.body
-
         try{
             const item = await Acidez.update({
                 nome,

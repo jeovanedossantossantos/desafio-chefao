@@ -39,7 +39,42 @@ const controllerMoagem = {
                 res.status(400).json(err)
             }
         },
-    async deletarMoagem(req, res) {},
-    async atualizarMoagem(req, res) {}
+    async deletarMoagem(req, res) {
+        try {
+            const item = await Moagem.destroy({
+                where: {
+                    id:req.params.id
+                }
+            })
+            res.status(201).json({ "messagem": "Deletado com sucesso"})
+        }catch (err) {
+            res.status(401).json({ "messagem": "Erro ao tentar deletar região!" })
+        }
+    },
+    async atualizarMoagem(req, res) {
+        const {nome} = req.body
+
+        try{
+            const item = await Moagem.update({
+                nome,
+            },
+                {
+                    where: {
+                        id: req.params.id,
+                    }
+                }
+            )
+            if(item !== null){
+                res.status(201).json({ "messagem": "Atualizada como sucesso!" })
+            }else{
+                res.status(401).json({ "messagem": "Não exite esse id!" })
+            }
+
+        }catch(err){
+            res.status(401).json({ "messagem": "Erro ao Atualizada!" })
+        }
+
+    }
 }
+
 module.exports = controllerMoagem

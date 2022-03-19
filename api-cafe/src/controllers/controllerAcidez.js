@@ -3,13 +3,11 @@ const Sequelize = require('sequelize');
 
 const controllerAcidez = {
     async cadastrarAcidez(req, res) {
-        const { nome,descricao } = req.body;
+        const { nome } = req.body;
 
         try {
             const newAcidez = await Acidez.create({
-                nome,
-                descricao
-
+                nome
             })
             res.status(200).json(newAcidez)
         } catch (err) {
@@ -42,42 +40,7 @@ const controllerAcidez = {
         }
 
     },
-    async deletarAcidez(req, res) { 
-        try{
-            const item = await Acidez.destroy({
-                where: {
-                    id:req.params.id
-                }
-            })
-            res.status(201).json({"messagem":"Deletado com sucesso"})
-        }catch (err) {
-            res.status(401).json({ "messagem": "Erro ao tentar deletar região!" })
-        }
-    },
-    async atualizarAcidez(req, res) { 
-        const {nome, descricao} = req.body
-
-        try{
-            const item = await Acidez.update({
-                nome,
-                descricao
-            },
-                {
-                    where: {
-                        id: req.params.id,
-                    }
-                }
-            )
-            if(item !== null){
-                res.status(201).json({ "messagem": "Atualizada como sucesso!" })
-            }else{
-                res.status(401).json({ "messagem": "Não exite esse id!" })
-            }
-
-        }catch(err){
-            res.status(401).json({ "messagem": "Erro ao Atualizada!" })
-        }
-
-    }
+    async deletarAcidez(req, res) { },
+    async atualizarAcidez(req, res) { }
 }
 module.exports = controllerAcidez

@@ -18,7 +18,8 @@ route.put("/cafe-put/:id", controllerCafe.atualizarCafe)
 
 route.post("/cadastrar-acidez", controllerAcidez.cadastrarAcidez)
 route.get("/listar-acidez", controllerAcidez.listarAcidez)
-route.get("/buscar-um/:id", controllerAcidez.buscarUmAcidez)
-
+route.get("/buscar-um-acidez/:id", controllerAcidez.buscarUmAcidez)
+route.delete("/deletar-acidez/:id", controllerAcidez.deletarAcidez)
+route.put("/atulizar-acidez/:id", controllerAcidez.atualizarAcidez)
 
 module.exports =route

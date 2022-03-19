@@ -35,7 +35,7 @@ const controllerAcidez = {
             if (item !== null) {
                 res.status(200).json(item)
             } else {
-                res.status(402).json({ "messagem": "Nada foi encontrado" })
+                res.status(402).json({ "Mensagem": "Nada foi encontrado" })
             }
         } catch (err) {
             res.status(400).json(err)
@@ -49,9 +49,9 @@ const controllerAcidez = {
                     id:req.params.id
                 }
             })
-            res.status(201).json({"messagem":"Deletado com sucesso"})
+            res.status(201).json({"Mensagem":"Deletado com sucesso"})
         }catch (err) {
-            res.status(401).json({ "messagem": "Erro ao tentar deletar região!" })
+            res.status(401).json({ "Mensagem": "Erro ao tentar deletar região!" })
         }
     },
     async atualizarAcidez(req, res) { 
@@ -69,13 +69,13 @@ const controllerAcidez = {
                 }
             )
             if(item !== null){
-                res.status(201).json({ "messagem": "Atualizada como sucesso!" })
+                res.status(201).json({ "Mensagem": "Atualizada como sucesso!" })
             }else{
-                res.status(401).json({ "messagem": "Não exite esse id!" })
+                res.status(401).json({ "Mensagem": "Não exite esse id!" })
             }
 
         }catch(err){
-            res.status(401).json({ "messagem": "Erro ao Atualizada!" })
+            res.status(401).json({ "Mensagem": "Erro ao Atualizada!" })
         }
 
     }

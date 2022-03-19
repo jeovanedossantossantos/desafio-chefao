@@ -23,7 +23,22 @@ const controllerMoagem = {
             res.status(400).json(lista_moagem)
         }
     },
-    async buscarUmMoagem(req, res){},
+    async buscarUmMoagem(req, res){
+        try {
+            const item = await Moagem.findOne({
+                where: {
+                    id: req.params.id
+                }
+            })
+            if (item !== null) {
+                res.status(200).json(item)
+            } else {
+                res.status(402).json({ "messagem": "Nada foi encontrado"})
+            }
+            } catch (err) {
+                res.status(400).json(err)
+            }
+        },
     async deletarMoagem(req, res) {},
     async atualizarMoagem(req, res) {}
 }

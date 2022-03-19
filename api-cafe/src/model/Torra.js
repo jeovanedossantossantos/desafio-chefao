@@ -1,23 +1,18 @@
 const db = require('../db')
 const {DataTypes} = require("sequelize")
 
-const Regiao = db.db.define("Regiao",{
+
+const Torra = db.db.define("Torra",{
     id:{
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
     },
-    foto_bandeira:{
+    nome:{
         type: DataTypes.STRING,
-    },
-    pais:{
-        type: DataTypes.TEXT,
     },
     descricao:{
         type: DataTypes.TEXT,
-    },
-    altitude:{
-        type: DataTypes.INTEGER,
     },
     createdAt: {
         type: DataTypes.DATE,
@@ -25,10 +20,8 @@ const Regiao = db.db.define("Regiao",{
     updatedAt: {
         type: DataTypes.DATE,
     },
-
-
 },{
-    tableName: "regiao"
+    tableName:"torra"
 })
 
-module.exports = Regiao
+module.exports = Torra

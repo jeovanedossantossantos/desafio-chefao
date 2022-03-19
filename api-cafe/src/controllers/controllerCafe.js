@@ -10,9 +10,13 @@ const controllerCafe = {
             foto_cafe,
             foto_cafe_1,
             foto_cafe_2,
-            safra,
             tipo,
             regiao_id,
+            corpo_id,
+            variente_id,
+            torra_id,
+            acidez_id,
+            moagem_id,
             descricao,
             produtores } = req.body;
         // console.log(req.body);
@@ -25,6 +29,11 @@ const controllerCafe = {
             safra,
             tipo,
             regiao_id,
+            corpo_id,
+            variente_id,
+            torra_id,
+            acidez_id,
+            moagem_id,
             descricao,
             produtores
         }).then(async () => {
@@ -111,6 +120,11 @@ const controllerCafe = {
             safra,
             tipo,
             regiao_id,
+            corpo_id,
+            variente_id,
+            torra_id,
+            acidez_id,
+            moagem_id,
             descricao,
             produtores } = req.body;
 
@@ -122,6 +136,11 @@ const controllerCafe = {
             safra,
             tipo,
             regiao_id,
+            corpo_id,
+            variente_id,
+            torra_id,
+            acidez_id,
+            moagem_id,
             descricao,
             produtores
         }, {

@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const controllerRegiao = {
     async cadastrarRegiao(req, res) {
-        const { foto_bandeira, pais, descricao, colocacao } = req.body
+        const { foto_bandeira, pais, descricao, altitude } = req.body
         console.log(req.body)
 
         try {
@@ -11,7 +11,7 @@ const controllerRegiao = {
                 foto_bandeira,
                 pais,
                 descricao,
-                colocacao
+                altitude
             })
             res.status(201).json(newRegiao)
         } catch (err) {
@@ -58,7 +58,7 @@ const controllerRegiao = {
                 foto_bandeira,
                 pais,
                 descricao,
-                colocacao
+                altitude
             },
                 {
                     where: {

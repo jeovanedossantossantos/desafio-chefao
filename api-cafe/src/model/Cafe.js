@@ -1,6 +1,11 @@
 const db = require('../db')
 const {DataTypes} = require("sequelize")
 const Regiao = require('./Regiao')
+const Acidez = require('./Acidez')
+const Corpo = require('./Corpo')
+const Moagem = require('./Moagem')
+const Variedade = require('./Variedade')
+const Torra = require('./Torra')
 
 const Cafe = db.db.define("cafe",{
     id:{
@@ -18,12 +23,7 @@ const Cafe = db.db.define("cafe",{
     },foto_cafe_2:{
         type: DataTypes.STRING,
     },
-    safra:{
-        type: DataTypes.STRING,
-    },
-    tipo:{
-        type: DataTypes.STRING,
-    },
+    
     regiao_id: {
         type: DataTypes.INTEGER,
         reference:{
@@ -31,12 +31,44 @@ const Cafe = db.db.define("cafe",{
             key:"id"
         },
     },
+    corpo_id: {
+        type: DataTypes.INTEGER,
+        reference:{
+            model:Corpo,
+            key:"id"
+        },
+    },
+    variente_id: {
+        type: DataTypes.INTEGER,
+        reference:{
+            model:Variedade,
+            key:"id"
+        },
+    },
+    torra_id:{
+        type: DataTypes.INTEGER,
+        reference:{
+            model:Torra,
+            key:"id"
+        },
+    },
+    acidez_id: {
+        type: DataTypes.INTEGER,
+        reference:{
+            model:Acidez,
+            key:"id"
+        },
+    },
+    moagem_id: {
+        type: DataTypes.INTEGER,
+        reference:{
+            model:Moagem,
+            key:"id"
+        },
+    },
    
     descricao:{
         type: DataTypes.TEXT,
-    },
-   produtores:{
-        type: DataTypes.STRING,
     },
     
     createdAt: {

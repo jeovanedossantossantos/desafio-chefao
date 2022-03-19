@@ -3,13 +3,11 @@ const Sequelize = require('sequelize');
 
 const controllerAcidez = {
     async cadastrarAcidez(req, res) {
-        const { nome,descricao } = req.body;
+        const { nome } = req.body;
 
         try {
             const newAcidez = await Acidez.create({
-                nome,
-                descricao
-
+                nome
             })
             res.status(200).json(newAcidez)
         } catch (err) {
@@ -56,7 +54,6 @@ const controllerAcidez = {
     },
     async atualizarAcidez(req, res) { 
         const {nome, descricao} = req.body
-
         try{
             const item = await Acidez.update({
                 nome,

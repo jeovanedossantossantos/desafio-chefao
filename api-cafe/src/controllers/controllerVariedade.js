@@ -4,11 +4,12 @@ const Sequelize = require('sequelize');
 
 const controllerVariedade = {
     async cadastrarVariedade(req, res) {
-        const { nome } = req.body;
+        const { nome, descricao} = req.body;
 
         try {
             const newVariedade = await Variedade.create({
-                nome
+                nome,
+                descricao
             })
             res.status(200).json(newVariedade)
         } catch (err) {
@@ -46,7 +47,12 @@ const controllerVariedade = {
                     id:req.params.id
                 }
             })
+            console.log(item)
+           if(item === 1){
             res.status(201).json({"Mensagem":"Deletado com sucesso"})
+           }else{
+            res.status(401).json({"Mensagem":"Não encontrado"})
+           }
         }catch (err) {
             res.status(401).json({ "Mensagem": "Erro ao tentar deletar região!" })
         }

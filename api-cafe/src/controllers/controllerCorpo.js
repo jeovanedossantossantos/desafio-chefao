@@ -3,12 +3,11 @@ const Sequelize = require('sequelize');
 
 const controllerCorpo = {
     async cadastrarCorpo(req, res) {
-        const { nome,descricao } = req.body;
+        const { nome } = req.body;
 
         try {
             const newCorpo = await Corpo.create({
-                nome,
-                descricao
+                nome
 
             })
             res.status(200).json(newCorpo)
@@ -68,10 +67,11 @@ const controllerCorpo = {
                     }
                 }
             )
-            if(item !== null){
+            console.log(item)
+            if(item[0] !== 0){
                 res.status(201).json({ "Mensagem": "Atualizada como sucesso!" })
             }else{
-                res.status(401).json({ "Mensagem": "Não exite esse id!" })
+                res.status(401).json({ "Mensagem": "Não exite esse id ou atualização já foi feita!" })
             }
 
         }catch(err){

@@ -38,7 +38,7 @@ const Cafe = db.db.define("cafe",{
             key:"id"
         },
     },
-    variente_id: {
+    variedade_id: {
         type: DataTypes.INTEGER,
         reference:{
             model:Variedade,

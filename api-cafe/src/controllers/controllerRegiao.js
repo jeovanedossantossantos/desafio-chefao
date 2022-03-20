@@ -21,6 +21,22 @@ const controllerRegiao = {
 
     },
 
+    async buscarUmaRegiao(req, res){
+       
+        try {
+            const item = await Regiao.findOne({ 
+                where: {id: req.params.id}
+            })
+           if(item !== null){
+            res.status(200).json(item)
+           }else{
+            res.status(400).json({"messagem":"Item não encontrado"})
+           }
+        }catch(err){
+            res.status(500).json(err)
+        }
+    },
+
     async listarRegioes(req, res) {
         try {
             const listaDeReigoes = await Regiao.findAll();

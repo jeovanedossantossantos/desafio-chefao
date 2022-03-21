@@ -67,7 +67,7 @@ const controllerRegiao = {
         try {
             // console.log("Regiao atualizada!")
             const { id } = req.params //parametro que a gente tem que ver como vai add;
-            const { foto_bandeira, pais, descricao, colocacao } = req.body;
+            const { foto_bandeira, pais, descricao, altitude } = req.body;
             if (!id) return res.status(400).json({ "messagem": "id não enviado" })
 
             const regiaoAtualizada = await Regiao.update({

@@ -3,11 +3,12 @@ const Sequelize = require('sequelize');
 
 const controllerAcidez = {
     async cadastrarAcidez(req, res) {
-        const { nome } = req.body;
+        const { nome, descricao} = req.body;
 
         try {
             const newAcidez = await Acidez.create({
-                nome
+                nome, 
+                descricao
             })
             res.status(200).json(newAcidez)
         } catch (err) {

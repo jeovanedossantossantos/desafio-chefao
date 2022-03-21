@@ -9,7 +9,49 @@ const Torra = require('./Torra')
 Cafe.belongsTo(Regiao,{
     foreignKey: 'regiao_id',
     // through:Regiao,
+    as:"regiao"
 })
+
+// Regiao.hasMany(Cafe,{
+//     foreignKey: 'regiao_id',
+//     as:"cafe"
+// })
+
+Cafe.belongsTo(Acidez,{
+    foreignKey: 'acidez_id',
+    // through:Regiao,
+    as:"acidez"
+})
+
+Cafe.belongsTo(Corpo,{
+    foreignKey: 'corpo_id',
+    // through:Regiao,
+    as:"corpo"
+})
+
+Cafe.belongsTo(Variedade,{
+    foreignKey: 'variedade_id',
+    // through:Regiao,
+    as:"variedade"
+})
+
+Cafe.belongsTo(Moagem,{
+    foreignKey: 'moagem_id',
+    // through:Regiao,
+    as:"moagem"
+})
+
+Cafe.belongsTo(Torra,{
+    foreignKey: 'torra_id',
+    // through:Regiao,
+    as:"torra"
+})
+
+
+// Regiao.hasMany(Cafe,{
+//     foreignKey: 'regiao_id',
+//     as:"cafe"
+// })
 
 // Cafe.hasMany(Acidez,{
 //     foreignKey: 'acidez_id',

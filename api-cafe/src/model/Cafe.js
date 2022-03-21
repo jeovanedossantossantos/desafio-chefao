@@ -22,6 +22,14 @@ const Cafe = db.db.define("cafe",{
         type: DataTypes.STRING,
     },foto_cafe_2:{
         type: DataTypes.STRING,
+    },nota:{
+        type: DataTypes.STRING,
+    },peso_liquido:{
+        type: DataTypes.STRING,
+    },preco:{
+        type: DataTypes.STRING,
+    },preco:{
+        type: DataTypes.STRING,
     },
     
     regiao_id: {

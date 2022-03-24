@@ -1,12 +1,12 @@
 import React from 'react';
 import {Navbar, Container, Nav} from 'react-bootstrap';
-import {StyledNav, CenterWrapperColorizer} from './styles'
+import {StyledNav, CenterWrapperColorizer, StyledNavBar} from './styles'
 
 
 export const Header: React.FC = () =>{
 return (
     <CenterWrapperColorizer> 
-<Navbar bg="transparent" expand="lg" variant="light">
+<Navbar bg="transparent" expand="lg" variant="dark">
   <Container>
     <Navbar.Brand href="#home">Logo</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />

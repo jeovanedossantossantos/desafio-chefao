@@ -17,6 +17,10 @@ export const StyledNav = styled(Nav)`
     }
 `;
 
+export const StyledNavBar = styled(Navbar)`
+  color: white !important;
+`;
+
 export const CenterWrapperColorizer = styled(Container)`
 display: flex;
 justify-content:center;

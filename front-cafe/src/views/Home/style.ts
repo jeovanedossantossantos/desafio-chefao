@@ -9,7 +9,7 @@ position: absolute;
     background: url(${homeHeaderBackgroundImage}) ;    
     background-repeat: no-repeat;
     background-size: contain;
-    @media only screen and (min-width: 2560px) {
+    @media only screen and (min-width: 1920px) {
         background-size: cover;
     }
 `

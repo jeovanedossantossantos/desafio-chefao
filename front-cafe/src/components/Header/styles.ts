@@ -17,8 +17,12 @@ export const StyledNav = styled(Nav)`
     }
 `;
 
-export const StyledNavBar = styled(Navbar)`
-  color: white !important;
+export const WrapBannerText = styled.div`
+max-width: 70%;
+margin: 0 auto;
+display:flex;
+align-items: center;
+
 `;
 
 export const CenterWrapperColorizer = styled(Container)`

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, Container, Nav} from 'react-bootstrap';
-import {StyledNav, CenterWrapperColorizer, StyledNavBar} from './styles'
+import {StyledNav, CenterWrapperColorizer, WrapBannerText} from './styles'
 
 
 export const Header: React.FC = () =>{

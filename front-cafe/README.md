@@ -29,4 +29,8 @@
 
 
 <li>
+<li>yarn add axios</li>
+<li>yarn add react-router-dom</li>
+<li>yarn add styled-components</li>
+<li>yarn add @types/styled-components</li>
 </ol>

@@ -1,11 +1,12 @@
+import Rotas from "./Routes";
 
 function App() {
   return (
-    <div>
+    <>
 
-      olá
+      <Rotas/>
       
-    </div>
+    </>
   );
 }
 

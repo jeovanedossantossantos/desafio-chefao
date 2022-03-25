@@ -47,7 +47,7 @@ export const Header: React.FC = () => {
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
-                    Something else here
+                    Something else heres
                   </NavDropdown.Item>
                 </NavDropdown> */}
               </Nav>

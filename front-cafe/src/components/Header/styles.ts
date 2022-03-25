@@ -1,6 +1,13 @@
 import styled from 'styled-components'
 import {Navbar, Container, Nav} from 'react-bootstrap';
 
+export const ContainerMain = styled.div`
+CenterWrapperColorizer{
+  display:none;
+}
+
+`
+
 
 export const StyledNav = styled(Nav)`
 
@@ -14,6 +21,8 @@ export const StyledNav = styled(Nav)`
   margin-top:6vh;
   @media only screen and (max-width: 991px) {
     margin-left:0;
+    margin-top:0;
+    font-size:10px;
     }
 `;
 

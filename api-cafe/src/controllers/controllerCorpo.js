@@ -67,7 +67,7 @@ const controllerCorpo = {
                     }
                 }
             )
-            console.log(item)
+          
             if(item[0] !== 0){
                 res.status(201).json({ "Mensagem": "Atualizada como sucesso!" })
             }else{

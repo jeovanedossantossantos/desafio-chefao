@@ -4,7 +4,7 @@ const Op = Sequelize.Op;
 const controllerRegiao = {
     async cadastrarRegiao(req, res) {
         const { foto_bandeira, pais, descricao, altitude } = req.body
-        console.log(req.body)
+        
 
         try {
             const newRegiao = await Regiao.create({
@@ -41,7 +41,7 @@ const controllerRegiao = {
         try {
             const listaDeReigoes = await Regiao.findAll();
             res.status(201).json(listaDeReigoes)
-            // console.log(listaDeReigoes)
+           
         } catch (err) {
             res.status(401).json({ "messagem": "Erro ao tentar encontrar regiões" })
         }
@@ -50,7 +50,7 @@ const controllerRegiao = {
     async deletarRegiao(req, res) {
         try {
             const { id } = req.params //parametro que a gente tem que ver como vai add;
-            // console.log("Produto deletado!")
+            
             await Regiao.destroy({
                 where: {
                     id
@@ -65,7 +65,7 @@ const controllerRegiao = {
 
     async atualizarRegiao(req, res) {
         try {
-            // console.log("Regiao atualizada!")
+           
             const { id } = req.params //parametro que a gente tem que ver como vai add;
             const { foto_bandeira, pais, descricao, altitude } = req.body;
             if (!id) return res.status(400).json({ "messagem": "id não enviado" })
@@ -82,7 +82,7 @@ const controllerRegiao = {
                     }
                 });
             res.status(201).json({ "messagem": "Região atualizada!" })
-            // console.log("Regiao atualizada!")
+            
         } catch (err) {
             res.status(401).json({ "messagem": "Erro ao tentar atualizar região!" })
         }

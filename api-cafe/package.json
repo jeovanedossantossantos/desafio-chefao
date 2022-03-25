@@ -2,7 +2,7 @@
   "name": "api-cafe",
   "version": "1.0.0",
   "description": "Api para o desafio chefão do XP-40 da Gama Acatemic",
-  "main": "index.js",
+  "main": "server.js",
   "repository": "https://github.com/jeovanedossantossantos/desafio-chefao",
   "author": "Jeovane dos Santos Santos",
   "license": "MIT",
@@ -15,6 +15,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon server.js"
   }
 }

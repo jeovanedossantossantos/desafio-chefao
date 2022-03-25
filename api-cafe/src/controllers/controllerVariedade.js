@@ -18,8 +18,10 @@ const controllerVariedade = {
     },
     async listarVariedade(req, res){
         try {
+            
             const lista_variedade = await Variedade.findAll()
             res.status(200).json(lista_variedade)
+            
         } catch (err) {
             res.status(400).json(err)
         }
@@ -47,7 +49,7 @@ const controllerVariedade = {
                     id:req.params.id
                 }
             })
-            console.log(item)
+          
            if(item === 1){
             res.status(201).json({"Mensagem":"Deletado com sucesso"})
            }else{

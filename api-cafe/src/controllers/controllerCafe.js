@@ -21,7 +21,6 @@ const controllerCafe = {
             acidez_id,
             moagem_id,
             descricao, } = req.body;
-        // console.log(req.body);
         try {
             const novoCafe = await Cafe.create({
                 nome,
@@ -53,7 +52,7 @@ const controllerCafe = {
                     { model: Torra, as: "torra" },
                 ]
             })
-            console.log(novoCafe);
+           
             res.status(201).json(cafe)
         } catch (err) {
             res.status(500).json({ "messagem": err.message })
@@ -84,7 +83,7 @@ const controllerCafe = {
 
     async listarCafesPorRegiao(req, res) {
         const { regiao_id } = req.params
-        // console.log(regiao_id)
+        
         await Cafe.findAll({
             where: {
                 regiao_id
@@ -108,12 +107,11 @@ const controllerCafe = {
                 }
             ).then(async (eregiao) => {
 
-                console.log(eregiao)
+               
                 if (e.length === 0) {
                     res.status(200).json({ "messagem": "Não existe cafe cadastrado nesta região" })
                 } else {
-                    // const item = await 
-                    // e.push(eregiao)
+                    
                     res.status(200).json(e)
                 }
 
@@ -186,7 +184,7 @@ const controllerCafe = {
                 id
             }
         }).then(e => {
-            console.log(e)
+           
             if (e[0] === 1) {
                 res.status(200).json({ "messagem": "Atualizado com sucesso!" })
             } else {
@@ -203,7 +201,7 @@ const controllerCafe = {
         // 
         try {
             const { valorDaPesquisa } = req.query
-            console.log(valorDaPesquisa)
+           
 
             const resultadDeBuscaNome = await Cafe.findAll({
                 where: {

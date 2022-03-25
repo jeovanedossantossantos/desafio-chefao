@@ -24,14 +24,15 @@ export const Header: React.FC = () => {
       </CenterWrapperColorizer>
 
 
-      <Navbar bg="light" expand={false} className="mb">
-        <Container fluid>
+      <Navbar bg="transparent" expand={false} className="mb">
+        <Container fluid >
           <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
+            style={{background:"red"}}
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>

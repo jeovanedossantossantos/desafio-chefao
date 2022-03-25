@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
-import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, } from './styles'
+import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, MobileMenuCloseBtn} from './styles'
 
 
 export const Header: React.FC = () => {
@@ -24,31 +24,32 @@ export const Header: React.FC = () => {
       </CenterWrapperColorizer>
 
 
-      <Navbar bg="transparent" expand={false} className="mb">
+      <Navbar bg="transparent" expand={false} className="mb" variant="dark">
         <Container fluid >
-          <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+          <Navbar.Brand ><StyledNav>Logo café</StyledNav></Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
-            style={{background:"red"}}
+            style={{background:"#2F1D19"}}
           >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+            <Offcanvas.Header  closeButton style={{background:"#C0836E", opacity: '100%'}}>
+              <Offcanvas.Title id="offcanvasNavbarLabel"><StyledNav>Logo</StyledNav></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
+                <Nav.Link ><StyledNav>Nossos Cafés</StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav>Assinatura  </StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav>Sobre </StyledNav></Nav.Link>
+                {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action5">
                     Something else here
                   </NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

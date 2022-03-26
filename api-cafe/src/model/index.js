@@ -5,7 +5,7 @@ const Corpo = require('./Corpo')
 const Moagem = require('./Moagem')
 const Variedade = require('./Variedade')
 const Torra = require('./Torra')
-
+const Usuarios = require('./Usuarios')
 Cafe.belongsTo(Regiao,{
     foreignKey: 'regiao_id',
     // through:Regiao,
@@ -81,4 +81,5 @@ module.exports = {
     Moagem,
     Variedade,
     Torra,
+    Usuarios
 }

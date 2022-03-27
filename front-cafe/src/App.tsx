@@ -1,12 +1,12 @@
 import Rotas from "./Routes";
-
+import ContextProvider from "./hooks/context"
 
 function App() {
   return (
     <>
-
-      <Rotas/>
-
+      <ContextProvider>
+        <Rotas />
+      </ContextProvider>
     </>
   );
 }

@@ -16,9 +16,11 @@ const PrivateRoute: any = ({componet: Component, path, Path, ...rest}: any) =>{
         }
     }
     return (
-        <Route {...rest} render={(props: any) => (
-            isSectionActive() ? <Component {...props}/> : <Navigate to={'/'}/>
-        )}/>
+        // <Route {...rest} render={(props: any) => (
+        //     isSectionActive() ? <Component {...props}/> : <Navigate to={'/'}/>
+        // )}/>
+      
+        <Route path="/cadastra" element={isSectionActive() ? <Component/> : <Navigate to={'/'}/>} />
     )
 }
 export default PrivateRoute

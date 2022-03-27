@@ -31,17 +31,21 @@ const SignIn: React.FC = () => {
         setLoad(true)
         
         api.post('/login', data).then(
+
+           
             
             response => {
+                push('/formulario')
                 const sessionToken = JSON.stringify(response.data.tokem)
-                localStorage.setItem('@gamaServiceToken',sessionToken)
+                localStorage.setItem('@cafeToken',sessionToken)
                 setLoad(false)
                 toast.success("Login realizado com sucesso!", {
                     hideProgressBar: false,
-                    // onClose: () => push('/dashboard')
+                    onClose: () => push('/formulario')
                 })
 
             }
+            
 
         ).catch(e => {toast.error("Oops, algo deu errado!")})
             .finally(()=>setLoad(false))

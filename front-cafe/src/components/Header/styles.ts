@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Navbar, Container, Nav} from 'react-bootstrap';
+import { Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 
 export const ContainerMain = styled.div`
 
@@ -29,9 +29,9 @@ export const StyledNav = styled(Nav)`
   margin-left:4vh;
   margin-top:6vh;
   @media only screen and (max-width: 991px) {
-    margin-left:0;
+    margin-left:2vh;
     margin-top:0;
-    font-size:10px;
+    font-size:20px;
     }
 `;
 
@@ -53,4 +53,9 @@ padding-left:19vh;
     margin-left:-18vh;
 
     }
+`;
+
+export const MobileMenuCloseBtn = styled(Offcanvas)`
+
+
 `;

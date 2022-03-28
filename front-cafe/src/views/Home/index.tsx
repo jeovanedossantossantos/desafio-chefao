@@ -17,9 +17,7 @@ export const Home: React.FC = () => {
         <div>
             {/* <HomeHeaderBackground/> */}
             
-            <Video autoPlay muted loop id="myVideo">
-                <source src={require("../../assets/videos/production ID_4820118.mp4")} type="video/mp4" />
-            </Video>
+            <Video src={require("../../assets/videos/production ID_4820118.mp4")} autoPlay muted loop/>
             <Header />
 
 

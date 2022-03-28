@@ -14,12 +14,26 @@ position: absolute;
     }
 `
 export const Video = styled.video`
+
  position: fixed;
   right: 0;
   bottom: 0;
-  max-width:100%;
-  min-width: 100%;
-  min-height: 100vh;
+  width: auto;
+  /* max-width:100%; */
+  /* min-width: 100%; */
   
-  `
+  height: auto;
+  
+  background-cover:cover;
+  /* transform: rotate(90deg);
+ -ms-transform: rotate(90deg);
+ -webkit-transform: rotate(90deg); */
+  source{
+     /* height: 100vh; */
+  
+      
+  }
+  
+  
+`
 

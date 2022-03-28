@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
 import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, } from './styles'
-
+import Logo from "../../assets/images/1.png"
 
 export const Header: React.FC = () => {
 
@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
       <CenterWrapperColorizer className="sm">
         <Navbar bg="transparent" expand="lg" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Logo</Navbar.Brand>
+            <Navbar.Brand href="#home"><img width="100px" src={Logo}></img></Navbar.Brand>
            
 
             <Navbar >
@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
 
       <Navbar bg="transparent" expand={false} className="mb">
         <Container fluid >
-          <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+          <Navbar.Brand href="#"><img width="100px" src={Logo}></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"
@@ -38,7 +38,7 @@ export const Header: React.FC = () => {
             style={{background:"red"}}
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel"><img width="100px" src={Logo}></img></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
@@ -48,7 +48,7 @@ export const Header: React.FC = () => {
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link>
+                  <Nav.Link href="/login">Login</Nav.Link>
                 </NavDropdown>
               </Nav>
             </Offcanvas.Body>

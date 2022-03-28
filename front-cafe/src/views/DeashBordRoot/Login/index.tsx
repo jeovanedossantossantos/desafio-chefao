@@ -58,9 +58,9 @@ const SignIn: React.FC = () => {
 
     return (
         <Container>
-            <Video autoPlay muted loop id="myVideo">
-                <source src={require("../../../assets/videos/production ID_4820118.mp4")} type="video/mp4"/>
-            </Video>
+            <Video src={require("../../../assets/videos/production ID_4820118.mp4")} autoPlay muted loop/>
+               
+           
             <div className="card">
                 <h5>Logar</h5>
                 <form >

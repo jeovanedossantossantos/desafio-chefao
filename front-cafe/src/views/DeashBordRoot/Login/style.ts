@@ -6,16 +6,20 @@ export const Container = styled.div`
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: #8c52e5;
+    background-color: #A18262;
    
-
+    a{
+        color: #A18262
+    }
     .card{
         display: grid;
-        background: #f9f9f9;
+        background: transparent;
+        border: none;
         max-width: 400px;
-        min-width: 300px;
+        min-width: 200px;
         border-radius: 22px;
         padding: 22px;
+        margin: 10px;
         
         text-align: center;
         
@@ -23,7 +27,7 @@ export const Container = styled.div`
             font-family: 'Roboto', sans-serif;
             text-align: center;
             font-size: 22px;
-            color: #8c52e5;
+            color: #A18262;
         }
         form{
             text-align: center;
@@ -31,7 +35,7 @@ export const Container = styled.div`
             input{
                 width: 98%;
                 height: 32px;
-                border-radius: 22px;
+                /* border-radius: 22px; */
                 padding: 5px;
                 border: 1px solid #e2e2e2;
                 
@@ -42,20 +46,30 @@ export const Container = styled.div`
             }
             button{
                 font-weight: bold;
-                color: #fff;
+                color: #000000;
                 margin-top: 5px;
-                width: 100%;
+                width: 98%;
                 border: none;
-                background: #68de5a;
+                background: #4B3621;
                 padding: 5px;
-                border-radius: 12px;
+                /* border-radius: 12px; */
                 transition: 0.6s;
                 cursor: pointer;
                 &:hover{
-                    background: #8c52e5;
+                    background: #A38068;
                     color: #fff;
                 }
             }
         }
     }
+`
+export const Video = styled.video`
+ position: fixed;
+  right: 0;
+  bottom: 0;
+  max-width:100%;
+  min-width: 100%;
+  min-height: 100vh;
+  
+  
 `

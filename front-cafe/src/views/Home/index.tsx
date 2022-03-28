@@ -1,23 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import {Header} from '../../components/Header';
-import {HomeHeaderBackground} from './style';
+import { Header } from '../../components/Header';
+import { HomeHeaderBackground, Video } from './style';
 
 
 // import {api} from '../../serve'
 
-interface DadosProps{
+interface DadosProps {
     id: number,
     nome: string,
     descricao: string,
 }
 
 
-export const Home: React.FC = () =>{
-    return ( 
-    <div>      
-        <HomeHeaderBackground/>
-        <Header/>
-        
+export const Home: React.FC = () => {
+    return (
+        <div>
+            {/* <HomeHeaderBackground/> */}
+            
+            <Video autoPlay muted loop id="myVideo">
+                <source src={require("../../assets/videos/production ID_4820118.mp4")} type="video/mp4" />
+            </Video>
+            <Header />
+
+
         </div>
     )
 
@@ -36,9 +41,9 @@ export const Home: React.FC = () =>{
 
     // useEffect(()=>{
     //     req()
-        
-        
-        
+
+
+
     // },[])
     // return(
     //     <div>

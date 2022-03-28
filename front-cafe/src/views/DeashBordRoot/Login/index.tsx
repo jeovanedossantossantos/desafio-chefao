@@ -10,12 +10,8 @@ import { api } from "../../../serve";
 
 
 interface IDate {
-    
-   
     email: string;
-    
     senha: string;
-    
 }
 
 
@@ -26,41 +22,45 @@ const SignIn: React.FC = () => {
     const push = useNavigate()
 
     
-    const hadleSumbmit = useCallback((e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault()
+    const hadleSumbmit = async () => {
+        // e.preventDefault()
+        // useCallback((e: FormEvent<HTMLFormElement>)
         setLoad(true)
         
-        api.post('/login', data).then(
+        await api.post('/login', data).then(
 
            
             
             response => {
-                push('/formulario')
+                
                 const sessionToken = JSON.stringify(response.data.tokem)
                 localStorage.setItem('@cafeToken',sessionToken)
                 setLoad(false)
-                toast.success("Login realizado com sucesso!", {
-                    hideProgressBar: false,
-                    onClose: () => push('/formulario')
-                })
+                // toast.success("Login realizado com sucesso!", {
+                //     hideProgressBar: false,
+                //     onClose: () => push('/formulario')
+                // })
+                push('/formulario')
 
             }
             
 
         ).catch(e => {toast.error("Oops, algo deu errado!")})
             .finally(()=>setLoad(false))
-    }, [data, push])
+    }
     if (load) {
         return(
             <Loader/>
         )
     }
+
+    
     return (
         <Container>
 
             <div className="card">
                 <h5>Logar</h5>
-                <form onSubmit={hadleSumbmit}>
+                <form >
                     
                     
                    
@@ -77,7 +77,7 @@ const SignIn: React.FC = () => {
                     />
                    
                     
-                    <button type="submit" value="Logar">Logar</button>
+                    <button onClick={()=>hadleSumbmit()} value="Logar">Logar</button>
                 </form>
                 <Link to={"/cadastra"}>Cadastre-se</Link>
             </div>

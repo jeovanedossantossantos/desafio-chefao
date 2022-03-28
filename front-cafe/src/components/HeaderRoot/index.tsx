@@ -1,10 +1,15 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, } from './styles'
 
 
-export const Header: React.FC = () => {
-
+export const HeaderRoot: React.FC = () => {
+  const push = useNavigate()
+  const sair = ()=>{
+    localStorage.removeItem('@cafeToken');
+    push("/")
+}
   return (
     <ContainerMain>
       <CenterWrapperColorizer className="sm">
@@ -15,11 +20,17 @@ export const Header: React.FC = () => {
 
             <Navbar >
               <Nav >
-                <Nav.Link href="#home"><StyledNav>Sobre</StyledNav></Nav.Link>
-                <Nav.Link href="#home"><StyledNav>Nossos Cafés</StyledNav></Nav.Link>
+                <Nav.Link href="/formulario"><StyledNav>Formulario</StyledNav></Nav.Link>
+                <Nav.Link href="/lista"><StyledNav>Lista</StyledNav></Nav.Link>
                 <Nav.Link href="#link"><StyledNav>Assinatura</StyledNav></Nav.Link>
-                
                 <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link>
+                <NavDropdown title="Login" id="offcanvasNavbarDropdown">
+                  <NavDropdown.Item href="/login"><StyledNav>Login</StyledNav></NavDropdown.Item>
+                  <NavDropdown.Item onClick={()=>sair()}>Sair</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                 
+                </NavDropdown>
+               
               </Nav>
             </Navbar>
           </Container>
@@ -38,17 +49,19 @@ export const Header: React.FC = () => {
             style={{background:"red"}}
           >
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">Offcanvas</Offcanvas.Title>
+              <Offcanvas.Title id="offcanvasNavbarLabel">Cafe</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">Home</Nav.Link>
-                <Nav.Link href="#action2">Link</Nav.Link>
-                <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
-                  <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                  <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+              <Nav.Link href="/formulario"><StyledNav>Formulario</StyledNav></Nav.Link>
+                <Nav.Link href="/lista"><StyledNav>Lista</StyledNav></Nav.Link>
+                <Nav.Link href="#link"><StyledNav>Assinatura</StyledNav></Nav.Link>
+                <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link>
+                <NavDropdown title="Login" id="offcanvasNavbarDropdown">
+                  <NavDropdown.Item href="/login">Login</NavDropdown.Item>
+                  <NavDropdown.Item onClick={()=>sair()}>Sair</NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link>
+                 
                 </NavDropdown>
               </Nav>
             </Offcanvas.Body>

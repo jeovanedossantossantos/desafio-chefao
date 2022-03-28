@@ -5,6 +5,7 @@ import { Formulario } from './views/DeashBordRoot/Formulario';
 import Login from './views/DeashBordRoot/Login';
 import { Home } from './views/Home'
 import jwt_decode from 'jwt-decode'
+import { Lista } from './views/DeashBordRoot/Lista';
 
 function Rotas() {
 
@@ -29,11 +30,17 @@ function Rotas() {
                 <Route path="/cadastra" element={<Cadastra />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 
+                
                 {isSectionActive() &&
+                   <>
                     <Route path="/formulario" element={<Formulario />} />
+                    <Route path="/lista" element={<Lista />}/>
+                   </>
                 }
                 {!isSectionActive() && 
-                 <Route path="/formulario" element={<Navigate to="/"/>}/>}
+                 <Route path="/formulario" element={<Navigate to="/"/>}/>
+                 }
+                
 
                 {/* {!isSectionActive() ? 
                 <Route path="/formulario" element={<Navigate to="/"/>}/>: 

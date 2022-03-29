@@ -9,7 +9,7 @@ border-width: medium;
    display: flex;
    flex-direction: column;
    max-width: 100%;
-   height: 405px;   /* Height of the footer */
+   height: 92.116vh;   /* Height of the footer */
    background: #438B70;
 
 

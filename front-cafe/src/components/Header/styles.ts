@@ -31,7 +31,7 @@ export const StyledNav = styled(Nav)`
   border-style: solid;
   border-color: green;
 
-  font-family: 'Poppins';
+  font-family: 'Poppins-Bold';
   font-size:19px;
   color:#EFEFEF;
   text-transform: uppercase;

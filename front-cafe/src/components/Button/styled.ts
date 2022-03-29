@@ -7,8 +7,8 @@ height: 4.5vw;
 border: 1px solid #EEDCCD;
 border-radius: 13px;
 background-color: transparent ;
-font-family: 'Poppins';
-  font-size:0.9vw;
+font-family: 'Poppins-SemiBold';
+  font-size:1.0vw;
   color:#EEDCCD;
   text-transform: uppercase;
 

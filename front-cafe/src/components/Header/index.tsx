@@ -33,7 +33,6 @@ export const Header: React.FC = () => {
 
       <Navbar bg="transparent" expand={false} className="mb" variant="dark">
         <Container fluid >
-
           <Navbar.Toggle aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
             id="offcanvasNavbar"

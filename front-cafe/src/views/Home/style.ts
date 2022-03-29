@@ -38,6 +38,7 @@ font-size: 0.985vw;
 display: flex;
 justify-content: center;
 margin-top: 2%;
+margin-bottom: 4%;
 letter-spacing: 0.1em;
 `
 export const BannerIconSpace = styled.div`

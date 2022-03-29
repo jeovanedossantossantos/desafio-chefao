@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackground.png'
+import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackgroundCorRgb.png'
 
 
 export const HomeHeaderBackground = styled.div`
@@ -14,13 +14,16 @@ export const HomeHeaderBackground = styled.div`
     background: url(${homeHeaderBackgroundImage}) ;    
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0% 20%; 
+  
     @media only screen and (min-width: 1920px) {
         background-size: cover;
+
     }
 `
 export const BannerText = styled.div`
 color: #EFEFEF;
-margin-top: 10%;
+margin-top: 8.6%;
 text-align: center;
 `
 
@@ -48,7 +51,9 @@ letter-spacing: 0.1em;
 `
 export const BannerIconSpace = styled.div`
 padding-left: 0.7%;
-
+`
+export const ButtonBottomMargin = styled.div`
+padding-bottom: 33vh;
 `
 
 export const Video = styled.video`

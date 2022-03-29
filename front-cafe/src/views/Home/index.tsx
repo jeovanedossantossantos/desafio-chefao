@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
-import { HomeHeaderBackground, Video, BannerText, BannerTitle, BannerIcon, BannerDesc, BannerIconSpace, } from './style';
+import { HomeHeaderBackground, Video, BannerText, BannerTitle, BannerIcon, BannerDesc, BannerIconSpace, ButtonBottomMargin} from './style';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerLine  from '../../assets/images/Rectangle5iconBanner.svg';
 import BannerIconImage from '../../assets/images/VectoriconBanner.svg';
@@ -29,13 +29,13 @@ export const Home: React.FC = () => {
     <Col><BannerTitle>coffee experience</BannerTitle></Col>
   </Row>
   <Row>
-    <Col><BannerIcon><img src={BannerLine} alt='' width={'55px'}/><BannerIconSpace/><img src={BannerIconImage} alt='' width={'22px'}/><BannerIconSpace/><img src={BannerLine} alt='' width={'55px'}/></BannerIcon></Col>
+    <Col><BannerIcon><img src={BannerLine} alt='' width={'55px'}/><BannerIconSpace/><img src={BannerIconImage} alt='' width={'22vw'}/><BannerIconSpace/><img src={BannerLine} alt='' width={'55px'}/></BannerIcon></Col>
   </Row>
   <Row>
     <Col><BannerDesc>Nós produzimos cafés para coffe lovers que amam café <br/>em todos os sentidos, do olfato ao tato</BannerDesc></Col>
   </Row>
   <Row>
-    <Col><Button /></Col>
+    <Col><Button /><ButtonBottomMargin/></Col>
   </Row>
 </Container>
 </BannerText>

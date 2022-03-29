@@ -64,7 +64,7 @@ border-width: medium;
   border-style: solid;
   border-color: pink;
 
-display:flex;
+position: absolute;
 background-size: 59px 59px;
 width: 59px;
 height: 59px;

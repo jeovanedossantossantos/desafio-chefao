@@ -15,10 +15,11 @@ interface DadosProps {
 export const Home: React.FC = () => {
     return (
         <div>
-            {/* <HomeHeaderBackground/> */}
-            
-            <Video src={require("../../assets/videos/production ID_4820118.mp4")} autoPlay muted loop/>
+            <HomeHeaderBackground/>
             <Header />
+            
+            {/* <Video src={require("../../assets/videos/production ID_4820118.mp4")} autoPlay muted loop/>
+            <Header /> */}
 
 
         </div>

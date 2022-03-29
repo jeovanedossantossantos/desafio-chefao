@@ -1,7 +1,8 @@
 
 import { Row, Container, Col} from 'react-bootstrap';
-import { FooterStyle, FooterLogoStyle,FooterTextStyle, FooterIconStyle, FooterIconCircleStyle, FooterCopyrigthStyle, FooterLinkStyle } from './styles'
+import { FooterStyle, FooterLogoStyle,FooterTextStyle, FooterIconStyle, FooterCopyrigthStyle, FooterLinkStyle } from './styles'
 import LogoImage from '../../assets/images/VectorlogoCorreto.svg';
+import { SocialMediaIcon } from '../SocialMediaIcon';
 
 export const Footer: React.FC = () => {
 
@@ -12,14 +13,14 @@ export const Footer: React.FC = () => {
 <FooterStyle>
 <Container>
   <Row>
-    <Col><FooterLogoStyle><img src={LogoImage} width='59px' alt=''></img></FooterLogoStyle></Col>
+    <Col><FooterLogoStyle><img src={LogoImage} width='45.5px' alt=''></img></FooterLogoStyle></Col>
   </Row>
   <Row>
     <Col><FooterTextStyle>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</FooterTextStyle></Col>
   </Row>
   <Row>
-    <Col><FooterIconCircleStyle/>   Have a question? 310-437-2766</Col> 
-    <Col><FooterIconCircleStyle/>   Contact us at unreal@outlook.com</Col>
+    <Col>  <SocialMediaIcon/> </Col> 
+    <Col>  Contact us at unreal@outlook.com Have a question? 310-437-2766</Col>
     <Col>1 of 1</Col>
   </Row>
   <FooterLinkStyle>

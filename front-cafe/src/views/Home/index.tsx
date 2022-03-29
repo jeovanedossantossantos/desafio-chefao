@@ -58,9 +58,8 @@ export const Home: React.FC = () => {
 
 </Slider>
 
-<footer>
-<Footer/>
-</footer>
+<Footer>
+</Footer>
 
 
         </div>

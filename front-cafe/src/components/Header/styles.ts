@@ -17,9 +17,7 @@ export const ContainerMain = styled.div`
     }
   }
   
-  border-width: medium;
-  border-style: solid;
-  border-color: red;
+  
   
   
 `
@@ -27,17 +25,14 @@ export const ContainerMain = styled.div`
 
 
 export const StyledNav = styled(Nav)`
- border-width: medium;
-  border-style: solid;
-  border-color: green;
 
   font-family: 'Poppins-Bold';
-  font-size:19px;
+  font-size:0.9722222222222222vw;
   color:#EFEFEF;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 700;
-  margin-left:2.5vh;
+  margin-left:1.2vw;
   margin-top:3.5vh;
   @media only screen and (max-width: 991px) {
     margin-left:2vh;
@@ -47,9 +42,7 @@ export const StyledNav = styled(Nav)`
 `;
 
 export const WrapBannerText = styled.div`
-border-width: medium;
-  border-style: solid;
-  border-color: yellow;
+
 
 max-width: 70%;
 margin: 0 auto;
@@ -60,14 +53,10 @@ align-items: center;
 
 
 export const Logo = styled.div`
-border-width: medium;
-  border-style: solid;
-  border-color: pink;
-
 position: absolute;
-background-size: 59px 59px;
-width: 59px;
-height: 59px;
+background-size: 42.5px 42.5px;
+width: 42.5px;
+height: 42.5px;
 background-image: url(${LogoImage});
 margin-top:4vh;
 margin-left:7.9%;
@@ -78,9 +67,6 @@ display: none;
 `;
 
 export const CenterWrapperColorizer = styled(Container)`
-border-width: medium;
-  border-style: solid;
-  border-color: black;
   
 display: flex;
 justify-content:right;

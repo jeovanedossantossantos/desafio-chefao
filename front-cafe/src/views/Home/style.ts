@@ -3,11 +3,6 @@ import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackgro
 
 
 export const HomeHeaderBackground = styled.div`
-    border-width: medium;
-  border-style: solid;
-  border-color: #00f;
-  
-   
     display: flex;
     flex-direction: column;
     max-width: 100%;  
@@ -29,7 +24,7 @@ text-align: center;
 `
 
 export const BannerTitle = styled.div`
-font-size: 4.5vw;
+font-size: 4.444444444444445vw;
 font-weight: 300;
 letter-spacing: 0.44em;
 display: flex;

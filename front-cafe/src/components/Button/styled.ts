@@ -2,13 +2,13 @@
 import styled from "styled-components";
 
 export const ButtonContainer = styled.button `
-width: 265px;
-height: 85px;
+width: 10.60vw;
+height: 3.40vw;
 border: 1px solid #EEDCCD;
 border-radius: 13px;
 background-color: transparent ;
 font-family: 'Poppins';
-  font-size:19px;
+  font-size:0.7vw;
   color:#EEDCCD;
   text-transform: uppercase;
 

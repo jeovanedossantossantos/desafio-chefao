@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
-import { HomeHeaderBackground, Video, BannerText, BannerTitle, BannerIcon, BannerDesc, BannerIconSpace} from './style';
+import { HomeHeaderBackground, Video, BannerText, BannerTitle, BannerIcon, BannerDesc, BannerIconSpace, } from './style';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerLine  from '../../assets/images/Rectangle5iconBanner.svg';
 import BannerIconImage from '../../assets/images/VectoriconBanner.svg';
 import { Button } from '../../components/Button';
+import { Footer } from '../../components/Footer';
 
 // import {api} from '../../serve'
 
@@ -38,7 +39,12 @@ export const Home: React.FC = () => {
   </Row>
 </Container>
 </BannerText>
+
 </HomeHeaderBackground>
+<footer>
+<Footer/>
+</footer>
+
         </div>
     )
 

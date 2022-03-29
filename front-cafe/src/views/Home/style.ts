@@ -3,12 +3,17 @@ import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackgro
 
 
 export const HomeHeaderBackground = styled.div`
-position: absolute;
-    width: 100%;
-    height: 931px;
+    border-width: medium;
+  border-style: solid;
+  border-color: #00f;
+  
+   
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;  
     background: url(${homeHeaderBackgroundImage}) ;    
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     @media only screen and (min-width: 1920px) {
         background-size: cover;
     }

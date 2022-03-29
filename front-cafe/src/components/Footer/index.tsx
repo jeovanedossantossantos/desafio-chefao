@@ -8,6 +8,7 @@ export const Footer: React.FC = () => {
 
   return (
 <div>
+  
 <FooterStyle>
 <Container>
   <Row>

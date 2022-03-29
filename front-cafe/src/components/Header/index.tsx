@@ -62,6 +62,6 @@ export const Header: React.FC = () => {
       </Navbar>
     </ContainerMain>
     </div>
-  )
+  ) 
 
 }

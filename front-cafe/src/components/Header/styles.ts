@@ -16,12 +16,20 @@ export const ContainerMain = styled.div`
       display:none;
     }
   }
-
+  
+  border-width: medium;
+  border-style: solid;
+  border-color: red;
+  
+  
 `
 
 
 
 export const StyledNav = styled(Nav)`
+ border-width: medium;
+  border-style: solid;
+  border-color: green;
 
   font-family: 'Poppins';
   font-size:19px;
@@ -39,6 +47,10 @@ export const StyledNav = styled(Nav)`
 `;
 
 export const WrapBannerText = styled.div`
+border-width: medium;
+  border-style: solid;
+  border-color: yellow;
+
 max-width: 70%;
 margin: 0 auto;
 display:flex;
@@ -48,7 +60,11 @@ align-items: center;
 
 
 export const Logo = styled.div`
-position: absolute;
+border-width: medium;
+  border-style: solid;
+  border-color: pink;
+
+display:flex;
 background-size: 59px 59px;
 width: 59px;
 height: 59px;
@@ -62,12 +78,15 @@ display: none;
 `;
 
 export const CenterWrapperColorizer = styled(Container)`
+border-width: medium;
+  border-style: solid;
+  border-color: black;
+  
 display: flex;
 justify-content:right;
 margin-right: 4vh;
 img {
   display: flex;
-justify-content:left;
 }
 
 @media only screen and (max-width: 991px) {

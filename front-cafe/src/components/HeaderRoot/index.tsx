@@ -1,8 +1,7 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, } from './styles'
-import Logo from "../../assets/images/1.png"
+import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain} from './styles'
 
 export const HeaderRoot: React.FC = () => {
   const push = useNavigate()
@@ -11,11 +10,12 @@ export const HeaderRoot: React.FC = () => {
     push("/")
 }
   return (
+    
     <ContainerMain>
       <CenterWrapperColorizer className="sm">
         <Navbar bg="transparent" expand="lg" variant="dark">
           <Container>
-            <Navbar.Brand href="#home"><img src={Logo}></img></Navbar.Brand>
+            <Navbar.Brand href="#home"></Navbar.Brand>
            
 
             <Navbar >

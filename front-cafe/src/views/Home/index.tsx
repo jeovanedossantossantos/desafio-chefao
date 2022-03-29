@@ -6,6 +6,7 @@ import BannerLine  from '../../assets/images/Rectangle5iconBanner.svg';
 import BannerIconImage from '../../assets/images/VectoriconBanner.svg';
 import { Button } from '../../components/Button';
 import { Footer } from '../../components/Footer';
+import { About } from '../../components/About';
 
 // import {api} from '../../serve'
 
@@ -41,9 +42,15 @@ export const Home: React.FC = () => {
 </BannerText>
 
 </HomeHeaderBackground>
+<About>
+
+
+</About>
+
 <footer>
 <Footer/>
 </footer>
+
 
         </div>
     )

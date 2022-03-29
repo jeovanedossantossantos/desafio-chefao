@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackgroundCorRgb.png'
+import sectionAboutImage from '../../assets/images/sectionAbout.svg'
 
 
 export const HomeHeaderBackground = styled.div`
@@ -34,8 +35,9 @@ font-weight: 300;
 letter-spacing: 0.44em;
 display: flex;
 justify-content: center;
-font-family: 'Poppins-Light'
+font-family: 'Poppins-Light';
 `
+
 export const BannerIcon = styled.div`
 color: white;
 display: flex;
@@ -79,7 +81,24 @@ export const Video = styled.video`
      /* height: 100vh; */
   
   }
-  
-  
+    
 `
+
+export const HomeAboutBackground = styled.div` 
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 507px;
+    background: url(${sectionAboutImage}) ;    
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media only screen and (min-width: 1920px) {
+        background-size: cover;
+        
+    }
+`
+
+
 

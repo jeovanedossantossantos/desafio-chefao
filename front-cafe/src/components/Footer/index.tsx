@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
     <Col><FooterTextStyle>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</FooterTextStyle></Col>
   </Row>
   <Row>
-    <Col>  <SocialMediaIcon/> </Col> 
+    <Col>  <SocialMediaIcon SocialMediaIconImg="Teste" SocialMediaIconText2='fdgd' SocialMediaIconText1='dffdsfd'/> </Col> 
     <Col>  Contact us at unreal@outlook.com Have a question? 310-437-2766</Col>
     <Col>1 of 1</Col>
   </Row>

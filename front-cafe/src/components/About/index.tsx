@@ -4,7 +4,7 @@ import { Paragrafo, SectionAbout, HomeAboutBackgroundImage, Titulo} from './styl
 
 export const About: React.FC = () => {
   return (
-    <div>
+    <div  id='about'>
     <Row>
       <SectionAbout>
         <Col xs={6}><Titulo>

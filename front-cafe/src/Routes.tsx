@@ -4,6 +4,9 @@ import { Cadastra } from './views/DeashBordRoot/Cadastro';
 import { Formulario } from './views/DeashBordRoot/Formulario';
 import Login from './views/DeashBordRoot/Login';
 import { Home } from './views/Home'
+import { Contact } from './views/Contact'
+import { SearchPage } from './views/SearchPage'
+import { ProductPage } from './views/ProductPage'
 import jwt_decode from 'jwt-decode'
 import { Lista } from './views/DeashBordRoot/Lista';
 
@@ -27,6 +30,9 @@ function Rotas() {
         <BrowserRouter>
             <RoutesWrapper>
                 <Route path="/" element={<Home />}></Route>
+                <Route path="/#about" element={<Home />}></Route>
+                <Route path="/searchpage" element={<SearchPage />}/>
+                <Route path="/productpage" element={<ProductPage />}></Route>
                 <Route path="/cadastra" element={<Cadastra />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 

@@ -6,6 +6,7 @@ export const FooterStyle = styled.footer`
    flex-direction: column;
    max-width: 100%;
    height: 44.116vh;   /* Height of the footer */
+   min-height: 417px;
    background: #438B70;
    /* margin-top: 28vh; */ /* distance between slider and the footer */
    padding-left: 9.9vw;

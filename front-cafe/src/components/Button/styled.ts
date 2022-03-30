@@ -13,6 +13,6 @@ font-family: 'Poppins-SemiBold';
   text-transform: uppercase;
 
 &:hover {
-    transform: scale(1.2)
+    transform: scale(1.02)
 }
 `

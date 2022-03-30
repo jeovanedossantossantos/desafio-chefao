@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import { Paragrafo, SectionAbout, HomeAboutBackgroundImage, Titulo } from './styles';
+import { Paragrafo, SectionAbout, HomeAboutBackgroundImage, Titulo} from './styles';
 
 export const About: React.FC = () => {
   return (
-
+    <div>
     <Row>
       <SectionAbout>
         <Col xs={6}><Titulo>
@@ -22,14 +22,10 @@ export const About: React.FC = () => {
 
         </Col>
 
-
-
-
-
       </SectionAbout>
 
     </Row>
-
+    </div>
 
   );
 

@@ -94,7 +94,6 @@ export const HomeAboutBackground = styled.div`
     background-size: contain;
     @media only screen and (min-width: 1920px) {
         background-size: cover;
-        
     }
 `
 

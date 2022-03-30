@@ -1,41 +1,32 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
-border-width: medium;
-  border-style: solid;
-  border-color: orange;
 
-  
    display: flex;
    flex-direction: column;
    max-width: 100%;
    height: 92.116vh;   /* Height of the footer */
    background: #438B70;
-
+   margin-top: 28vh;
+   padding-left: 25vh;
 
 `;
 
 export const FooterLogoStyle = styled.div`
-border-width: medium;
-  border-style: solid;
-  border-color: yellow;
-
-  margin: 12px 0px;
+padding-top: 10vh;
 `;
 
 export const FooterTextStyle = styled.div`
-border-width: medium;
-  border-style: solid;
-  border-color: red;
 
-font-family: 'Poppins';
+
+font-family: 'Poppins-Light';
 font-weight: 300;
    font-size:  14px;
+   line-height: 24px;
    color:#DACFCE;
    max-width:32.84vw;
    margin-top: 1.4%;
    border-radius: 50px;
-
    position: static;
 width: 457px;
 height: 72px;
@@ -47,17 +38,7 @@ export const FooterIconStyle = styled.div`
 
 `;
 
-export const FooterIconCircleStyle = styled.div`
-border-width: medium;
-  border-style: solid;
-  border-color: red;
 
-position: absolute;
-width: 3.5vw;
-height: 3.5vw;
-border: 1.9px solid #EEDCCD;
-border-radius: 100%;
-`;
 
 export const FooterLinkStyle = styled.div`
 border-width: medium;

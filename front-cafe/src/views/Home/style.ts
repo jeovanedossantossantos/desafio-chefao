@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackgroundCorRgb.png'
+import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackground.png'
 import sectionAboutImage from '../../assets/images/sectionAbout.svg'
 
 
@@ -17,6 +17,9 @@ export const HomeHeaderBackground = styled.div`
 
     }
 `
+
+
+
 export const BannerText = styled.div`
 color: #EFEFEF;
 margin-top: 8.6%;

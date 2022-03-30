@@ -110,12 +110,17 @@ export const HomeAboutBackgroundImage = styled.section`
     margin-left: 120vh;
     display:flex;
     flex-direction: column;
-    width: 575px;
+    width: 100%;
+    max-width:575px;
+    min-width:200px;
     height: 575px;
    
     background-image: url(${sectionAboutImage});
     background-repeat: no-repeat;
 
+    @media (max-width:900px){
+      display: none;
+    }
 
 
 `;

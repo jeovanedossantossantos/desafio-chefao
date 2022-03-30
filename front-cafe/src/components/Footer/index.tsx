@@ -3,6 +3,11 @@ import { Row, Container, Col} from 'react-bootstrap';
 import { FooterStyle, FooterLogoStyle,FooterTextStyle, FooterIconStyle, FooterCopyrigthStyle, FooterLinkStyle } from './styles'
 import LogoImage from '../../assets/images/VectorlogoCorreto.svg';
 import { SocialMediaIcon } from '../SocialMediaIcon';
+import CallIcon from '../../assets/images/ButtonCallIcon.svg';
+import EmailIcon from '../../assets/images/ButtonEmailIcon.svg';
+import FbIcon from '../../assets/images/Mini-ButtonFbIcon.svg';
+import YtIcon from '../../assets/images/Mini-ButtonYtIcon.svg';
+import ZapIcon from '../../assets/images/Mini-ButtonIconZap.svg';
 
 export const Footer: React.FC = () => {
 
@@ -19,9 +24,13 @@ export const Footer: React.FC = () => {
     <Col><FooterTextStyle>We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</FooterTextStyle></Col>
   </Row>
   <Row>
-    <Col>  <SocialMediaIcon SocialMediaIconImg="Teste" SocialMediaIconText2='fdgd' SocialMediaIconText1='dffdsfd'/> </Col> 
-    <Col>  Contact us at unreal@outlook.com Have a question? 310-437-2766</Col>
-    <Col>1 of 1</Col>
+    <Col>  <SocialMediaIcon SocialMediaIconImg={CallIcon} SocialMediaIconText1='Have a question?' SocialMediaIconText2='310-437-2766' /> </Col> 
+    <Col>  <SocialMediaIcon SocialMediaIconImg={CallIcon} SocialMediaIconText1='Have a question?' SocialMediaIconText2='310-437-2766' />  </Col>
+    <Col></Col>
+    <Col></Col>
+    <Col><SocialMediaIcon SocialMediaIconImg={CallIcon}/> </Col>
+    <Col><SocialMediaIcon SocialMediaIconImg={CallIcon}/> </Col>
+    <Col><SocialMediaIcon SocialMediaIconImg={CallIcon}/> </Col>
   </Row>
   <FooterLinkStyle>
   <Row>

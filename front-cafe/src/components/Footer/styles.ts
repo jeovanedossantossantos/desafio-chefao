@@ -8,7 +8,7 @@ export const FooterStyle = styled.footer`
    height: 92.116vh;   /* Height of the footer */
    background: #438B70;
    margin-top: 28vh;
-   padding-left: 25vh;
+   padding-left: 9.9vw;
 
 `;
 
@@ -26,12 +26,10 @@ font-weight: 300;
    color:#DACFCE;
    max-width:32.84vw;
    margin-top: 1.4%;
+   margin-bottom: 2.4%;
    border-radius: 50px;
    position: static;
-width: 457px;
-height: 72px;
-left: 0px;
-top: 54.4px;
+
 `;
 
 export const FooterIconStyle = styled.div`

@@ -5,15 +5,15 @@ export const FooterStyle = styled.footer`
    display: flex;
    flex-direction: column;
    max-width: 100%;
-   height: 92.116vh;   /* Height of the footer */
+   height: 44.116vh;   /* Height of the footer */
    background: #438B70;
-   margin-top: 28vh;
+   /* margin-top: 28vh; */ /* distance between slider and the footer */
    padding-left: 9.9vw;
 
 `;
 
 export const FooterLogoStyle = styled.div`
-padding-top: 10vh;
+padding-top: 5vh;
 `;
 
 export const FooterTextStyle = styled.div`
@@ -32,32 +32,29 @@ font-weight: 300;
 
 `;
 
-export const FooterIconStyle = styled.div`
-
-`;
-
-
-
 export const FooterLinkStyle = styled.div`
-border-width: medium;
-  border-style: solid;
-  border-color: green;
 
- width:45% ;
-position: absolute;
-margin-top: 120px;
-font-family: 'Poppins';
-font-style: normal;
+font-family: 'Poppins-Light';
 font-weight: 400;
 font-size: 14px;
-line-height: 25px;
+color: #F5F1F1;
+margin-top: 8vh;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
 `;
 
 export const FooterCopyrigthStyle = styled.div`
-border-width: medium;
-  border-style: solid;
-  border-color: red;
-
    margin-right: -36vw;
-   margin-left: 23vw;
+   margin-left: 27.4vw;
 `;
+
+export const SocialMediaIconStyle = styled.div`
+display: flex;
+padding-left: -1vw;
+
+img {
+   width: 51px;
+}
+`;
+

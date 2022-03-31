@@ -15,15 +15,14 @@ export const Header: React.FC = () => {
       <CenterWrapperColorizer className="sm">
         <Navbar bg="transparent" expand="lg" variant="dark">
           <Container>
-
             <Navbar >
               <Nav>
-                <Nav.Link><StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav></Nav.Link>
-                <Nav.Link><StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav></Nav.Link>
-                <Nav.Link><StyledNav><Link to ='/contact'>contato</Link></StyledNav></Nav.Link>
-                <Nav.Link><StyledNav>|</StyledNav></Nav.Link>
+             <StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav>
+               <StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav>
+                <StyledNav><Link to ='/contact'>contato</Link></StyledNav>
+               <StyledNav>|</StyledNav>
                 {/* <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link> */}
-                <Nav.Link ><StyledNav><Link to ='/'> Clube de Assinatura</Link></StyledNav></Nav.Link>
+              <StyledNav><Link to ='/'> Clube de Assinatura</Link></StyledNav>
               </Nav>
             </Navbar>
           </Container>

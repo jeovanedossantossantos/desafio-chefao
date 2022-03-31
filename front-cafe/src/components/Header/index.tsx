@@ -2,13 +2,15 @@ import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
 import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo} from './styles'
 import LogoImage from '../../assets/images/VectorlogoCorreto.svg';
+import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 export const Header: React.FC = () => {
 
 
   return (
 <div>
-          <Logo/>
+<Link to ='/'><Logo/></Link>
     <ContainerMain>
       <CenterWrapperColorizer className="sm">
         <Navbar bg="transparent" expand="lg" variant="dark">
@@ -16,14 +18,12 @@ export const Header: React.FC = () => {
 
             <Navbar >
               <Nav>
-
-              <Navbar.Brand href="#home"></Navbar.Brand>
-                <Nav.Link href="#home"><StyledNav>Sobre</StyledNav></Nav.Link>
-                <Nav.Link href="#home"><StyledNav>Nossos Cafés</StyledNav></Nav.Link>
-                <Nav.Link href="#link"><StyledNav>contato</StyledNav></Nav.Link>
+                <Nav.Link><StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav></Nav.Link>
+                <Nav.Link><StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav></Nav.Link>
+                <Nav.Link><StyledNav><Link to ='/contact'>contato</Link></StyledNav></Nav.Link>
                 <Nav.Link><StyledNav>|</StyledNav></Nav.Link>
                 {/* <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link> */}
-                <Nav.Link href="/login"><StyledNav>Clube de Assinatura</StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav><Link to ='/'> Clube de Assinatura</Link></StyledNav></Nav.Link>
               </Nav>
             </Navbar>
           </Container>

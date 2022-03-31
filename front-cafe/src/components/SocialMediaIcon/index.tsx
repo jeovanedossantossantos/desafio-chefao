@@ -1,5 +1,5 @@
 
-import {FooterIconCircleStyle, FooterIconTextOnSide } from './styles'
+import {FooterIconCircleStyle, FooterIconTextOnSide1, FooterIconTextOnSide2 } from './styles'
 
 interface SocialMediaIconProps {
     SocialMediaIconImg?: string;
@@ -13,9 +13,9 @@ export const SocialMediaIcon: React.FC<SocialMediaIconProps> = ({SocialMediaIcon
   return (
 <div>
 
-<FooterIconCircleStyle><img src='' alt=''/></FooterIconCircleStyle>
-<FooterIconTextOnSide> {SocialMediaIconImg}</FooterIconTextOnSide>
-
+<FooterIconCircleStyle><img src={SocialMediaIconImg} alt=''/></FooterIconCircleStyle>
+<FooterIconTextOnSide1> {SocialMediaIconText1}</FooterIconTextOnSide1>
+<FooterIconTextOnSide2> {SocialMediaIconText2}</FooterIconTextOnSide2>
 </div>
   )
 }

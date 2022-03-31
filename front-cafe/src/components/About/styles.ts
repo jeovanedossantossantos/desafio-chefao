@@ -36,14 +36,6 @@ export const StyledNav = styled(Nav)`
     }
 `;
 
-export const WrapBannerText = styled.div`
-max-width: 70%;
-margin: 0 auto;
-display:flex;
-align-items: center;
-
-`;
-
 
 export const CenterWrapperColorizer = styled(Container)`
 display: flex;
@@ -93,7 +85,7 @@ color: #FFFFFF;
 
 
 export const SectionAbout = styled.main`
-   
+   z-index: 2;
   background-color: #2941ab;
   height: 600px;
   width: 100%;
@@ -103,7 +95,7 @@ export const SectionAbout = styled.main`
   gap: 15px;
   background: url(${homeAboutBackgroundImage }) ; 
   background-position: 46% 4%;
-  background-size: 175%;  
+  background-size: 175%;   
 `;
 
 export const HomeAboutBackgroundImage = styled.section`
@@ -124,6 +116,8 @@ export const HomeAboutBackgroundImage = styled.section`
 
 
 `;
+
+
 
 
 

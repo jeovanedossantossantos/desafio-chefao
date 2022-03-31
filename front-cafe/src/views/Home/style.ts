@@ -57,7 +57,7 @@ export const BannerIconSpace = styled.div`
 padding-left: 0.7%;
 `
 export const ButtonBottomMargin = styled.div`
-padding-bottom: 33vh;
+padding-bottom: 15vh;
 `
 
 export const Video = styled.video`
@@ -94,7 +94,6 @@ export const HomeAboutBackground = styled.div`
     background-size: contain;
     @media only screen and (min-width: 1920px) {
         background-size: cover;
-        
     }
 `
 

@@ -53,10 +53,7 @@ export const Home: React.FC = () => {
 
 
       </Body>
-
-      <Slider>
-
-      </Slider>
+      
 
       <Footer>
       </Footer>

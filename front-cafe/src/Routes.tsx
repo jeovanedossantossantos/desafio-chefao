@@ -7,6 +7,7 @@ import { Home } from './views/Home'
 import { Contact } from './views/Contact'
 import { SearchPage } from './views/SearchPage'
 import { ProductPage } from './views/ProductPage'
+import { ContactPage } from './views/ContactPage'
 import jwt_decode from 'jwt-decode'
 import { Lista } from './views/DeashBordRoot/Lista';
 
@@ -33,6 +34,7 @@ function Rotas() {
                 {/* <Route path="/#about" element={<Home />}></Route> */}
                 <Route path="/searchpage" element={<SearchPage />}/>
                 <Route path="/productpage" element={<ProductPage />}></Route>
+                <Route path="/contact" element={<ContactPage />}></Route>
                 <Route path="/cadastra" element={<Cadastra />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 

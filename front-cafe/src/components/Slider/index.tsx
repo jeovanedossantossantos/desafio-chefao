@@ -19,7 +19,13 @@ interface DataProps {
   variedade_id:number,
   torra_id:number,
   acidez_id:number,
-  moagem_id:number
+  moagem_id:number,
+  regiao:{
+    id: number,
+			foto_bandeira: string,
+			descricao: string,
+			altitude: string,
+  }
 }
 
 
@@ -29,8 +35,10 @@ export const Slider: React.FC = () => {
     const res = async()=>{ 
     try{
       const resposta = await api.get('/cafes')
+      const {regiao} = resposta.data
       setData(resposta.data)  
-      setVetor(resposta.data[0])
+      setVetor(resposta.data)
+      // console.log(resposta.data.acidez.id)
     }
     catch (error){
       console.log(error)
@@ -48,7 +56,7 @@ export const Slider: React.FC = () => {
             return (  
                <Carousel>
               <Carousel.Item>
-                <img
+                <img width="500px" height="500px"
                   className="d-block w-100"
                   src={e.foto_cafe}
                   alt="First slide"
@@ -60,6 +68,7 @@ export const Slider: React.FC = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <img
+                width="500px" height="500px"
                   className="d-block w-100"
                  src={e.foto_cafe_1}
                   alt="Second slide"
@@ -72,6 +81,7 @@ export const Slider: React.FC = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <img
+                width="500px" height="500px"
                   className="d-block w-100"
                   src={e.foto_cafe_2}
                   alt="Third slide"

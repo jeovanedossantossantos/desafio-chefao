@@ -29,8 +29,8 @@ function Rotas() {
     return (
         <BrowserRouter>
             <RoutesWrapper>
-                {/* <Route path="/" element={<Home />}></Route>
-                <Route path="/#about" element={<Home />}></Route> */}
+                <Route path="/" element={<Home />}></Route>
+                {/* <Route path="/#about" element={<Home />}></Route> */}
                 <Route path="/searchpage" element={<SearchPage />}/>
                 <Route path="/productpage" element={<ProductPage />}></Route>
                 <Route path="/cadastra" element={<Cadastra />}></Route>

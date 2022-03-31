@@ -18,7 +18,11 @@ export const Cadastra: React.FC = () => {
 
     const requestCadastra = async () =>{
         try{
-           const resposta = await api.post('/cadastra-usuario', data)
+           const resposta = await api.post('/cadastra-usuario', data,{
+               headers: {
+                   authorization: codigoAuthorization
+               }
+           })
             console.log("ok")
             push("/login")
         }catch(err){
@@ -41,7 +45,7 @@ export const Cadastra: React.FC = () => {
             <h1>Cadastra</h1>
             <Form.Group className="mb-3">
                 <Form.Label>Codigo de Autorização</Form.Label>
-                <Form.Control placeholder="Codigo de Autorização"  onChange={e => setData({...data, authorization: e.target.value})} />
+                <Form.Control placeholder="Codigo de Autorização"  onChange={e => setCodigoAuthorization(e.target.value)} />
             </Form.Group>
             <Form.Group className="mb-3">
                 <Form.Label>Seu nome:</Form.Label>

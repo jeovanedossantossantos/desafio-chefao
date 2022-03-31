@@ -29,14 +29,14 @@ function Rotas() {
     return (
         <BrowserRouter>
             <RoutesWrapper>
-                <Route path="/" element={<Home />}></Route>
-                <Route path="/#about" element={<Home />}></Route>
+                {/* <Route path="/" element={<Home />}></Route>
+                <Route path="/#about" element={<Home />}></Route> */}
                 <Route path="/searchpage" element={<SearchPage />}/>
                 <Route path="/productpage" element={<ProductPage />}></Route>
                 <Route path="/cadastra" element={<Cadastra />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 
-                {isSectionActive() && 
+                {/* {isSectionActive() && 
                  <Route path="/formulario" element={<Navigate to="/"/>}/>
                  }
                 {!isSectionActive() &&
@@ -44,7 +44,7 @@ function Rotas() {
                     <Route path="/formulario" element={<Formulario />} />
                     <Route path="/lista" element={<Lista />}/>
                    </>
-                }
+                } */}
                
                 
 

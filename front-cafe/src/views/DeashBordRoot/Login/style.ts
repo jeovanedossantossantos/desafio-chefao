@@ -68,6 +68,7 @@ export const Video = styled.video`
   right: 0;
   bottom: 0;
   width: auto;
+  
   /* max-width:100%; */
   /* min-width: 100%; */
   

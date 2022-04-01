@@ -10,6 +10,7 @@ import { About } from '../../components/About';
 import { Body } from '../../components/Body';
 import { Slider } from '../../components/Slider';
 
+
 // import {api} from '../../serve'
 
 interface DadosProps {
@@ -21,8 +22,8 @@ interface DadosProps {
 
 export const Home: React.FC = () => {
   return (
-    <div>
-      <HomeHeaderBackground>
+    <div >
+      <HomeHeaderBackground >
 
         {/* <Video src={require("../../assets/videos/production ID_4820118.mp4")} autoPlay muted loop/> */}
         <Header />
@@ -32,7 +33,7 @@ export const Home: React.FC = () => {
               <Col><BannerTitle>coffee experience</BannerTitle></Col>
             </Row>
             <Row>
-              {/* <Col><BannerIcon><img src={BannerLine} alt='' width={'40px'} /><BannerIconSpace /><img src={BannerIconImage} alt='' width={'18vw'} /><BannerIconSpace /><img src={BannerLine} alt='' width={'40px'} /></BannerIcon></Col> */}
+              <Col><BannerIcon><img src={BannerLine} alt='' width={'40px'} /><BannerIconSpace /><img src={BannerIconImage} alt='' width={'18vw'} /><BannerIconSpace /><img src={BannerLine} alt='' width={'40px'} /></BannerIcon></Col>
             </Row>
             <Row>
               <Col><BannerDesc>Nós produzimos cafés para coffe lovers que amam café <br />em todos os sentidos, do olfato ao tato</BannerDesc></Col>

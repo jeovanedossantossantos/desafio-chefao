@@ -1,7 +1,7 @@
 
 import { Row, Container, Col} from 'react-bootstrap';
 import { SocialMediaIconStyle, FooterStyle, FooterLogoStyle,FooterTextStyle, FooterCopyrigthStyle, FooterLinkStyle } from './styles'
-import LogoImage from '../../assets/images/VectorlogoCorreto.svg';
+import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
 import { SocialMediaIcon } from '../SocialMediaIcon';
 import CallIcon from '../../assets/images/ButtonCallIcon.svg';
 import EmailIcon from '../../assets/images/ButtonEmailIcon.svg';

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Row} from 'react-bootstrap';
 import { BodyContent } from './styles'
-import Content from '../../assets/images/homeContent.svg';
+import Content from '../../assets/images/homeContent.webp';
 
 
 

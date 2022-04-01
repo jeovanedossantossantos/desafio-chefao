@@ -1,16 +1,19 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
 import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo} from './styles'
-import LogoImage from '../../assets/images/VectorlogoCorreto.svg';
+import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { HomeAboutBackgroundImage } from '../About/styles';
+
 
 export const Header: React.FC = () => {
 
 
-  return (
-<div>
+  return (  
+<div >
 <Link to ='/'><Logo/></Link>
+
     <ContainerMain>
       <CenterWrapperColorizer className="sm">
         <Navbar bg="transparent" expand="lg" variant="dark">
@@ -60,6 +63,7 @@ export const Header: React.FC = () => {
         </Container>
       </Navbar>
     </ContainerMain>
+   
     </div>
   ) 
 

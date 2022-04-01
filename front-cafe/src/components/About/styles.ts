@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import {Container, Nav} from 'react-bootstrap';
 import homeAboutBackgroundImage from '../../assets/images/homePageAboutBackground.png'
-import sectionAboutImage from '../../assets/images/sectionAbout.svg'
+import sectionAboutImage from '../../assets/images/sectionAbout.webp'
 
 export const ContainerMain = styled.div`
 

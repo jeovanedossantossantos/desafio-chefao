@@ -1,13 +1,13 @@
 import styled from "styled-components"
-import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackground.png'
-import sectionAboutImage from '../../assets/images/sectionAbout.svg'
+import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackgroundn.webp'
+import sectionAboutImage from '../../assets/images/sectionAbout.webp'
 
 
 export const HomeHeaderBackground = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 100%;  
-    background: url(${homeHeaderBackgroundImage}) ;    
+   background: url(${homeHeaderBackgroundImage}) ;    
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 

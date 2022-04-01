@@ -1,7 +1,8 @@
 
 import styled from 'styled-components'
 import { Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
-import LogoImage from '../../assets/images/VectorlogoCorreto.svg';
+import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
+import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackground.webp'
 
 export const ContainerMain = styled.div`
 

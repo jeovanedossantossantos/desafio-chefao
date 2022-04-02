@@ -1,10 +1,11 @@
 
-import {} from './styles';
+import { } from './styles';
 
 
 export const SearchCard: React.FC = () => {
-    return ( <div>
+    return (
+        <div>
 
-    </div>
+        </div>
     )
 }

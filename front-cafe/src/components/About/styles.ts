@@ -4,11 +4,15 @@ import homeAboutBackgroundImage from '../../assets/images/homePageAboutBackgroun
 import sectionAboutImage from '../../assets/images/sectionAbout.webp'
 
 export const ContainerMain = styled.div`
+  justify-content:center;
+  align-items:center;
+  flex-direction: row;
+  margin: auto;
 
   .mb{
     display:none;
   }
-  @media (max-width:991px){
+  @media (max-width:900px){
     .mb{
     display:block;
     }
@@ -34,6 +38,8 @@ export const StyledNav = styled(Nav)`
     margin-top:0;
     font-size:10px;
     }
+
+    
 `;
 
 
@@ -51,26 +57,31 @@ padding-left:19vh;
 
 
 export const Titulo = styled.h1`
-  position: absolute;
-
-height: 51px;
-left: 216px;
+  /* position: absolute; */
+/* height: 51px; */
+/* left: 216px; */
 font-family: 'Poppins-Light';
 font-style: normal;
 font-weight: 300;
 font-size: 32px;
 line-height: 48px;
 letter-spacing: 0.3em;
-padding-top: 115px;
+text-align: center;
+margin: auto;
+/* padding-top: 115px; */
 color: #C0836E;
+
 `;
 
 export const Paragrafo = styled.p`
-position: absolute;
-width: 455px;
-height: 300px;
+/* background: red; */
+/* position: absolute; */
+width: 100%;
+/* max-width:455px;
+min-width: 200px; */
+/* height: 300px; */
 left: 216px;
-padding-top: 167px;
+/* padding-top: 167px; */
 font-family: 'Poppins-Regular';
 font-style: normal;
 font-weight: 400;
@@ -85,30 +96,51 @@ color: #FFFFFF;
 
 
 export const SectionAbout = styled.main`
-   z-index: 2;
+ 
+   /* z-index: 2; */
   background-color: #2941ab;
-  height: 600px;
+  /* height: 600px; */
   width: 100%;
   color: #1ed760;
   display: flex; 
-  flex-direction: column;
-  gap: 15px;
+  flex-direction: row;
+justify-content: center;
+align-items: center;
+  
+  /* flex-direction: column; */
+  /* gap: 15px; */
   background: url(${homeAboutBackgroundImage }) ; 
-  background-position: 46% 4%;
-  background-size: 175%;   
+  /* background-position: 46% 4%;
+  background-size: 175%;  */
+  
+  .col-sectionAbout{
+     margin:10px;
+     @media(max-width:900px){
+       width:90%;
+       max-width:400px;
+       min-width: 200px;
+       margin:10px;
+     }
+     
+     
+      
+    }
+   
 `;
 
 export const HomeAboutBackgroundImage = styled.section`
-    margin-left: 120vh;
-    display:flex;
-    flex-direction: column;
+    /* margin-left: 120vh; */
+    /* display:flex; */
+    /* flex-direction: column; */
     width: 100%;
-    max-width:575px;
+    /* max-width:455px; */
     min-width:200px;
     height: 575px;
    
     background-image: url(${sectionAboutImage});
     background-repeat: no-repeat;
+    /* background: red; */
+    
 
     @media (max-width:900px){
       display: none;

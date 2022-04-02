@@ -10,10 +10,11 @@ export const Body: React.FC = () => {
       
         <div>
             <BodyContent>
-            <Row> <img src={Content} alt='' />
+            {/* <Row>  */}
+                <img src={Content} alt='' />
 
 
-            </Row>
+            {/* </Row> */}
             </BodyContent>
   
             </div>

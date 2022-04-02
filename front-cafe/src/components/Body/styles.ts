@@ -6,6 +6,6 @@ export const BodyContent = styled.div`
     flex-direction: column;
     max-width: 100%;
     transform: rotate(-180deg); 
-    max-height: 21vh;
+    /* max-height: 21vh; */
     background-size: center top;
 `;

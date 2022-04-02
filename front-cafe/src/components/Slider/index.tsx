@@ -1,64 +1,73 @@
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { SliderContent} from './styles'
+import { SliderContent } from './styles'
 import SliderImg from '../../assets/images/homePageAboutBackground.png';
 import { api } from '../../serve';
 
 interface DataProps {
-  id:number,
-  nome:string,
-  foto_cafe:string,
-  foto_cafe_1:string,
-  foto_cafe_2:string,
-  nota:string,
-  peso_liquido:string,
-  preco:string,
-  descricao:string,
-  regiao_id:number,
-  corpo_id:number,
-  variedade_id:number,
-  torra_id:number,
-  acidez_id:number,
-  moagem_id:number,
-  regiao:{
+  id: number,
+  nome: string,
+  foto_cafe: string,
+  foto_cafe_1: string,
+  foto_cafe_2: string,
+  nota: string,
+  peso_liquido: string,
+  preco: string,
+  descricao: string,
+  regiao_id: number,
+  corpo_id: number,
+  variedade_id: number,
+  torra_id: number,
+  acidez_id: number,
+  moagem_id: number,
+  regiao: {
     id: number,
-			foto_bandeira: string,
-			descricao: string,
-			altitude: string,
+    foto_bandeira: string,
+    descricao: string,
+    altitude: string,
   }
 }
 
 
 export const Slider: React.FC = () => {
-    const [data, setData]=useState<DataProps[]>([])  
-    const [vetor, setVetor]=useState<DataProps[]> ([])
-    const res = async()=>{ 
-    try{
+  const [data, setData] = useState<DataProps[]>([])
+  const [vetor, setVetor] = useState<DataProps>()
+
+  const getRandomInt = (min: number, max: number)=> {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+  // let vetor = Array(<DataProps>)
+  const res = async () => {
+    try {
       const resposta = await api.get('/cafes')
-      const {regiao} = resposta.data
-      setData(resposta.data)  
-      setVetor(resposta.data)
-      // console.log(resposta.data.acidez.id)
+      // const {regiao} = resposta.data
+      setData(resposta.data)
+      setVetor(resposta.data[getRandomInt(0,resposta.data.length)])
+      // for(var i=0; resposta.data.length > 0; i++){
+      //   vetor.push(resposta.data[i])
+      // }
+      console.log(getRandomInt(0,resposta.data.length))
     }
-    catch (error){
+    catch (error) {
       console.log(error)
     }
-   }
+  }
 
-  useEffect(()=>{res()}, [])
+  useEffect(() => { res() }, [])
 
-    return (
+  return (
 
-        <SliderContent>
-      
-        {
-          vetor.map(e =>{
-            return (  
-               <Carousel>
-              <Carousel.Item>
-                <img width="500px" height="500px"
-                  className="d-block w-100"
-                  src={e.foto_cafe}
+    <SliderContent>
+
+      {
+        
+            <Carousel style={{overflow: 'hidden'}}>
+              <Carousel.Item >
+                <img  style={{ minHeight:"200px", maxHeight:"400px"}}
+                  className="d-block w-100 h-100"
+                  src={vetor?.foto_cafe ?vetor?.foto_cafe :"https://alavoura.com.br/wp-content/uploads/2020/06/tim-e1592429928966.jpeg"}
                   alt="First slide"
                 />
                 <Carousel.Caption>
@@ -68,12 +77,12 @@ export const Slider: React.FC = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                width="500px" height="500px"
-                  className="d-block w-100"
-                 src={e.foto_cafe_1}
+                  style={{ minHeight:"200px", maxHeight:"400px"}}
+                  className="d-block w-100 h-100"
+                  src={vetor?.foto_cafe_1 ? vetor?.foto_cafe_1:"https://alavoura.com.br/wp-content/uploads/2020/06/article.png"}
                   alt="Second slide"
                 />
-            
+
                 <Carousel.Caption>
                   <h3>Second slide label</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -81,21 +90,21 @@ export const Slider: React.FC = () => {
               </Carousel.Item>
               <Carousel.Item>
                 <img
-                width="500px" height="500px"
-                  className="d-block w-100"
-                  src={e.foto_cafe_2}
+                 style={{ minHeight:"200px", maxHeight:"400px"}}
+                  className="d-block w-100 h-100"
+                  src={vetor?.foto_cafe_2 ? vetor.foto_cafe_2 :"https://alavoura.com.br/wp-content/uploads/2020/06/article.png"}
                   alt="Third slide"
                 />
-            
+
                 <Carousel.Caption>
                   <h3>Third slide label</h3>
                   <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
               </Carousel.Item>
-            </Carousel>)
-          })
-        }
+            </Carousel>
+       
+      }
 
-      </SliderContent>
-    );
+    </SliderContent>
+  );
 }

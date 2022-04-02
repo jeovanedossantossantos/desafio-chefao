@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
-import { HomeHeaderBackground, Video, BannerText, BannerTitle, BannerIcon, BannerDesc, BannerIconSpace, ButtonBottomMargin } from './style';
+import { HomeHeaderBackground, 
+  BannerText, 
+  BannerTitle, 
+  BannerIcon, 
+  BannerDesc, 
+  BannerIconSpace, 
+  ButtonBottomMargin } from './style';
 import { Container, Row, Col } from 'react-bootstrap';
 import BannerLine from '../../assets/images/Rectangle5iconBanner.svg';
 import BannerIconImage from '../../assets/images/VectoriconBanner.svg';
@@ -25,7 +31,7 @@ export const Home: React.FC = () => {
     <div >
       <HomeHeaderBackground >
 
-        {/* <Video src={require("../../assets/videos/production ID_4820118.mp4")} autoPlay muted loop/> */}
+
         <Header />
         <BannerText>
           <Container fluid>
@@ -45,22 +51,12 @@ export const Home: React.FC = () => {
         </BannerText>
 
       </HomeHeaderBackground>
-      <About>
+       <About />
 
+      <Body />
+      <Slider />
+      <Footer />
 
-      </About>
-
-      <Body>
-
-
-      </Body>
-
-      <Slider>
-
-      </Slider>
-
-      <Footer>
-      </Footer>
 
 
     </div>

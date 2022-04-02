@@ -38,7 +38,7 @@ function Rotas() {
                 <Route path="/cadastra" element={<Cadastra />}></Route>
                 <Route path="/login" element={<Login />}></Route>
                 
-                {/* {isSectionActive() && 
+                {isSectionActive() && 
                  <Route path="/formulario" element={<Navigate to="/"/>}/>
                  }
                 {!isSectionActive() &&
@@ -46,7 +46,7 @@ function Rotas() {
                     <Route path="/formulario" element={<Formulario />} />
                     <Route path="/lista" element={<Lista />}/>
                    </>
-                } */}
+                }
                
                 
 

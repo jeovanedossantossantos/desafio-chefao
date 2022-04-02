@@ -3,11 +3,12 @@ const Sequelize = require('sequelize');
 const Op = Sequelize.Op;
 const controllerRegiao = {
     async cadastrarRegiao(req, res) {
-        const { foto_bandeira, pais, descricao, altitude } = req.body
+        const {nome, foto_bandeira, pais, descricao, altitude } = req.body
         
 
         try {
             const newRegiao = await Regiao.create({
+                nome,
                 foto_bandeira,
                 pais,
                 descricao,
@@ -67,10 +68,11 @@ const controllerRegiao = {
         try {
            
             const { id } = req.params //parametro que a gente tem que ver como vai add;
-            const { foto_bandeira, pais, descricao, altitude } = req.body;
+            const { nome, foto_bandeira, pais, descricao, altitude } = req.body;
             if (!id) return res.status(400).json({ "messagem": "id não enviado" })
 
             const regiaoAtualizada = await Regiao.update({
+                nome,
                 foto_bandeira,
                 pais,
                 descricao,

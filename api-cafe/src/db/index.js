@@ -5,7 +5,8 @@ const dotenv = require('dotenv/config')
 try {
     db = new Sequelize(process.env.DBNAME, process.env.DBUSER, process.env.DBPASSWORD, {
         dialect: "mysql",
-        host: process.env.DBHOST,        
+        host: process.env.DBHOST,
+              
 
     })
     console.log("Conexão bem sucedida")

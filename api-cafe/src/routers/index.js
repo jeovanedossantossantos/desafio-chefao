@@ -17,8 +17,8 @@ const route = express.Router();
 route.get('/',(req, res) => {
     res.status(200).json({"messagem":"Olá"})
 })
-
-route.post('/cadastra-usuario',auth.auth,UsusriosCreateValidations, controllerUsuarios.registro)
+// UsusriosCreateValidations,
+route.post('/cadastra-usuario',auth.auth, UsusriosCreateValidations,controllerUsuarios.registro)
 route.post('/login',authLoginValidations,controllerAuth.login)
 
 route.post("/cadastrar-regiao", bloque,controllerRegiao.cadastrarRegiao)
@@ -33,7 +33,7 @@ route.get('/cafes', controllerCafe.listarCafes)
 route.get('/cafes-por-regiao/:regiao_id', controllerCafe.listarCafesPorRegiao)
 route.delete("/cafe-delete/:id", bloque,controllerCafe.deletarCafe)
 route.put("/cafe-put/:id", bloque,controllerCafe.atualizarCafe)
-route.get("/search-cafe", bloque,controllerCafe.pesquisaCafe)
+route.get("/search-cafe",controllerCafe.pesquisaCafe)
 
 route.post("/cadastrar-acidez", controllerAcidez.cadastrarAcidez)
 route.get("/listar-acidez", controllerAcidez.listarAcidez)

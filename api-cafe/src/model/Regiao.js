@@ -7,6 +7,9 @@ const Regiao = db.db.define("Regiao",{
         primaryKey: true,
         autoIncrement: true,
     },
+    nome: {
+        type: DataTypes.STRING,
+    },
     foto_bandeira:{
         type: DataTypes.STRING,
     },
@@ -17,7 +20,7 @@ const Regiao = db.db.define("Regiao",{
         type: DataTypes.TEXT,
     },
     altitude:{
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
     },
     createdAt: {
         type: DataTypes.DATE,

@@ -7,7 +7,7 @@ export const FooterStyle = styled.footer`
   width: 100%;
    /* height: 44.116vh;    */
    /* Height of the footer */
-   min-height: 417px;
+   min-height: 300px;
    background: #438B70;
    /* margin-top: 28vh; */ /* distance between slider and the footer */
    /* padding-left: 9.9vw; */
@@ -26,7 +26,7 @@ font-weight: 300;
    font-size:  14px;
    line-height: 24px;
    color:#DACFCE;
-   max-width:300px;
+   max-width:800px;
    margin-top: 1.4%;
    margin-bottom: 2.4%;
    border-radius: 50px;
@@ -50,8 +50,6 @@ font-weight: 400;
 font-size: 14px;
 line-height: 21px;
 width: 100%;
-/* max-width:400px;
-min-width: 200px; */
 
 margin: 10px;
 

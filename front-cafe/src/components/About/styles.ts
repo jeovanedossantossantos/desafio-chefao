@@ -60,16 +60,19 @@ export const Titulo = styled.h1`
   /* position: absolute; */
 /* height: 51px; */
 /* left: 216px; */
+
 font-family: 'Poppins-Light';
 font-style: normal;
 font-weight: 300;
 font-size: 32px;
 line-height: 48px;
 letter-spacing: 0.3em;
-text-align: center;
+text-align: justify;
 margin: auto;
 /* padding-top: 115px; */
 color: #C0836E;
+width: 100%;
+max-width:500px ;
 
 `;
 
@@ -77,6 +80,8 @@ export const Paragrafo = styled.p`
 /* background: red; */
 /* position: absolute; */
 width: 100%;
+max-width:500px ;
+margin: 0 auto;
 /* max-width:455px;
 min-width: 200px; */
 /* height: 300px; */

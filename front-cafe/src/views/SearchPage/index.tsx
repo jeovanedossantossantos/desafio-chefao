@@ -5,10 +5,12 @@ import {SearchCard} from '../../components/SearchCard';
 
 export const SearchPage: React.FC = () => {
     return ( <div>
+       
         <SearchHeaderBackground>
         <Header/>
         <SearchBar/>
         <SearchCard/>
+        
         </SearchHeaderBackground>
     </div>
     )

@@ -4,8 +4,35 @@ export const SearchBarContainer = styled.div`
 display: flex;
 justify-content: left;
 flex-direction: column;
-margin-left: 15vw;
+/* margin-left: 15vw; */
 margin-top: 17vh;
+/* margin: auto; */
+justify-content:center;
+
+.texto{
+
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 149%;
+/* or 24px */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #281813;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 28px 0px;
+}
+
 `;
 
 export const SearchBarTitleStyle = styled.h1`
@@ -27,7 +54,7 @@ export const Form = styled.form`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 1.9rem;
   height: 2rem;
-  width: 62vw;
+  /* width: 62vw; */
   border: solid 1px white;
   border-radius: 10px;
   img {

@@ -28,45 +28,53 @@ export const Footer: React.FC = () => {
             </Col>
           </Row>
           <Row>
-            <Col style={{display: 'flex', flexWrap: 'wrap'}} >
-              <div style={{margin:10}}>
-              <SocialMediaIcon SocialMediaIconImg={CallIcon} SocialMediaIconText1='Have a question?' SocialMediaIconText2='310-437-2766' />
+            <Col style={{ display: 'flex', flexWrap: 'wrap' }} >
+              <div style={{ margin: 10 }}>
+                <SocialMediaIcon SocialMediaIconImg={CallIcon} SocialMediaIconText1='Have a question?' SocialMediaIconText2='310-437-2766' />
 
               </div >
-            <div style={{margin:10}}>
-            <SocialMediaIcon SocialMediaIconImg={EmailIcon} SocialMediaIconText1='Contact us at' SocialMediaIconText2='unreal@outlook.com' />
+              <div style={{ margin: 10 }}>
+                <SocialMediaIcon SocialMediaIconImg={EmailIcon} SocialMediaIconText1='Contact us at' SocialMediaIconText2='unreal@outlook.com' />
 
-            </div>
+              </div>
             </Col>
             <Col md={{ span: 3 }} >
-              <SocialMediaIconStyle style={{ float: 'right'}}>
+              <SocialMediaIconStyle style={{ float: 'right' }}>
 
-                <SocialMediaIcon SocialMediaIconImg={FbIcon} />
-                <SocialMediaIcon SocialMediaIconImg={YtIcon} />
-                <SocialMediaIcon SocialMediaIconImg={ZapIcon} />
+                <div style={{ margin:5}}>
+                  <SocialMediaIcon SocialMediaIconImg={FbIcon} />
+                </div>
+                <div style={{ margin:5}}>
+                  <SocialMediaIcon SocialMediaIconImg={YtIcon} />
+                </div>
+
+                <div style={{ margin:5}}>
+                  <SocialMediaIcon SocialMediaIconImg={ZapIcon} />
+                </div>
+
               </SocialMediaIconStyle>
             </Col>
           </Row>
-          <div style={{display: 'flex', flexWrap: 'wrap', justifyContent:"space-between"}}>
-          <FooterLink>
-            <FooterLinkStyle>
-              {/* <Row xs="auto"> */}
-              <Col className="no-copy">Nossos Cafés</Col>
-              <Col className="no-copy">Sobre nós</Col>
-              <Col className="no-copy">Contacts</Col>
-              <Col className="no-copy">Privacy policy</Col>
-              <Col className="no-copy">Terms of Use</Col>
+          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: "space-between" }}>
+            <FooterLink style={{maxWidth:600,width:"100%",minWidth:200}}>
+              <FooterLinkStyle style={{maxWidth:600,width:"100%",minWidth:200}}>
+                {/* <Row xs="auto"> */}
+                <Col className="no-copy">Nossos Cafés</Col>
+                <Col className="no-copy">Sobre nós</Col>
+                <Col className="no-copy">Contacts</Col>
+                <Col className="no-copy">Privacy policy</Col>
+                <Col className="no-copy">Terms of Use</Col>
 
-              {/* </Row> */}
-            </FooterLinkStyle>
+                {/* </Row> */}
+              </FooterLinkStyle>
 
-          </FooterLink>
-          <FooterLink>
-            <FooterLinkStyle style={{ float: 'right' }}>
-              <FooterCopyrigthStyle >© 2000-2022, All Rights Reserved</FooterCopyrigthStyle>
+            </FooterLink>
+            <FooterLink>
+              <FooterLinkStyle style={{ float: 'right' }}>
+                <FooterCopyrigthStyle >© 2000-2022, All Rights Reserved</FooterCopyrigthStyle>
 
-            </FooterLinkStyle>
-          </FooterLink>
+              </FooterLinkStyle>
+            </FooterLink>
           </div>
         </Container>
       </FooterStyle>

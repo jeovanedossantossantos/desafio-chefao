@@ -67,7 +67,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
         {
             data.map(e => {
               return (
-                <Card  onClick={()=>push("/detalhes/"+e.id)} style={{ width: '18rem', margin:"auto", marginTop:20, cursor: 'pointer' }}>
+                <Card  onClick={()=>push("/productpage/"+e.id)} style={{ width: '18rem', margin:"auto", marginTop:20, cursor: 'pointer' }}>
                   <div style={{height:300,}}>
                     <Card.Img variant="top" src={e.foto_cafe} style={{maxHeight:300,margin:"auto",justifyContent: 'center',alignItems:"center",}} />
                   </div>

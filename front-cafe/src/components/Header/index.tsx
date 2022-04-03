@@ -2,13 +2,14 @@ import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
 import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo} from './styles'
 import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { HomeAboutBackgroundImage } from '../About/styles';
 
 
 export const Header: React.FC = () => {
 
+  const push = useNavigate()
 
   return (  
 <div >
@@ -47,9 +48,10 @@ export const Header: React.FC = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link ><StyledNav>Nossos Cafés</StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav>Assinatura  </StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav>Sobre </StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav><Link to ='/contact'>contato</Link></StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav></Nav.Link>
+                <Nav.Link><StyledNav> <Link to ='/'> Clube de Assinatura</Link></StyledNav></Nav.Link>
                 {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>

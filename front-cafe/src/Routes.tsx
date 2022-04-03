@@ -33,10 +33,11 @@ function Rotas() {
                 <Route path="/" element={<Home />}></Route>
                 {/* <Route path="/#about" element={<Home />}></Route> */}
                 <Route path="/searchpage" element={<SearchPage />}/>
-                <Route path="/productpage" element={<ProductPage />}></Route>
+                <Route path="/productpage/:id" element={<ProductPage />}></Route>
                 <Route path="/contact" element={<ContactPage />}></Route>
                 <Route path="/cadastra" element={<Cadastra />}></Route>
                 <Route path="/login" element={<Login />}></Route>
+                <Route path={`/detalhes/:id`} element={<ProductPage />}/>
                 
                 {isSectionActive() && 
                  <Route path="/formulario" element={<Navigate to="/"/>}/>

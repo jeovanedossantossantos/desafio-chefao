@@ -24,9 +24,7 @@ export const Header: React.FC = () => {
              <StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav>
                <StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav>
                 <StyledNav><Link to ='/contact'>contato</Link></StyledNav>
-               <StyledNav>|</StyledNav>
                 {/* <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link> */}
-              <StyledNav><Link to ='/'> Clube de Assinatura</Link></StyledNav>
               </Nav>
             </Navbar>
           </Container>
@@ -51,7 +49,6 @@ export const Header: React.FC = () => {
                 <Nav.Link ><StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav></Nav.Link>
                 <Nav.Link ><StyledNav><Link to ='/contact'>contato</Link></StyledNav></Nav.Link>
                 <Nav.Link ><StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav></Nav.Link>
-                <Nav.Link><StyledNav> <Link to ='/'> Clube de Assinatura</Link></StyledNav></Nav.Link>
                 {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>

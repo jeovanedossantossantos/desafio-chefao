@@ -23,9 +23,7 @@ export const HeaderProduct: React.FC = () => {
              <StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav>
                <StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav>
                 <StyledNav><Link to ='/contact'>contato</Link></StyledNav>
-               <StyledNav>|</StyledNav>
                 {/* <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link> */}
-              <StyledNav><Link to ='/'> Clube de Assinatura</Link></StyledNav>
               </Nav>
             </Navbar>
           </Container>

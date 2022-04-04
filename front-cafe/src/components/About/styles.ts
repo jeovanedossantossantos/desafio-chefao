@@ -69,7 +69,7 @@ line-height: 48px;
 letter-spacing: 0.3em;
 text-align: justify;
 margin: auto;
-/* padding-top: 115px; */
+padding-bottom: 15px;
 color: #C0836E;
 width: 100%;
 max-width:500px ;

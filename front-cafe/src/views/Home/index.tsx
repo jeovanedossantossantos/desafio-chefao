@@ -13,7 +13,6 @@ import BannerIconImage from '../../assets/images/VectoriconBanner.svg';
 import { Button } from '../../components/Button';
 import { Footer } from '../../components/Footer';
 import { About } from '../../components/About';
-import { Body } from '../../components/Body';
 import { Slider } from '../../components/Slider';
 
 
@@ -53,7 +52,6 @@ export const Home: React.FC = () => {
       </HomeHeaderBackground>
        <About />
 
-      <Body />
       <Slider />
       <Footer />
 

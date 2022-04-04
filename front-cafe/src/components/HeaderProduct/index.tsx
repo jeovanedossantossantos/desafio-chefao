@@ -20,9 +20,9 @@ export const HeaderProduct: React.FC = () => {
           <Container>
             <Navbar >
               <Nav>
-             <StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav>
+             <StyledNav><HashLink smooth to='/#about'>Quem Somos</HashLink></StyledNav>
                <StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav>
-                <StyledNav><Link to ='/contact'>contato</Link></StyledNav>
+                <StyledNav><Link to ='/contact'>Contato</Link></StyledNav>
                 {/* <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link> */}
               </Nav>
             </Navbar>
@@ -46,8 +46,8 @@ export const HeaderProduct: React.FC = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link ><StyledNav>Nossos Cafés</StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav>Assinatura  </StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav>Sobre </StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav><Link to ='/contact'>Contato</Link></StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav>Quem Somos </StyledNav></Nav.Link>
                 {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>

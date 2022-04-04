@@ -40,6 +40,10 @@ export const StyledNav = styled(Nav)`
     margin-top:0;
     font-size:20px;
     }
+
+    &:hover {
+    transform: scale(1.02)
+}
 `;
 
 export const WrapBannerText = styled.div`

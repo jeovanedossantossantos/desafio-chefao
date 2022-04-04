@@ -7,14 +7,14 @@ import { HomeHeaderBackground,
   BannerDesc, 
   BannerIconSpace, 
   ButtonBottomMargin } from './style';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import BannerLine from '../../assets/images/Rectangle5iconBanner.svg';
 import BannerIconImage from '../../assets/images/VectoriconBanner.svg';
 import { Button } from '../../components/Button';
 import { Footer } from '../../components/Footer';
 import { About } from '../../components/About';
-import { Body } from '../../components/Body';
 import { Slider } from '../../components/Slider';
+import { Link } from 'react-router-dom';
 
 
 // import {api} from '../../serve'
@@ -42,18 +42,17 @@ export const Home: React.FC = () => {
               <Col><BannerIcon><img src={BannerLine} alt='' width={'40px'} /><BannerIconSpace /><img src={BannerIconImage} alt='' width={'18vw'} /><BannerIconSpace /><img src={BannerLine} alt='' width={'40px'} /></BannerIcon></Col>
             </Row>
             <Row>
-              <Col><BannerDesc>Nós produzimos cafés para coffe lovers que amam café <br />em todos os sentidos, do olfato ao tato</BannerDesc></Col>
+              <Col><BannerDesc>Nós produzimos cafés para coffee lovers que amam café <br />em todos os sentidos, do olfato ao tato</BannerDesc></Col>
             </Row>
             <Row>
-              <Col><Button /><ButtonBottomMargin /></Col>
+              <Col><Nav.Link href="/searchpage"><Button /><ButtonBottomMargin /></Nav.Link></Col>
             </Row>
           </Container>
-        </BannerText>
+        </BannerText>        
 
       </HomeHeaderBackground>
        <About />
 
-      <Body />
       <Slider />
       <Footer />
 

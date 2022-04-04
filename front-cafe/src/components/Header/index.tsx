@@ -21,12 +21,10 @@ export const Header: React.FC = () => {
           <Container>
             <Navbar >
               <Nav>
-             <StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav>
+             <StyledNav><HashLink smooth to='/#about'>Quem Somos</HashLink></StyledNav>
                <StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav>
-                <StyledNav><Link to ='/contact'>contato</Link></StyledNav>
-               <StyledNav>|</StyledNav>
+                <StyledNav><Link to ='/contact'>Contato</Link></StyledNav>
                 {/* <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link> */}
-              <StyledNav><Link to ='/'> Clube de Assinatura</Link></StyledNav>
               </Nav>
             </Navbar>
           </Container>
@@ -49,9 +47,8 @@ export const Header: React.FC = () => {
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <Nav.Link ><StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav><Link to ='/contact'>contato</Link></StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav></Nav.Link>
-                <Nav.Link><StyledNav> <Link to ='/'> Clube de Assinatura</Link></StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav><Link to ='/contact'>Contato</Link></StyledNav></Nav.Link>
+                <Nav.Link ><StyledNav><HashLink smooth to='/#about'>Quem Somos</HashLink></StyledNav></Nav.Link>
                 {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>

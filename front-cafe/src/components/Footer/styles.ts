@@ -72,12 +72,19 @@ margin: 10px;
 }
 
 @media (max-width: 428px) {
-      border-color:green;
-    font-size: 10px;
+    font-size: 11px;
    display: flex;
 
   
 }
+
+
+@media (max-width: 393px) {
+   width:55vw;
+
+  
+}
+
 
 `;
 

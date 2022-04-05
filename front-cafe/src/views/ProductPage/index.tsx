@@ -37,7 +37,7 @@ export const ProductPage: React.FC = () => {
             <ContentBackground>
                 <Container>
                     <Row>
-                        <Col sm={4}><img src={LogoImageProduct} alt='' /></Col>
+                        <Col sm={4}><img src={data?.foto_cafe} alt='' /></Col>
 
                         <Col sm={7} style={{ paddingLeft: "120px" }}  >
                             <div>

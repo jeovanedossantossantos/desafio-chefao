@@ -35,11 +35,32 @@ export const StyledNav = styled(Nav)`
   font-weight: 700;
   margin-left:1.2vw;
   margin-top:3.5vh;
+  @media only screen and (max-width: 1024px) {
+    font-size:12px;
+    margin-left:3.2vw;
+    }
   @media only screen and (max-width: 991px) {
     margin-left:2vh;
     margin-top:0;
     font-size:20px;
     }
+
+    &:hover {
+    transform: scale(1.02)
+}
+`;
+
+export const StyledNavMobile = styled(Nav)`
+
+  font-family: 'Poppins-Regular';
+  font-size:28px;
+  color:#EFEFEF;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  margin-left:6.2vw;
+  margin-bottom:6.2vw;
+
 
     &:hover {
     transform: scale(1.02)
@@ -66,7 +87,8 @@ background-image: url(${LogoImage});
 margin-top:4vh;
 margin-left:7.9%;
     @media only screen and (max-width: 991px) {
-display: none;
+      margin-top:4vw;
+
     }
 
 `;
@@ -79,7 +101,10 @@ margin-right: 4vh;
 img {
   display: flex;
 }
-
+@media only screen and (max-width: 1024px) {
+    font-size:12px;
+    margin-left:-1.2vw;
+    }
 @media only screen and (max-width: 991px) {
     display: flex;
     justify-content:left;

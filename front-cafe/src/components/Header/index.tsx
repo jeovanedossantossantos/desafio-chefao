@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
-import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo} from './styles'
+import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo, StyledNavMobile} from './styles'
 import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
 import { Link, useNavigate } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
           <Container>
             <Navbar >
               <Nav>
-             <StyledNav><HashLink smooth to='/#about'>Quem Somos</HashLink></StyledNav>
+             <StyledNav><HashLink smooth to='/#about'>Sobre</HashLink></StyledNav>
                <StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav>
                 <StyledNav><Link to ='/contact'>Contato</Link></StyledNav>
                 {/* <Nav.Link href="/login"><StyledNav>Login</StyledNav></Nav.Link> */}
@@ -34,21 +34,22 @@ export const Header: React.FC = () => {
 
       <Navbar bg="transparent" expand={false} className="mb" variant="dark">
         <Container fluid >
-          <Navbar.Toggle aria-controls="offcanvasNavbar" />
+          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "83vw",marginTop: "3vw"}}/>
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
-            style={{background:"#2F1D19"}}
+            style={{background:"#131313", width: '299px'}}
           >
-            <Offcanvas.Header  closeButton style={{background:"#C0836E", opacity: '100%'}}>
-            <Offcanvas.Title id="offcanvasNavbarLabel"><img src={LogoImage} alt='' /></Offcanvas.Title>
+            <Offcanvas.Header  closeButton style={{filter:"invert(1)", marginRight: "76px", marginTop: "15px", transform: 'scale(1.4)'}}>
+            <Offcanvas.Title id="offcanvasNavbarLabel" style={{filter:"invert(1)"}}></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link ><StyledNav><Link to ='/searchpage'>Nossos Cafés</Link></StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav><Link to ='/contact'>Contato</Link></StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav><HashLink smooth to='/#about'>Quem Somos</HashLink></StyledNav></Nav.Link>
+              <Nav.Link ><StyledNavMobile><HashLink smooth to='/#about'>Sobre</HashLink></StyledNavMobile></Nav.Link>
+                <Nav.Link ><StyledNavMobile><Link to ='/searchpage'>Nossos Cafés</Link></StyledNavMobile></Nav.Link>
+                <Nav.Link ><StyledNavMobile><Link to ='/contact'>Contato</Link></StyledNavMobile></Nav.Link>
+
                 {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>

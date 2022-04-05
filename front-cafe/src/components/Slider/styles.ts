@@ -12,7 +12,7 @@ overflow: hidden;
     h4{
         
 
-        font-family: 'Poppins';
+        font-family: 'Poppins-SemiBold';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -23,7 +23,7 @@ overflow: hidden;
         color: #CD7254;
     }
     h3{
-        font-family: 'Poppins';
+        font-family: 'Poppins-SemiBold';
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
@@ -35,7 +35,7 @@ overflow: hidden;
         color: #281813;
     }
     h2{
-        font-family: 'Poppins';
+        font-family: 'Poppins-SemiBold';
         font-style: normal;
         font-weight: 600;
         font-size: 32px;
@@ -48,7 +48,7 @@ overflow: hidden;
         color: #301F1B;
     }
     p{
-        font-family: 'Poppins';
+        font-family: 'Poppins-Regular';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;

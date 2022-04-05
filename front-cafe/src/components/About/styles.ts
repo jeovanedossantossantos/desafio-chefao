@@ -97,6 +97,10 @@ line-height: 149%;
 letter-spacing: 0.1em;
 
 color: #FFFFFF;
+@media only screen and (max-width: 1024px) {
+  font-size: 16px;
+    }
+    
 `;
 
 
@@ -117,9 +121,13 @@ align-items: center;
   background: url(${homeAboutBackgroundImage }) ; 
   /* background-position: 46% 4%;
   background-size: 175%;  */
+  @media only screen and (max-width: 991px) {
+      height:45vw;
+
+    }
   
   .col-sectionAbout{
-     margin:10px;
+     /* margin:10px; */
      @media(max-width:900px){
        width:90%;
        max-width:400px;
@@ -146,7 +154,9 @@ export const HomeAboutBackgroundImage = styled.section`
     background-repeat: no-repeat;
     /* background: red; */
     
-
+    @media (max-width:1024px){
+      margin-left:90px;
+    }
     @media (max-width:900px){
       display: none;
     }

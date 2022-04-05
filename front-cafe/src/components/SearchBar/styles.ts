@@ -8,7 +8,11 @@ flex-direction: column;
 margin-top: 17vh;
 /* margin: auto; */
 justify-content:center;
-
+@media screen 
+  and (min-width: 460px) 
+  and (max-width: 801px){
+    margin-left: 5vw;
+}
 .texto{
 
 
@@ -42,8 +46,9 @@ font-size: 24px;
 line-height: 36px;
 letter-spacing: 0.05em;
 text-transform: uppercase;
-color: #EFEFEF;
+color: #281813;
 margin-bottom: 2.8vh;
+
 `;
 
 export const Form = styled.form`
@@ -55,8 +60,19 @@ export const Form = styled.form`
   padding: 1.9rem;
   height: 2rem;
   /* width: 62vw; */
-  border: solid 1px white;
+  border: solid 1px #281813;
   border-radius: 10px;
+  @media screen 
+  and (min-width: 802px) 
+  and (max-width: 1024px){
+    width: 90% !important;
+}
+
+@media screen 
+  and (min-width: 460px) 
+  and (max-width: 801px){
+    width: 78% !important;
+}
   img {
     justify-content: right;
     margin-right: -14px;
@@ -73,12 +89,14 @@ width: 63vw;
 background-color: transparent;
 text-transform:uppercase;
 margin-left: -10px;
-  color: white;
+  color: #281813;
+  opacity: 50%;
   &:focus,
   &:active {
     outline: none;
   }
   &::placeholder {
-    color: white;
+    color: #281813;
   }
+
 `;

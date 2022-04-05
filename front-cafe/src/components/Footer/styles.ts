@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const FooterStyle = styled.footer`
 
    display: flex;
-    flex-direction: column; 
-  width: 100%;
+   flex-direction: column; 
+   width: 100%;
    /* height: 44.116vh;    */
    /* Height of the footer */
    height: 16vh;
@@ -14,9 +14,9 @@ export const FooterStyle = styled.footer`
 
    @media (max-width: 500px) {
     
-   height: 24vh;
+      height: 24vh;
   
-}
+   }
 
 `;
 

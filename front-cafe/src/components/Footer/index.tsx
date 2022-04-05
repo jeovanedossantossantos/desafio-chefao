@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
 
               <FooterLinkStyle  style={{ maxWidth:230, float:'right', marginTop: 15}}>
                 <FooterCopyrigthStyle style={{}} >Av. República do Libano, 235  </FooterCopyrigthStyle>
-                <FooterLine  style={{marginLeft: 20 }}> | </FooterLine>
+                <FooterLine style={{marginLeft:10 }}> | </FooterLine>
                 </FooterLinkStyle>
 
              

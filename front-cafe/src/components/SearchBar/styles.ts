@@ -5,7 +5,7 @@ display: flex;
 justify-content: left;
 flex-direction: column;
 /* margin-left: 15vw; */
-margin-top: 17vh;
+margin-top: 10vh;
 /* margin: auto; */
 justify-content:center;
 margin-bottom:8vw;

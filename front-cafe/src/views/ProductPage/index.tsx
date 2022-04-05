@@ -39,11 +39,11 @@ export const ProductPage: React.FC = () => {
             <ContentBackground>
                 <Container>
                     <Row>
-                        <Col sm={4}><img src={data?.foto_cafe} alt='' /></Col>
+                        <Col sm={4}><img src={data?.foto_cafe} alt='' style={{width:'130%', marginLeft:'1.1vw', marginTop: '-12%'}}/></Col>
 
-                        <Col sm={7} style={{ paddingLeft: "120px" }}  >
+                        <Col sm={7} style={{ paddingLeft: "10vw" }}  >
                             <div>
-                                <Titulo>
+                                <Titulo >
                                     {/* Café Mantiqueira de Minas */}
                                     {data?.nome}
                                 </Titulo>

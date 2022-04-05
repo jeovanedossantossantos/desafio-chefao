@@ -40,7 +40,7 @@ export const Slider: React.FC = () => {
     <SliderContent>
 
 
-      <Carousel>
+      <Carousel variant="dark">
         {
           data.map(e => {
             return (

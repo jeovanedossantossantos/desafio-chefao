@@ -6,7 +6,7 @@ overflow: hidden;
     background-repeat: no-repeat;
     flex-direction: column;
    width: 100%;
-   background: #ccc;
+
 
     /* height: 73vh; */
     h4{

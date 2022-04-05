@@ -58,7 +58,7 @@ export const Slider: React.FC = () => {
                   <Col className="w-400" xs={5} style={{ margin: 10 }}>
                     {/* <Carousel> */}
                       {/* <Carousel.Item> */}
-                        <img style={{ minHeight: "200px", maxHeight: "400px" }}
+                        <img style={{ minHeight: "200px", maxHeight: "620px" }}
                           className="d-block w-100 h-100"
                           src={e?.foto_cafe ? e?.foto_cafe : "https://alavoura.com.br/wp-content/uploads/2020/06/tim-e1592429928966.jpeg"}
                           alt="First slide"

@@ -46,9 +46,10 @@ color: #EFEFEF;
 margin-top: 11.2%;
 text-align: center;
 @media only screen and (max-width: 1024px) {
-    margin-top: 164.6%;
+    margin-top: 14.6%;
     }
 
+ 
 `
 
 export const BannerTitle = styled.div`
@@ -60,6 +61,10 @@ justify-content: center;
 font-family: 'Poppins-Light';
 @media only screen and (max-width: 1024px) {
     font-size: 48px;
+    }
+
+    @media only screen and (max-width: 469px) {
+   font-size: 30px;
     }
 
 `
@@ -92,28 +97,10 @@ padding-left: 0.7%;
 `
 export const ButtonBottomMargin = styled.div`
 padding-bottom: 15vh;
-`
 
-export const Video = styled.video`
-
- position: fixed;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  /* max-width:100%; */
-  /* min-width: 100%; */
-  
-  height: auto;
-  
-  background-cover:cover;
-  /* transform: rotate(90deg);
- -ms-transform: rotate(90deg);
- -webkit-transform: rotate(90deg); */
-  source{
-     /* height: 100vh; */
-  
-  }
-    
+@media only screen and (max-width: 469px) {
+   font-size: 10px;
+    }
 `
 
 export const HomeAboutBackground = styled.div` 

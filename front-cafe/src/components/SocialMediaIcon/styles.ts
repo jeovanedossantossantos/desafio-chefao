@@ -10,7 +10,7 @@ max-width: 200px;
 
 img {
 
-    width: 50px;
+    width: 40px;
     
 
 }

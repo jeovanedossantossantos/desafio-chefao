@@ -7,6 +7,7 @@ overflow: hidden;
     flex-direction: column;
    width: 100%;
 
+
     /* height: 73vh; */
     h4{
         

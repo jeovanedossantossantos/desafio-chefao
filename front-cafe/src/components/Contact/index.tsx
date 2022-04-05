@@ -6,12 +6,12 @@ import {ContactTitleStyle, ContactContainer, ContactLine, ContentContact, Conten
 export const Contact: React.FC = () => {
   
   return ( 
-  <Col >
-      <ContactContainer>
-      <Container>
+  <Col  >
+      <ContactContainer style={{}}>
+      <Container >
   <Row xs="auto">
    
-<ContactTitleStyle>Contato<ContactLine>
+    <ContactTitleStyle >Contato<ContactLine>
     </ContactLine></ContactTitleStyle>
   </Row>
  

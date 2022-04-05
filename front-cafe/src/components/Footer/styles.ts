@@ -12,7 +12,11 @@ export const FooterStyle = styled.footer`
    /* margin-top: 28vh; */ /* distance between slider and the footer */
    /* padding-left: 9.9vw; */
 
-
+   @media (max-width: 500px) {
+    
+   height: 24vh;
+  
+}
 
 `;
 

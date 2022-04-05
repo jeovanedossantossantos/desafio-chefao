@@ -63,7 +63,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
 
         </Container>
 
-        <Container style={{ marginTop: 20, display: 'flex', flexWrap:"wrap" }}>
+        <Container style={{ marginBottom: 400 ,marginTop: 20, display: 'flex', flexWrap:"wrap" }}>
         {
             data.map(e => {
               return (

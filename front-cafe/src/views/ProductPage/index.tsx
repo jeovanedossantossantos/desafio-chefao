@@ -11,6 +11,8 @@ import { useEffect, useState } from 'react';
 import { DataProps } from '../../Interfaces/DataProps';
 
 
+
+
 export const ProductPage: React.FC = () => {
 
     const {id} = useParams()
@@ -104,9 +106,11 @@ export const ProductPage: React.FC = () => {
                         </Col>
 
                     </Row>
+                
                 </Container>
-
+               
             </ContentBackground>
+     
         </div>
     )
 }

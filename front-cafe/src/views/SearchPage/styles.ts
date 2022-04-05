@@ -4,7 +4,7 @@ export const SearchHeaderBackground = styled.div`
     display: flex;
     flex-direction: column;
     max-width: 100%;  
-    height: 400px;
+    height: 107px;
     background: #39231B;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,5 +13,8 @@ export const SearchHeaderBackground = styled.div`
     @media only screen and (min-width: 1920px) {
         background-size: cover;
 
+    }
+    @media (max-width:991px){
+    
     }
 `

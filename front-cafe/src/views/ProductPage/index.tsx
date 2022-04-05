@@ -11,6 +11,8 @@ import { useEffect, useState } from 'react';
 import { DataProps } from '../../Interfaces/DataProps';
 import { Footer } from '../../components/Footer';
 
+
+
 export const ProductPage: React.FC = () => {
 
     const {id} = useParams()
@@ -104,10 +106,11 @@ export const ProductPage: React.FC = () => {
                         </Col>
 
                     </Row>
+                
                 </Container>
-
+               
             </ContentBackground>
             <Footer/>
-        </div>
+            </div>
     )
 }

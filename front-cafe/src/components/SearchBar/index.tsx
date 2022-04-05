@@ -42,7 +42,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
     carregar()
   }, [])
   return (
-    <div>
+    <Col style={{ backgroundColor:" #FAF4F0"}}>
       <SearchBarContainer >
         <Container fluid >
           <Row xs="auto" style={{ width:"100%", maxWidth: 800, margin:"auto"}}>
@@ -84,7 +84,6 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
 
 
 
-
-    </div>
+          </Col>
   )
 }

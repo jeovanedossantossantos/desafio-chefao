@@ -11,13 +11,19 @@ export const HomeHeaderBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
+    filter: saturate(89%);
   
     @media only screen and (min-width: 1920px) {
         background-size: cover;
 
     }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 1440px) {
+        background-position: 50% 28%;
         background-size: 1500px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        background-size: 1440px;
     background-position: 50% 20%;
     height: 702px;
     }

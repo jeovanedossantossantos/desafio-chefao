@@ -9,6 +9,7 @@ export const SearchHeaderBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
+
     
     @media only screen and (min-width: 1920px) {
         background-size: cover;

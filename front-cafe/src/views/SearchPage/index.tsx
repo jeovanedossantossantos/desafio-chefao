@@ -11,7 +11,7 @@ export const SearchPage: React.FC = () => {
         <Header/>
         <SearchBar/>
         <SearchCard/>
-        <Footer></Footer>
+        <Footer/>
         </SearchHeaderBackground>
 
     </div>

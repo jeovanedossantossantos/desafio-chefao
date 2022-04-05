@@ -52,11 +52,11 @@ export const Titulo = styled.h1`
   /* position: absolute; */
 /* height: 51px; */
 /* left: 216px; */
-font-family: 'Poppins';
-font-size: 25px;
+font-family: 'Poppins-SemiBold';
+font-size: 32px;
 line-height: 48px;
 letter-spacing: 0.2em;
-margin: 60px 0px;
+margin-top: 5.4vw;
 text-transform: uppercase;
 /* padding-top: 115px; */
 color: #301F1B;
@@ -67,14 +67,15 @@ color: #301F1B;
 export const Paragrafo = styled.p`
 /* background: red; */
 /* position: absolute; */
-width: 318px;
-height: 105px;
-margin-top: 30px;
+max-width: 518px;
+max-height: 105px;
+margin-top: 20px;
+margin-bottom: 55px;
 
 /* padding-top: 167px; */
 font-family: 'Poppins-Regular';
 font-size: 14px;
-line-height: 149%;
+
 /* or 30px */
 
 letter-spacing: 0.1em;
@@ -87,14 +88,13 @@ export const TituloPropCafe = styled.p`
 /* position: absolute; */
 width: 318px;
 margin-top: 20px;
-
+margin-bottom: 0px;
+text-transform: uppercase;
 /* padding-top: 167px; */
-font-family: 'Poppins-Regular';
-font-size: 14px;
+font-family: 'Poppins-SemiBold';
+font-size: 12px;
 /* or 30px */
-
 letter-spacing: 0.1em;
-
 color: #CD7254;
 `;
 
@@ -103,11 +103,9 @@ export const ContextoPropCafe = styled.p`
  
 width: 300px;
 height: 36px;
-left: 0px;
-top: 18px;
 
 /* padding-top: 167px; */
-font-family: 'Poppins';
+font-family: 'Poppins-SemiBold';
 font-weight: 600;
 font-size: 1.5625vw;
 /* or 30px */

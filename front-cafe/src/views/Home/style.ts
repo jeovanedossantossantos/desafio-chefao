@@ -11,29 +11,13 @@ export const HomeHeaderBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
-    filter: saturate(89%);
-
   
     @media only screen and (min-width: 1920px) {
         background-size: cover;
 
     }
-    @media only screen and (max-width: 1440px) {
-        background-position: 60% 22%;
-        background-size: 1500px;
-
-    }
-    @media only screen and (max-width: 1366px) {
-        background-position: 90% 19%;
-        background-size: 1400px;
-    }
-    @media only screen and (max-width: 1280px) {
-        background-position: 30% 18%;
-        background-size: 1400px;
-    }
-
     @media only screen and (max-width: 1024px) {
-        background-size: 1440px;
+        background-size: 1500px;
     background-position: 50% 20%;
     height: 702px;
     }
@@ -43,10 +27,10 @@ export const HomeHeaderBackground = styled.div`
 
 export const BannerText = styled.div`
 color: #EFEFEF;
-margin-top: 11.2%;
+margin-top: 8.6%;
 text-align: center;
 @media only screen and (max-width: 1024px) {
-    margin-top: 164.6%;
+    margin-top: 14.6%;
     }
 
 `

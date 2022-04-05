@@ -9,6 +9,8 @@ import { useParams } from 'react-router-dom';
 import { api } from '../../serve';
 import { useEffect, useState } from 'react';
 import { DataProps } from '../../Interfaces/DataProps';
+import { Footer } from '../../components/Footer';
+
 
 
 export const ProductPage: React.FC = () => {
@@ -37,11 +39,11 @@ export const ProductPage: React.FC = () => {
             <ContentBackground>
                 <Container>
                     <Row>
-                        <Col sm={4}><img src={data?.foto_cafe} alt='' /></Col>
+                        <Col sm={4}><img src={data?.foto_cafe} alt='' style={{width:'130%', marginLeft:'1.1vw', marginTop: '-12%'}}/></Col>
 
-                        <Col sm={7} style={{ paddingLeft: "120px" }}  >
+                        <Col sm={7} style={{ paddingLeft: "10vw" }}  >
                             <div>
-                                <Titulo>
+                                <Titulo >
                                     {/* Café Mantiqueira de Minas */}
                                     {data?.nome}
                                 </Titulo>
@@ -104,9 +106,11 @@ export const ProductPage: React.FC = () => {
                         </Col>
 
                     </Row>
+                
                 </Container>
-
+               
             </ContentBackground>
-        </div>
+            <Footer/>
+            </div>
     )
 }

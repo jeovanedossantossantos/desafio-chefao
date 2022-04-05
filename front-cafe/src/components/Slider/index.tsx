@@ -40,13 +40,13 @@ export const Slider: React.FC = () => {
     <SliderContent>
 
 
-      <Carousel>
+      <Carousel variant="dark">
         {
           data.map(e => {
             return (
               <Carousel.Item>
                 <Row style={{ justifyContent: "center", alignItems: "center", width: "100%", maxWidth: 1500, margin: "auto" }}>
-                  <Col className="sumir" xs={3} style={{ margin: 10, justifyContent: "right" }}>
+                  <Col className="sumir" xs={2} style={{ margin: 10, justifyContent: "right", paddingLeft: 50}}>
                     <h4>NOTAS</h4>
                     <h3>{e?.nota}</h3>
                     <h4>ALTITUDE</h4>
@@ -58,7 +58,7 @@ export const Slider: React.FC = () => {
                   <Col className="w-400" xs={5} style={{ margin: 10 }}>
                     {/* <Carousel> */}
                       {/* <Carousel.Item> */}
-                        <img style={{ minHeight: "200px", maxHeight: "620px" }}
+                        <img style={{ minHeight: "200px", maxHeight: "857px", maxWidth: "660px" }}
                           className="d-block w-100 h-100"
                           src={e?.foto_cafe ? e?.foto_cafe : "https://alavoura.com.br/wp-content/uploads/2020/06/tim-e1592429928966.jpeg"}
                           alt="First slide"
@@ -89,7 +89,7 @@ export const Slider: React.FC = () => {
                     <p>{e?.descricao}</p>
                     <h4>CORPO</h4>
                     <h3>{e?.corpo.nome}</h3>
-                    <h4>VARAIEDADE</h4>
+                    <h4>VARIEDADE</h4>
                     <h3>{e?.variedade.nome}</h3>
                     <h4>ACIDEZ</h4>
                     <h3>{e?.acidez.nome}</h3>

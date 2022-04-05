@@ -84,11 +84,13 @@ img {
 
 
 export const ProductLine = styled.div`
-border: 1px solid #C4C4C4;
+border: 2px solid #C4C4C4;
 display: flex;
     flex-direction: column;
-    max-width: 250vh;  
+    width: 100%;
+    margin-top: 16px;
+
+
   
-margin: 32px;
 `;
 

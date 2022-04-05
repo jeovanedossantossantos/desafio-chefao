@@ -4,7 +4,7 @@ import { Cadastra } from './views/DeashBordRoot/Cadastro';
 import { Formulario } from './views/DeashBordRoot/Formulario';
 import Login from './views/DeashBordRoot/Login';
 import { Home } from './views/Home'
-import { Contact } from './views/Contact'
+
 import { SearchPage } from './views/SearchPage'
 import { ProductPage } from './views/ProductPage'
 import { ContactPage } from './views/ContactPage'

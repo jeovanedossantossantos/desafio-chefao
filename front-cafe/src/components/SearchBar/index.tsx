@@ -6,6 +6,7 @@ import { api } from '../../serve';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 interface SearchBarProps {
   SearchBarTitle?: string;
   SearchBarPlaceholder?: string;
@@ -41,14 +42,14 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
     carregar()
   }, [])
   return (
-    <div>
+    <Col style={{ backgroundColor:" #FAF4F0"}}>
       <SearchBarContainer >
         <Container fluid >
-          <Row xs="auto" style={{background:"red", width:"100%", maxWidth: 800, margin:"auto"}}>
+          <Row xs="auto" style={{ width:"100%", maxWidth: 800, margin:"auto"}}>
             <Col>
               <SearchBarTitleStyle>Nossos cafés</SearchBarTitleStyle></Col>
           </Row>
-          <Row style={{background:"red", width:"100%", maxWidth: 800, margin:"auto"}}>
+          <Row style={{ width:"100%", maxWidth: 800, margin:"auto"}}>
             <Col>
               <Form>
 
@@ -63,16 +64,16 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
 
         </Container>
 
-        <Container style={{ marginTop: 20, display: 'flex', flexWrap:"wrap" }}>
+        <Container style={{ marginTop: 20, display: 'flex', flexWrap:"wrap",justifyContent: 'center' }}>
         {
             data.map(e => {
               return (
-                <Card  onClick={()=>push("/productpage/"+e.id)} style={{ width: '18rem', margin:"auto", marginTop:20, cursor: 'pointer' }}>
-                  <div style={{height:300,}}>
-                    <Card.Img variant="top" src={e.foto_cafe} style={{maxHeight:300,margin:"auto",justifyContent: 'center',alignItems:"center",}} />
+                <Card  onClick={()=>push("/productpage/"+e.id)} style={{ width: '250px', margin:'1.5%', marginTop:20, cursor: 'pointer', backgroundColor:'#F5E9E0', border: 'none', borderRadius: '10px', height:'400px',}}>
+                  <div style={{height:320,}}>
+                    <Card.Img variant="top" src={e.foto_cafe} style={{maxHeight:300, width: '200px', marginLeft:'30px', marginTop:'30px'}} />
                   </div>
-                  <Card.Body>
-                    <Card.Title className="texto">{e.nome}</Card.Title>
+                  <Card.Body >
+                    <Card.Title className="texto" style={{marginTop:'-30px', fontFamily: 'Poppins-Bold', fontSize:'16px'}}>{e.nome}</Card.Title>
                   </Card.Body>
                 </Card>
               )
@@ -83,6 +84,6 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
 
 
 
-    </div>
+          </Col>
   )
 }

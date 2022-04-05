@@ -6,16 +6,16 @@ overflow: hidden;
     background-repeat: no-repeat;
     flex-direction: column;
    width: 100%;
-   background: #ccc;
+
 
     /* height: 73vh; */
     h4{
         
 
-        font-family: 'Poppins';
+        font-family: 'Poppins-SemiBold';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 18px;
         /* identical to box height */
 
@@ -23,10 +23,10 @@ overflow: hidden;
         color: #CD7254;
     }
     h3{
-        font-family: 'Poppins';
+        font-family: 'Poppins-SemiBold';
         font-style: normal;
         font-weight: 600;
-        font-size: 24px;
+        font-size: 20px;
         line-height: 36px;
         /* identical to box height */
 
@@ -35,10 +35,10 @@ overflow: hidden;
         color: #281813;
     }
     h2{
-        font-family: 'Poppins';
+        font-family: 'Poppins-SemiBold';
         font-style: normal;
         font-weight: 600;
-        font-size: 32px;
+        font-size: 20px;
         line-height: 48px;
         /* identical to box height */
 
@@ -48,10 +48,10 @@ overflow: hidden;
         color: #301F1B;
     }
     p{
-        font-family: 'Poppins';
+        font-family: 'Poppins-Regular';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 21px;
         letter-spacing: 0.1em;
 

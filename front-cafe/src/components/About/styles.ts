@@ -39,6 +39,7 @@ export const StyledNav = styled(Nav)`
     font-size:10px;
     }
 
+
     
 `;
 
@@ -74,6 +75,16 @@ color: #C0836E;
 width: 100%;
 max-width:500px ;
 
+
+@media only screen and (max-width: 480px) {
+    margin-left:0;
+    margin-top:22px;
+    line-height: 10px;
+    font-size:15px;
+
+    }
+
+
 `;
 
 export const Paragrafo = styled.p`
@@ -97,6 +108,25 @@ line-height: 149%;
 letter-spacing: 0.1em;
 
 color: #FFFFFF;
+
+@media only screen and (max-width: 1024px) {
+  font-size: 16px;  
+    }
+
+    @media only screen and (max-width: 570px) {
+    margin-left:0;
+    margin-top:0;
+    font-size:13px;
+    }
+
+    @media only screen and (max-width: 480px) {
+    margin-left:0;
+    margin-bottom:30px;
+    font-size:11px;
+
+    }
+
+    
 `;
 
 
@@ -117,9 +147,13 @@ align-items: center;
   background: url(${homeAboutBackgroundImage }) ; 
   /* background-position: 46% 4%;
   background-size: 175%;  */
+  @media only screen and (max-width: 991px) {
+      height:45vw;
+
+    }
   
   .col-sectionAbout{
-     margin:10px;
+     /* margin:10px; */
      @media(max-width:900px){
        width:90%;
        max-width:400px;
@@ -146,7 +180,9 @@ export const HomeAboutBackgroundImage = styled.section`
     background-repeat: no-repeat;
     /* background: red; */
     
-
+    @media (max-width:1024px){
+      margin-left:90px;
+    }
     @media (max-width:900px){
       display: none;
     }

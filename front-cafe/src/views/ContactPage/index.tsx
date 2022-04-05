@@ -1,6 +1,7 @@
 import {ContactHeaderBackground} from './styles';
 import {Header} from '../../components/Header';
 import {Contact} from '../../components/Contact';
+import {Footer} from '../../components/Footer';
 
 export const ContactPage: React.FC = () => {
     return ( <div>
@@ -12,7 +13,7 @@ export const ContactPage: React.FC = () => {
      </Contact>
 
      </ContactHeaderBackground>
-
+     <Footer/>
     </div>
     )
 }

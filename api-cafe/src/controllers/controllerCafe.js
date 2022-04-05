@@ -61,6 +61,24 @@ const controllerCafe = {
 
     },
 
+    async buscarUmCafe(req, res){
+        try{
+           const resposta =  await  Cafe.findOne({ 
+                where: {id: req.params.id},
+                include: [
+                    { model: Regiao, as: "regiao" },
+                    { model: Acidez, as: "acidez" },
+                    { model: Corpo, as: "corpo" },
+                    { model: Variedade, as: "variedade" },
+                    { model: Moagem, as: "moagem" },
+                    { model: Torra, as: "torra" },
+                ]
+            })
+            res.status(200).json(resposta)
+        }catch(err){
+            res.status(500).json(err)
+        }
+    },
     async listarCafes(req, res) {
 
         await Cafe.findAll({

@@ -33,7 +33,7 @@ Nesse documento mostraremos o passo a passo para fazer a documentão de uma api 
 
          http://localhost:3000/
 
-# Final, agora você pode fazer o hospedar a sua documentação.
+# Final, agora você pode hospedar a sua documentação.
 
 # API
 

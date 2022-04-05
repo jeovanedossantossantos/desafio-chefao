@@ -30,10 +30,11 @@ route.get("/buscar-regiao/:id", controllerRegiao.buscarUmaRegiao)
 
 route.post("/cadastra-cafe",bloque,controllerCafe.cadastrarCafe)
 route.get('/cafes', controllerCafe.listarCafes)
+route.get('/cafes/:id', controllerCafe.buscarUmCafe)
 route.get('/cafes-por-regiao/:regiao_id', controllerCafe.listarCafesPorRegiao)
 route.delete("/cafe-delete/:id", bloque,controllerCafe.deletarCafe)
 route.put("/cafe-put/:id", bloque,controllerCafe.atualizarCafe)
-route.get("/search-cafe",controllerCafe.pesquisaCafe)
+route.get("/search-cafe", controllerCafe.pesquisaCafe)
 
 route.post("/cadastrar-acidez", controllerAcidez.cadastrarAcidez)
 route.get("/listar-acidez", controllerAcidez.listarAcidez)

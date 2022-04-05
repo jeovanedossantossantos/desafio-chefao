@@ -43,10 +43,10 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
   }, [])
   return (
     <Col style={{ backgroundColor:" #FAF4F0"}}>
-      <SearchBarContainer >
-        <Container fluid >
+      <SearchBarContainer style={{ }} >
+        <Container fluid style={{ }} >
           <Row xs="auto" style={{ width:"100%", maxWidth: 800, margin:"auto"}}>
-            <Col>
+            <Col >
               <SearchBarTitleStyle>Nossos cafés</SearchBarTitleStyle></Col>
           </Row>
           <Row style={{ width:"100%", maxWidth: 800, margin:"auto"}}>

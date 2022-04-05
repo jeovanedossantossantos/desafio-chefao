@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
 import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackground.webp'
+import menuMobileIcon from '../../assets/images/menuMobile.svg';
 
 export const ContainerMain = styled.div`
 
@@ -87,12 +88,26 @@ background-image: url(${LogoImage});
 margin-top:4vh;
 margin-left:7.9%;
     @media only screen and (max-width: 991px) {
-      margin-top:4vw;
+      display:none;
 
     }
 
 `;
+export const LogoMobile = styled.div`
+position: absolute;
+background-size: 42.5px 42.5px;
+width: 42.5px;
+height: 42.5px;
+background-image: url(${LogoImage});
+margin-top:4vh;
+margin-left:7.9%;
+    @media only screen and (max-width: 991px) {
+      margin-top:-0.4vw;
+      margin-left: 6.7%;
 
+    }
+
+`;
 export const CenterWrapperColorizer = styled(Container)`
   
 display: flex;
@@ -111,5 +126,18 @@ img {
     margin-left:-18vh;
 
     }
+`;
+
+export const MobileMenuIconFigma = styled.div`
+position: absolute;
+background-size: 32.5px 32.5px;
+width: 32.5px;
+height: 32.5px;
+background-image: url(${menuMobileIcon});
+border-color: 'transparent';
+
+    &:hover {
+    transform: scale(1.02)
+}
 `;
 

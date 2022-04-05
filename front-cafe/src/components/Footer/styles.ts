@@ -7,21 +7,26 @@ export const FooterStyle = styled.footer`
    width: 100%;
    /* height: 44.116vh;    */
    /* Height of the footer */
-   height: 16vh;
+   /* height: 16vh; */
    background: #438B70;
    /* margin-top: 28vh; */ /* distance between slider and the footer */
    /* padding-left: 9.9vw; */
+   @media only screen and (min-width: 2390px) {
+      margin-left: 70px
+}
 
-   @media (max-width: 500px) {
+   @media (max-width: 1274px) {
     
-      height: 24vh;
+   /* height: 30vh; */
   
    }
+
 
 `;
 
 export const FooterLogoStyle = styled.div`
 padding-top: 5vh;
+
 `;
 
 export const FooterTextStyle = styled.div`
@@ -84,6 +89,15 @@ margin: 10px;
 
   
 }
+
+@media (max-width: 1275px) {
+   font-size: 12px;
+   width:55vw;
+   display: flex;
+
+  
+}
+
 
 
 `;

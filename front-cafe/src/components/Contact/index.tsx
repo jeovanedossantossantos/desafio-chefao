@@ -5,12 +5,13 @@ import {ContactTitleStyle, ContactContainer, ContactLine, ContentContact, Conten
 
 export const Contact: React.FC = () => {
   
-  return ( <div>
-      <ContactContainer>
-      <Container fluid >
+  return ( 
+  <Col  >
+      <ContactContainer style={{}}>
+      <Container >
   <Row xs="auto">
    
-<ContactTitleStyle>Contato<ContactLine>
+    <ContactTitleStyle >Contato<ContactLine>
     </ContactLine></ContactTitleStyle>
   </Row>
  
@@ -36,6 +37,6 @@ export const Contact: React.FC = () => {
 
 
 
-    </div>
+    </Col>
     )
 }

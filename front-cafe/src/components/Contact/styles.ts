@@ -1,10 +1,11 @@
 import styled from "styled-components"
 
 export const ContactContainer = styled.div`
-display: flex;
 justify-content: left;
-margin-left: 15vw;
-margin-top: 17vh;
+margin-left: 2vw;
+margin-top: 8vh;
+
+
 `;
 
 export const ContactTitleStyle = styled.h1`
@@ -20,24 +21,26 @@ margin-bottom: 2.8vh;
 
 export const ContactLine = styled.div`
 border: 1px solid #FEFEFE;
-width: 100vh;
+width: 40vw;
 display: inline-block;
 position: absolute;
 margin: 18px;
+
 `;
 
 
 
 export const ContentContact = styled.div`
 display: flex;
+margin-left: 10vw;
 justify-content: left;
 width: 116px;
 height: 21px;
 
 
 font-family: 'Poppins-Light';
-font-size: 16px;
-line-height: 30vh;
+font-size: 1vw;
+line-height: 9vw;
 letter-spacing: 0.05em;
 text-transform: uppercase;
 
@@ -45,13 +48,12 @@ color: #EFEFEF;
 `;
 
 export const Contentv2Contact = styled.div`
-height: 74px;
-left: 0px;
-top: 0px;
+height: 4vw;
+margin-left: 10vw;
 
 font-family: 'Poppins-Light';
-font-size: 64px;
-line-height: 45vh;
+font-size: 3vw;
+line-height: 12vw;
 letter-spacing: 0.05em;
 text-transform: uppercase;
 
@@ -60,13 +62,13 @@ color: #EFEFEF;
 
 export const SpaceContact = styled.div`
 
-    line-height: 90vh;
+    line-height: 20vw;
 `;
 
 export const SpaceContactFinans = styled.div`
 
     justify-content: left;
-    line-height: 70vh;
+    line-height: 17vw;
 `;
 
 

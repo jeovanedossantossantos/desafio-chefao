@@ -54,8 +54,10 @@ overflow: hidden;
         font-size: 12px;
         line-height: 21px;
         letter-spacing: 0.1em;
-
         color: #574C49;
+        word-wrap: break-word;
+  overflow: hidden;
+  max-height: 13.9em;
     }
   
     @media(max-width:858px){
@@ -70,6 +72,13 @@ overflow: hidden;
        }
        }
     }
+    @media (min-device-width:712px) and (max-device-width:850px){
+        img{
+        margin-left:8vw;
+       }
+}
+
+
 
 
   

@@ -6,6 +6,7 @@ import { api } from '../../serve';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+
 interface SearchBarProps {
   SearchBarTitle?: string;
   SearchBarPlaceholder?: string;
@@ -80,6 +81,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
           }
         </Container>
       </SearchBarContainer>
+
 
 
 

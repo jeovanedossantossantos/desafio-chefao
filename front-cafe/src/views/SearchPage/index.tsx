@@ -12,6 +12,7 @@ export const SearchPage: React.FC = () => {
         <SearchCard/>
         
         </SearchHeaderBackground>
+
     </div>
     )
 }

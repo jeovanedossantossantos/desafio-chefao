@@ -9,7 +9,7 @@ import { useParams } from 'react-router-dom';
 import { api } from '../../serve';
 import { useEffect, useState } from 'react';
 import { DataProps } from '../../Interfaces/DataProps';
-
+import { Footer } from '../../components/Footer';
 
 export const ProductPage: React.FC = () => {
 
@@ -107,6 +107,7 @@ export const ProductPage: React.FC = () => {
                 </Container>
 
             </ContentBackground>
+            <Footer/>
         </div>
     )
 }

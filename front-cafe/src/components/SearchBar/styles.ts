@@ -8,6 +8,7 @@ flex-direction: column;
 margin-top: 17vh;
 /* margin: auto; */
 justify-content:center;
+margin-bottom:8vw;
 @media screen 
   and (min-width: 460px) 
   and (max-width: 801px){

@@ -34,6 +34,11 @@ export const HomeHeaderBackground = styled.div`
     background-position: 50% 20%;
     height: 702px;
     }
+    @media only screen and (max-width: 600px) {
+        background-size: 1900px;
+    background-position: 45.7% 24%;
+    height: 938px;
+    }
 `
 
 

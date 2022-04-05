@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Navbar, Container, Nav, Offcanvas } from 'react-bootstrap';
 import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
 import homeHeaderBackgroundImage from '../../assets/images/homePageHeaderBackground.webp'
-import menuMobileIcon from '../../assets/images/menuMobile.svg';
+import menuMobileIcon from '../../assets/images/menuMobileSemPs.svg';
 
 export const ContainerMain = styled.div`
 
@@ -139,5 +139,9 @@ border-color: 'transparent';
     &:hover {
     transform: scale(1.02)
 }
+@media only screen and (max-width: 363px) {
+  margin-top: 1.4px;
+  margin-left: 6.7px;
+    }
 `;
 

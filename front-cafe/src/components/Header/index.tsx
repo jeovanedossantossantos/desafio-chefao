@@ -33,7 +33,7 @@ export const Header: React.FC = () => {
       </CenterWrapperColorizer>
 
 
-      <Navbar bg="transparent" expand={false} className="mb" variant='dark' >
+      <Navbar bg="transparent" expand={false} className="mb" variant='dark'  >
         <Container fluid >
         <Link to ='/'><LogoMobile/></Link>
         <MobileMenuIconFigma style={{marginLeft: "80.3vw",marginTop: "7.5vw", borderColor: 'transparent'}}/>

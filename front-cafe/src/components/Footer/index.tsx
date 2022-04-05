@@ -14,54 +14,54 @@ export const Footer: React.FC = () => {
   return (
     <div>
 
-        <FooterStyle style={{ }}> 
-        <Container style={{ marginTop:'50px', maxWidth:'95%' }}>       
-       
-            <FooterLink  style={{}} >
-            <Col style={{ maxWidth:'8vh'} }><img src={LogoImage} width='45.5px' alt=''></img></Col>
+      <FooterStyle style={{}}>
+        <Container style={{ marginTop: '50px', maxWidth: '95%' }}>
 
-              <FooterLinkStyle style={{ width:750, marginTop:'17px'}} >
-                {/* <Row xs="auto"> */}
-                
-                <Col style={{maxWidth:'430px'}} > © Coffee Experience Ltda. Todos os Direitos Reservados 2022 </Col>
-                <Col  style={{  maxWidth:'2vh', marginLeft:0}}> |</Col> 
-                <Col style={{ maxWidth:'170px', marginRight: 5 }}>Politica de Privacidade</Col> 
-                <Col style={{ maxWidth:'3vh'  }}><Link to ='/login'><img src={LockIcon} alt=''/></Link></Col>
-                
-          
-                
-              
-                {/* </Row> */}
-              </FooterLinkStyle>
+          <FooterLink style={{}} >
+            <Col style={{ maxWidth: '8vh' }}><img src={LogoImage} width='45.5px' alt=''></img></Col>
 
-              <Col style={{ maxHeight:'60px'}}>
-              <SocialMediaIconStyle style={{ justifyContent:'end', float:'right'}} >
+            <FooterLinkStyle style={{ width: 750, marginTop: '17px' }} >
+              {/* <Row xs="auto"> */}
 
-                        <div style={{ margin:5}}>
-                          <SocialMediaIcon SocialMediaIconImg={InstIcon} />
-                        </div>
-                        <div style={{ margin:5 }}>
-                          <SocialMediaIcon SocialMediaIconImg={LinkIcon} />
-                        </div>              
+              <Col style={{ maxWidth: '430px' }} > © Coffee Experience Ltda. Todos os Direitos Reservados 2022 </Col>
+              <Col style={{ maxWidth: '2vh', marginLeft: 0 }}> |</Col>
+              <Col style={{ maxWidth: '170px', marginRight: 5 }}>Politica de Privacidade</Col>
+              <Col style={{ maxWidth: '3vh' }}><Link to='/login'><img src={LockIcon} alt='' /></Link></Col>
+
+
+
+
+              {/* </Row> */}
+            </FooterLinkStyle>
+
+            <Col style={{ maxHeight: '60px' }}>
+              <SocialMediaIconStyle style={{ justifyContent: 'end', float: 'right' }} >
+
+                <div style={{ margin: 5 }}>
+                  <SocialMediaIcon SocialMediaIconImg={InstIcon} />
+                </div>
+                <div style={{ margin: 5 }}>
+                  <SocialMediaIcon SocialMediaIconImg={LinkIcon} />
+                </div>
 
               </SocialMediaIconStyle>
 
-              <FooterLinkStyle  style={{ maxWidth:230, float:'right', marginTop: 15}}>
+              <FooterLinkStyle style={{ maxWidth: 230, float: 'right', marginTop: 15 }}>
                 <FooterCopyrigthStyle style={{}} >Av. República do Libano, 235  </FooterCopyrigthStyle>
-                <FooterLine style={{marginLeft:10 }}> | </FooterLine>
-                </FooterLinkStyle>
-
-             
-
-               </Col>
+                <FooterLine style={{ marginLeft: 20 }}> | </FooterLine>
+              </FooterLinkStyle>
 
 
-            </FooterLink>           
+
+            </Col>
+
+
+          </FooterLink>
         </Container>
-        </FooterStyle>
+      </FooterStyle>
 
 
-  {/*  <Row xs="auto">
+      {/*  <Row xs="auto">
             <Col><FooterLogoStyle><img src={LogoImage} width='45.5px' alt=''></img></FooterLogoStyle></Col>
           </Row>
           <Row>
@@ -100,6 +100,6 @@ export const Footer: React.FC = () => {
             </Col>
   </Row> */}
     </div>
-    
+
   )
 }

@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 export const ContactContainer = styled.div`
 justify-content: left;
-margin-left: 15vw;
-margin-top: 17vh;
+margin-left: 2vw;
+margin-top: 8vh;
+
 
 `;
 
@@ -31,14 +32,15 @@ margin: 18px;
 
 export const ContentContact = styled.div`
 display: flex;
+margin-left: 10vw;
 justify-content: left;
 width: 116px;
 height: 21px;
 
 
 font-family: 'Poppins-Light';
-font-size: 2vw;
-line-height: 15vw;
+font-size: 1vw;
+line-height: 9vw;
 letter-spacing: 0.05em;
 text-transform: uppercase;
 
@@ -46,13 +48,12 @@ color: #EFEFEF;
 `;
 
 export const Contentv2Contact = styled.div`
-height: 7vw;
-left: 0px;
-top: 0px;
+height: 4vw;
+margin-left: 10vw;
 
 font-family: 'Poppins-Light';
-font-size: 5vw;
-line-height: 25vw;
+font-size: 3vw;
+line-height: 12vw;
 letter-spacing: 0.05em;
 text-transform: uppercase;
 
@@ -61,13 +62,13 @@ color: #EFEFEF;
 
 export const SpaceContact = styled.div`
 
-    line-height: 50vw;
+    line-height: 20vw;
 `;
 
 export const SpaceContactFinans = styled.div`
 
     justify-content: left;
-    line-height: 40vw;
+    line-height: 17vw;
 `;
 
 

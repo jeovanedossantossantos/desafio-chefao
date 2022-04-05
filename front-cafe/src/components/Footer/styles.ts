@@ -15,9 +15,9 @@ export const FooterStyle = styled.footer`
       margin-left: 70px
 }
 
-   @media (max-width: 1274px) {
+   @media (min-width: 1274px) {
     
-   /* height: 30vh; */
+   height: 30vh;
   
    }
 

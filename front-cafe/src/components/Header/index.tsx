@@ -37,7 +37,7 @@ export const Header: React.FC = () => {
         <Container fluid >
         <Link to ='/'><LogoMobile/></Link>
         <MobileMenuIconFigma style={{marginLeft: "80.3vw",marginTop: "7.5vw", borderColor: 'transparent'}}/>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "78vw",marginTop: "5vw", borderColor: 'transparent', opacity: '00%' }}/>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "78vw",marginTop: "5vw", borderColor: 'transparent', opacity: '100%' }}/>
 
           <Navbar.Offcanvas
             id="offcanvasNavbar"

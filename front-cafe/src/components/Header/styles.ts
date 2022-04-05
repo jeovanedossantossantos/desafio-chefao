@@ -106,7 +106,11 @@ margin-left:7.9%;
       margin-left: 6.7%;
 
     }
+    @media only screen and (max-width: 363px) {
+      margin-top: 5.4vw;
+      margin-left: 4.7%;
 
+    }
 `;
 export const CenterWrapperColorizer = styled(Container)`
   
@@ -139,6 +143,7 @@ border-color: 'transparent';
     &:hover {
     transform: scale(1.02)
 }
+
 @media only screen and (max-width: 363px) {
   margin-top: 1.4px;
   margin-left: 6.7px;

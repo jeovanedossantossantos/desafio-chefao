@@ -2,7 +2,7 @@
 
 <h3>Configurações para PWA</h3>
 <ol>
-<li><p>Nesse site você poder converter a sua imgem para i icone para seu aplicativo.</p>
+<li><p>Nesse site você poder converter a sua imagem para i icone para seu aplicativo.</p>
 <a href="https://favicon.io/favicon-converter/">Favicon.io</a></li>
 <li>
 <p>Nesse site você podera criar a configuação de abertura de seu app.</p>

@@ -14,4 +14,9 @@ export const ContactHeaderBackground = styled.div`
         background-size: cover;
 
     }
+    @media only screen and (min-width: 2120px) {
+        height: 1080px;
+
+    }
+    
 `

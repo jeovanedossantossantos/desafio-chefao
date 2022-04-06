@@ -24,14 +24,29 @@ height: 75vh;
 @media only screen and (min-height: 900px) {
     height: 77vh;
     }
+    @media only screen and (max-height: 962px) {
+    height: 90vh;
+    }
     @media only screen and (max-height: 767px) {
     height: 180vh;
+    }
+    @media only screen and (max-width: 767px) {
+        height: 120vh;
+    }
+    @media only screen and (max-height: 640px) {
+    height: 220vh;
     }
     @media only screen and (max-height: 575px) {
         height: 250vh;
     }
+    @media only screen and (max-width: 575px) {
+        height: 180vh;
+    }
     @media only screen and (max-height: 480px) {
         height: 240vh;
+    }
+    @media only screen and (max-width: 375px) {
+        height: 210vh;
     }
 `
 export const ContentBackground = styled.div`
@@ -171,6 +186,9 @@ font-size: 12px;
 /* or 30px */
 letter-spacing: 0.1em;
 color: #CD7254;
+@media only screen and (max-width: 886px) {
+        width: 30vw;
+    }
 @media only screen and (max-width: 320px) {
         width: 50vw;
     }
@@ -195,7 +213,10 @@ color: #281813;
     /* font-size: 1.5625vw; */
 
     }
-    
+    @media only screen and (max-width: 886px) {
+        width: 30vw;
+        font-size: 2.5vw
+    }
     @media only screen and (max-width: 320px) {
         width: 50vw;
     }

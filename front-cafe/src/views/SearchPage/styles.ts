@@ -24,6 +24,9 @@ export const BackgroundColorFill = styled.div`
     @media only screen and (min-height: 2160px) {
         height: 80vh;
     }
+    @media only screen and (min-width: 2160px) {
+        height: 140vh;
+    }
     @media only screen and (max-height: 900px) {
         height: 160vh;
     }

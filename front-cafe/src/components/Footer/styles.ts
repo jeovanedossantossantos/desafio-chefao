@@ -16,7 +16,6 @@ export const FooterStyle = styled.footer`
    @media (min-width: 1274px) {
     
    height: 15vh;
-  
    }
 
 

@@ -5,7 +5,7 @@ import SliderImg from '../../assets/images/homePageAboutBackground.png';
 import { api } from '../../serve';
 import { DataProps } from "../../Interfaces/DataProps"
 import { Col, Row } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 
 export const Slider: React.FC = () => {
   const [data, setData] = useState<DataProps[]>([])
@@ -43,6 +43,7 @@ export const Slider: React.FC = () => {
       <Carousel variant="dark">
         {
           data.map(e => {
+            const linkToTheCarrosselProduct = '/productpage/' + e?.id
             return (
               <Carousel.Item>
                 <Row style={{ justifyContent: "center", alignItems: "center", width: "100%", maxWidth: 1500, margin: "auto" }}>
@@ -58,11 +59,13 @@ export const Slider: React.FC = () => {
                   <Col className="w-400" xs={5} style={{ margin: 10 }}>
                     {/* <Carousel> */}
                       {/* <Carousel.Item> */}
+                      <Link to ={linkToTheCarrosselProduct}>
                         <img style={{ minHeight: "200px", maxHeight: "857px", maxWidth: "660px" }}
                           className="d-block w-100 h-100"
                           src={e?.foto_cafe ? e?.foto_cafe : "https://alavoura.com.br/wp-content/uploads/2020/06/tim-e1592429928966.jpeg"}
                           alt="First slide"
                         />
+                      </Link>
                       {/* </Carousel.Item>
                       <Carousel.Item>
                         <img

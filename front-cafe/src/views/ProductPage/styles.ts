@@ -24,14 +24,14 @@ height: 75vh;
 @media only screen and (min-height: 900px) {
     height: 77vh;
     }
-    @media only screen and (min-height: 767px) {
-    height: 120vh;
-    }
-    @media only screen and (min-height: 575px) {
+    @media only screen and (max-height: 767px) {
     height: 180vh;
     }
-    @media only screen and (min-height: 420px) {
-    height: 180vh;
+    @media only screen and (max-height: 575px) {
+        height: 250vh;
+    }
+    @media only screen and (max-height: 480px) {
+        height: 240vh;
     }
 `
 export const ContentBackground = styled.div`
@@ -49,16 +49,24 @@ export const ContentBackground = styled.div`
     width: 400px !important;
     margin-left: -100px !important;
         }
-        @media only screen and (max-height: 575px) {
+        @media only screen and (max-width: 575px) {
             width: 500px !important;
-            margin-left: 5vw !important;
+            margin-left: 0vw !important;
             margin-top: 0vw !important;
     }
-    @media only screen and (max-height: 480px) {
-        margin-left: 0vw !important;
+    @media only screen and (max-width: 512px) {
+        width: 450px !important;
     }
-    @media only screen and (max-height: 420px) {
-        margin-left: -9vw !important;
+    @media only screen and (max-width: 480px) {
+        margin-left: 8vw !important;
+        width: 88vw !important;
+    }
+    @media only screen and (max-width: 420px) {
+        margin-left: 6vw !important;
+    }
+    @media only screen and (max-width: 320px) {
+        margin-left: 6vw !important;
+
     }
     }
     @media only screen and (max-width: 1920px) {
@@ -134,16 +142,20 @@ font-size: 14px;
 letter-spacing: 0.1em;
 
 color: #574C49;
-@media only screen and (max-height: 575px) {
-            width: 70vw ;
-            margin-bottom: -8vw;
+@media only screen and (max-width: 575px) {
+            width: 78vw ;
+            margin-bottom: -10vw;
     }
-    @media only screen and (max-height: 480px) {
+    @media only screen and (max-width: 480px) {
         margin-bottom: -2vw;
     }
-    @media only screen and (max-height: 420px) {
+    @media only screen and (max-width: 420px) {
         margin-bottom: 30vw;
     }
+    @media only screen and (max-width: 320px) {
+        margin-bottom: 50vw;
+    }
+
 `;
 
 export const TituloPropCafe = styled.p`
@@ -159,7 +171,9 @@ font-size: 12px;
 /* or 30px */
 letter-spacing: 0.1em;
 color: #CD7254;
-
+@media only screen and (max-width: 320px) {
+        width: 50vw;
+    }
 `;
 
 export const ContextoPropCafe = styled.p`
@@ -181,5 +195,8 @@ color: #281813;
     /* font-size: 1.5625vw; */
 
     }
-
+    
+    @media only screen and (max-width: 320px) {
+        width: 50vw;
+    }
 `;

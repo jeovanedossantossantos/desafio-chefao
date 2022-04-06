@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const FooterStyle = styled.footer`
 
    display: flex;
-    flex-direction: column; 
-  width: 100%;
+   flex-direction: column; 
+   width: 100%;
    /* height: 44.116vh;    */
    /* Height of the footer */
    /* height: 16vh; */
@@ -12,16 +12,23 @@ export const FooterStyle = styled.footer`
    /* margin-top: 28vh; */ /* distance between slider and the footer */
    /* padding-left: 9.9vw; */
 
-   @media (max-width: 500px) {
+
+   @media (min-width: 1274px) {
     
+<<<<<<< HEAD
    /* height: 24vh; */
+=======
+   height: 30vh;
+>>>>>>> e0e46517f1c3da8602b0c1058954788d806f79a8
   
-}
+   }
+
 
 `;
 
 export const FooterLogoStyle = styled.div`
 padding-top: 5vh;
+
 `;
 
 export const FooterTextStyle = styled.div`
@@ -58,7 +65,7 @@ line-height: 21px;
 width: 100%;
 
 margin: 10px;
-
+font-family: 'Poppins-Medium';
 .no-copy{ //Col é igual a uma div
   
    margin: 5px;
@@ -84,6 +91,15 @@ margin: 10px;
 
   
 }
+
+@media (max-width: 1275px) {
+   font-size: 12px;
+   width:55vw;
+   display: flex;
+
+  
+}
+
 
 
 `;

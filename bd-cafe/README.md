@@ -1,7 +1,7 @@
 # Banco de dados 
 
 <h4>Esquema</h4>
-<img src="./img/2.jpeg"/>
+<img src="./img/2.png"/>
 <h4>Codigo Sql</h4>
 
             -- MySQL Workbench Forward Engineering
@@ -52,6 +52,8 @@
                 ON DELETE NO ACTION
                 ON UPDATE NO ACTION)
             ENGINE = InnoDB;
+            
+            
 
             
 

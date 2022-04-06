@@ -1,10 +1,11 @@
 import React from 'react';
 import { Navbar, Container, Nav, Offcanvas, NavDropdown } from 'react-bootstrap';
-import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo, StyledNavMobile} from './styles'
+import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo, LogoMobile, StyledNavMobile, MobileMenuIconFigma} from './styles'
 import LogoImage from '../../assets/images/VectorlogoCorreto.webp';
 import { Link, useNavigate } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { HomeAboutBackgroundImage } from '../About/styles';
+
 
 
 export const Header: React.FC = () => {
@@ -32,9 +33,12 @@ export const Header: React.FC = () => {
       </CenterWrapperColorizer>
 
 
-      <Navbar bg="transparent" expand={false} className="mb" variant="dark">
+      <Navbar bg="transparent" expand={false} className="mb" variant='dark'  >
         <Container fluid >
-          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "83vw",marginTop: "3vw"}}/>
+        <Link to ='/'><LogoMobile/></Link>
+        <MobileMenuIconFigma style={{marginLeft: "80.3vw",marginTop: "7.5vw", borderColor: 'transparent', pointerEvents: 'none'}}/>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "78vw",marginTop: "5vw", borderColor: 'transparent', opacity: '0%', marginRight:'12vw' }}/>
+
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"

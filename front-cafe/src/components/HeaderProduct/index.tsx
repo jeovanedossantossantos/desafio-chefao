@@ -4,7 +4,7 @@ import { StyledNav, CenterWrapperColorizer, WrapBannerText, ContainerMain, Logo,
 import LogoImage from '../../assets/images/VectorLogoProduct.svg';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
-
+import  {LogoMobile, MobileMenuIconFigma, StyledNavMobile } from '../../components/Header/styles'
 
 
 export const HeaderProduct: React.FC = () => {
@@ -31,23 +31,27 @@ export const HeaderProduct: React.FC = () => {
       </CenterWrapperColorizer>
 
 
-      <Navbar bg="transparent" expand={false} className="mb" variant="dark">
+      <Navbar bg="transparent" expand={false} className="mb" variant='dark' style={{filter: 'invert()'}}>
         <Container fluid >
-          <Navbar.Toggle aria-controls="offcanvasNavbar" />
+        <Link to ='/'><LogoMobile/></Link>
+        <MobileMenuIconFigma style={{marginLeft: "80.3vw",marginTop: "7.5vw", borderColor: 'transparent', pointerEvents: 'none'}}/>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "78vw",marginTop: "5vw", borderColor: 'transparent', opacity: '0%', marginRight:'12vw' }}/>
+
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
             placement="end"
-            style={{background:"#2F1D19"}}
+            style={{background:"#131313", width: '299px'}}
           >
-            <Offcanvas.Header  closeButton style={{background:"#C0836E", opacity: '100%'}}>
-            <Offcanvas.Title id="offcanvasNavbarLabel"><img src={LogoImage} alt='' /></Offcanvas.Title>
+            <Offcanvas.Header  closeButton style={{filter:"invert(1)", marginRight: "76px", marginTop: "15px", transform: 'scale(1.4)'}}>
+            <Offcanvas.Title id="offcanvasNavbarLabel" style={{filter:"invert(1)"}}></Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link ><StyledNav>Nossos Cafés</StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav><Link to ='/contact'>Contato</Link></StyledNav></Nav.Link>
-                <Nav.Link ><StyledNav>Sobre </StyledNav></Nav.Link>
+              <Nav.Link ><StyledNavMobile><HashLink smooth to='/#about'>Sobre</HashLink></StyledNavMobile></Nav.Link>
+                <Nav.Link ><StyledNavMobile><Link to ='/searchpage'>Nossos Cafés</Link></StyledNavMobile></Nav.Link>
+                <Nav.Link ><StyledNavMobile><Link to ='/contact'>Contato</Link></StyledNavMobile></Nav.Link>
+
                 {/* <NavDropdown title="Dropdown" id="offcanvasNavbarDropdown">
                   <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                   <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>

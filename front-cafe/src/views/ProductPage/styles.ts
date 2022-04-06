@@ -110,6 +110,20 @@ export const RowMargin = styled.div`
 
 `;
 
+
+
+export const LoadingMargin = styled.div`
+    @media only screen and (max-width: 575px) {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+`;
+
+export const NothingInScreen = styled.div`
+display: none;
+`;
+
 export const Logo = styled.div`
 position: absolute;
 background-size: 42.5px 42.5px;

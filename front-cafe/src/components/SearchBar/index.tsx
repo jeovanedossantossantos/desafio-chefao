@@ -1,5 +1,5 @@
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { SearchBarTitleStyle, SearchBarContainer, SearchBarInput, Form } from './styles';
+import { Container, Row, Col, Card, Spinner } from 'react-bootstrap';
+import { SearchBarTitleStyle, SearchBarContainer, SearchBarInput, Form, BoxToCreateSpaceForLoadingAnimation } from './styles';
 import SearchIcon from '../../assets/images/SearchIcon.svg'
 import { DataProps } from '../../Interfaces/DataProps';
 import { api } from '../../serve';
@@ -15,14 +15,15 @@ interface SearchBarProps {
 export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarPlaceholder }) => {
   const [data, setData] = useState<DataProps[]>([])
   const [palavra, setPalavra] = useState("")
+  const [loading, setLoading] = useState(false);
   const push = useNavigate()
   const carregar = async () => {
     try {
       const resposta = await api.get("/cafes")
-
       setData(resposta.data)
       console.log("=============================")
       console.log(data)
+      setLoading(true);
     } catch (err) {
       console.log(err)
     }
@@ -42,8 +43,10 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
     carregar()
   }, [])
   return (
+
     <Col style={{ backgroundColor:" #FAF4F0"}}>
       <SearchBarContainer style={{ }} >
+
         <Container fluid style={{ }} >
           <Row xs="auto" style={{ width:"100%", maxWidth: 800, margin:"auto"}}>
             <Col >
@@ -65,9 +68,12 @@ export const SearchBar: React.FC<SearchBarProps> = ({ SearchBarTitle, SearchBarP
         </Container>
 
         <Container style={{ marginTop: 20, display: 'flex', flexWrap:"wrap",justifyContent: 'center' }}>
+        {loading ? (carregar) : (<div><Spinner animation="grow" variant="success" style={{position:'absolute', marginTop:'3vw', marginLeft:'35px'}}/><BoxToCreateSpaceForLoadingAnimation/></div>)}
+
         {
             data.map(e => {
               return (
+                
                 <Card  onClick={()=>push("/productpage/"+e.id)} style={{ width: '250px', margin:'1.5%', marginTop:20, cursor: 'pointer', backgroundColor:'#F5E9E0', border: 'none', borderRadius: '10px', height:'400px',}}>
                   <div style={{height:320,}}>
                     <Card.Img variant="top" src={e.foto_cafe} style={{maxHeight:300, width: '200px', marginLeft:'30px', marginTop:'30px'}} />

@@ -99,5 +99,13 @@ margin-left: -10px;
   &::placeholder {
     color: #281813;
   }
+`;
+
+export const BoxToCreateSpaceForLoadingAnimation = styled.h1`
+background-color:transparent;
+width: 100px;
+height: 20vw;
+
+
 
 `;

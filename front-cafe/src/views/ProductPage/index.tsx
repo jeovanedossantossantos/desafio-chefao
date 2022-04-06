@@ -1,5 +1,5 @@
 import { HeaderProduct } from '../../components/HeaderProduct';
-import { ContentBackground, ContextoPropCafe, Paragrafo, ProductHeaderBackground, Titulo, TituloPropCafe } from './styles';
+import { ContentBackground, ContextoPropCafe, Paragrafo, ProductHeaderBackground, Titulo, TituloPropCafe, BackgroundFromTheContentBackground,ColumnMargin, RowMargin } from './styles';
 import { SearchBar } from '../../components/SearchBar';
 import { SearchCard } from '../../components/SearchCard';
 import { ContentContact } from '../../components/Contact/styles';
@@ -32,6 +32,7 @@ export const ProductPage: React.FC = () => {
     },[])
     return (
         <div>
+                        <BackgroundFromTheContentBackground>
             <ProductHeaderBackground>
                 <HeaderProduct />
             </ProductHeaderBackground>
@@ -53,8 +54,9 @@ export const ProductPage: React.FC = () => {
                                 {data?.descricao}
                             </Paragrafo>
 
-
+                            <RowMargin>
                             <Row xs={2} md={4} lg={6}>
+
                                 <Col lg={6}>
                                     <TituloPropCafe>
                                         Corpo
@@ -79,6 +81,7 @@ export const ProductPage: React.FC = () => {
                                     </ContextoPropCafe>
 
                                 </Col>
+                                                                    <ColumnMargin>
                                 <Col lg={4}>
                                     <TituloPropCafe>
                                         Nota
@@ -101,8 +104,9 @@ export const ProductPage: React.FC = () => {
                                        {data?.torra.nome}
                                     </ContextoPropCafe>
                                 </Col>
+                                </ColumnMargin>
                             </Row>
-
+                            </RowMargin>
                         </Col>
 
                     </Row>
@@ -111,6 +115,8 @@ export const ProductPage: React.FC = () => {
                
             </ContentBackground>
             <Footer/>
+            </BackgroundFromTheContentBackground>
+
             </div>
     )
 }

@@ -16,7 +16,24 @@ export const ProductHeaderBackground = styled.div`
 
     }
 `
+export const BackgroundFromTheContentBackground = styled.div`
 
+background: #FAF4F0;
+height: 75vh;
+
+@media only screen and (min-height: 900px) {
+    height: 77vh;
+    }
+    @media only screen and (min-height: 767px) {
+    height: 120vh;
+    }
+    @media only screen and (min-height: 575px) {
+    height: 180vh;
+    }
+    @media only screen and (min-height: 420px) {
+    height: 180vh;
+    }
+`
 export const ContentBackground = styled.div`
     background: #FAF4F0;
     display: flex;
@@ -26,13 +43,49 @@ export const ContentBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-   
- 
-    @media only screen and (min-width: 1920px) {
-        background-size: cover;
+    img {
+        @media only screen and (max-width: 991px) {
 
+    width: 400px !important;
+    margin-left: -100px !important;
+        }
+        @media only screen and (max-height: 575px) {
+            width: 500px !important;
+            margin-left: 5vw !important;
+            margin-top: 0vw !important;
+    }
+    @media only screen and (max-height: 480px) {
+        margin-left: 0vw !important;
+    }
+    @media only screen and (max-height: 420px) {
+        margin-left: -9vw !important;
+    }
+    }
+    @media only screen and (max-width: 1920px) {
+        background-size: cover;
+        margin-top:60px;
     }
 `
+export const ColumnMargin = styled.div`
+
+    @media only screen and (max-width: 991px) {
+        margin-left: 8vw
+    }
+    @media only screen and (max-width: 768px) {
+        margin-left: 9vw
+    }
+    @media only screen and (max-width: 767px) {
+        margin-left: 0.1vw
+    }
+
+`;
+export const RowMargin = styled.div`
+
+    @media only screen and (max-width: 767px) {
+        margin-top: 20vw
+    }
+
+`;
 
 export const Logo = styled.div`
 position: absolute;
@@ -81,6 +134,16 @@ font-size: 14px;
 letter-spacing: 0.1em;
 
 color: #574C49;
+@media only screen and (max-height: 575px) {
+            width: 70vw ;
+            margin-bottom: -8vw;
+    }
+    @media only screen and (max-height: 480px) {
+        margin-bottom: -2vw;
+    }
+    @media only screen and (max-height: 420px) {
+        margin-bottom: 30vw;
+    }
 `;
 
 export const TituloPropCafe = styled.p`
@@ -96,6 +159,7 @@ font-size: 12px;
 /* or 30px */
 letter-spacing: 0.1em;
 color: #CD7254;
+
 `;
 
 export const ContextoPropCafe = styled.p`
@@ -107,10 +171,15 @@ height: 36px;
 /* padding-top: 167px; */
 font-family: 'Poppins-SemiBold';
 font-weight: 600;
-font-size: 1.5625vw;
+font-size: 20px;
 /* or 30px */
 
 letter-spacing: 0.1em;
 
 color: #281813;
+@media only screen and (max-width: 991px) {
+    /* font-size: 1.5625vw; */
+
+    }
+
 `;

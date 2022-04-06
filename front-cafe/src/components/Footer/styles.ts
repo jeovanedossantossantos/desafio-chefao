@@ -11,9 +11,7 @@ export const FooterStyle = styled.footer`
    background: #438B70;
    /* margin-top: 28vh; */ /* distance between slider and the footer */
    /* padding-left: 9.9vw; */
-   @media only screen and (min-width: 2390px) {
-      margin-left: 70px
-}
+
 
    @media (max-width: 1274px) {
     

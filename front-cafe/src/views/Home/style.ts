@@ -58,7 +58,21 @@ text-align: center;
 @media only screen and (max-width: 1024px) {
     margin-top: 14.6%;
     }
-
+    @media only screen and (max-width: 600px) {
+    margin-top: 27.6%;
+    }
+    @media only screen and (max-width: 480px) {
+    margin-top: 47.6%;
+    }
+    @media only screen and (max-width: 420px) {
+    margin-top: 54.6%;
+    }
+    @media only screen and (max-width: 375px) {
+    margin-top: 61.6%;
+    }
+    @media only screen and (max-width: 320px) {
+    margin-top: 73.6%;
+    }
  
 `
 
@@ -73,8 +87,8 @@ font-family: 'Poppins-Light';
     font-size: 48px;
     }
 
-    @media only screen and (max-width: 469px) {
-   font-size: 30px;
+    @media only screen and (max-width: 600px) {
+   font-size: 32px;
     }
 
 `
@@ -87,6 +101,21 @@ margin-top: 1%;
 @media only screen and (max-width: 1024px) {
     margin-top: 3.6%;
     }
+    @media only screen and (max-width: 600px) {
+    margin-top: 10.6%;
+    }
+    @media only screen and (max-width: 480px) {
+    margin-top: 10.6%;
+    }
+    @media only screen and (max-width: 420px) {
+    margin-top: 14.6%;
+    }
+    @media only screen and (max-width: 375px) {
+    margin-top: 16.6%;
+    }
+    @media only screen and (max-width: 320px) {
+    margin-top: 19.6%;
+    }
 `
 export const BannerDesc = styled.div`
 color: white;
@@ -95,11 +124,43 @@ display: flex;
 justify-content: center;
 margin-top: 2%;
 margin-bottom: 4%;
+margin-left: 30vw;
+margin-right: 30vw;
 letter-spacing: 0.1em;
 font-family: 'Poppins-Medium';
 color: #FFFFFF;
 @media only screen and (max-width: 1024px) {
-    font-size:12px;
+    font-size:14px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 3.6%;
+    }
+    @media only screen and (max-width: 768px) {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    }
+    @media only screen and (max-width: 600px) {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    }
+    @media only screen and (max-width: 480px) {
+    margin-top: 5.6%;
+    margin-bottom: 50px;
+    margin-left: 7vw;
+    margin-right: 7vw;
+    }
+    @media only screen and (max-width: 420px) {
+    margin-top: 6.6%;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    }
+    @media only screen and (max-width: 375px) {
+    margin-top: 7.6%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    }
+    @media only screen and (max-width: 320px) {
+    margin-top: 8.6%;
     }
 `
 export const BannerIconSpace = styled.div`
@@ -108,9 +169,6 @@ padding-left: 0.7%;
 export const ButtonBottomMargin = styled.div`
 padding-bottom: 15vh;
 
-@media only screen and (max-width: 469px) {
-   font-size: 10px;
-    }
 `
 
 export const HomeAboutBackground = styled.div` 

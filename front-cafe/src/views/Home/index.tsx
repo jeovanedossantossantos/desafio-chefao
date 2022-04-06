@@ -42,7 +42,7 @@ export const Home: React.FC = () => {
               <Col><BannerIcon><img src={BannerLine} alt='' width={'40px'} /><BannerIconSpace /><img src={BannerIconImage} alt='' width={'18vw'} /><BannerIconSpace /><img src={BannerLine} alt='' width={'40px'} /></BannerIcon></Col>
             </Row>
             <Row>
-              <Col><BannerDesc>Nós produzimos cafés para coffee lovers que amam café <br />em todos os sentidos, do olfato ao tato</BannerDesc></Col>
+              <Col><BannerDesc>Nós produzimos cafés para coffee lovers que amam café em todos os sentidos, do olfato ao tato</BannerDesc></Col>
             </Row>
             <Row>
               <Col><Nav.Link href="/searchpage"><Button /><ButtonBottomMargin /></Nav.Link></Col>

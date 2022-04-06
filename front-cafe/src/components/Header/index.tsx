@@ -36,8 +36,8 @@ export const Header: React.FC = () => {
       <Navbar bg="transparent" expand={false} className="mb" variant='dark'  >
         <Container fluid >
         <Link to ='/'><LogoMobile/></Link>
-        <MobileMenuIconFigma style={{marginLeft: "80.3vw",marginTop: "7.5vw", borderColor: 'transparent'}}/>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "78vw",marginTop: "5vw", borderColor: 'transparent', opacity: '100%' }}/>
+        <MobileMenuIconFigma style={{marginLeft: "80.3vw",marginTop: "7.5vw", borderColor: 'transparent', pointerEvents: 'none'}}/>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" style={{marginLeft: "78vw",marginTop: "5vw", borderColor: 'transparent', opacity: '0%', marginRight:'12vw' }}/>
 
           <Navbar.Offcanvas
             id="offcanvasNavbar"

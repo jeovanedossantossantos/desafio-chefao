@@ -106,6 +106,11 @@ margin-left:7.9%;
       margin-left: 6.7%;
 
     }
+    @media only screen and (max-width: 799px) {
+      margin-top: 4.4vw;
+      margin-left: 6.7%;
+
+    }
     @media only screen and (max-width: 363px) {
       margin-top: 5.4vw;
       margin-left: 4.7%;

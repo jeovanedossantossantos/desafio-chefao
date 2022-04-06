@@ -63,7 +63,7 @@ line-height: 21px;
 width: 100%;
 
 margin: 10px;
-
+font-family: 'Poppins-Medium';
 .no-copy{ //Col é igual a uma div
   
    margin: 5px;

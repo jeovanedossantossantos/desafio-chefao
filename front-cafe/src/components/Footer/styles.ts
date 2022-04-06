@@ -13,9 +13,9 @@ export const FooterStyle = styled.footer`
    /* padding-left: 9.9vw; */
 
 
-   @media (max-width: 1274px) {
+   @media (min-width: 1274px) {
     
-   /* height: 30vh; */
+   height: 30vh;
   
    }
 

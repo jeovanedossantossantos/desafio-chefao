@@ -79,9 +79,10 @@ max-width:500px ;
 @media only screen and (max-width: 480px) {
     margin-left:0;
     margin-top:22px;
-    line-height: 10px;
-    font-size:15px;
-
+    line-height: 38px;
+    font-size:27px;
+    width: 50px;
+    letter-spacing: 0.3em;
     }
 
 
@@ -122,8 +123,8 @@ color: #FFFFFF;
     @media only screen and (max-width: 480px) {
     margin-left:0;
     margin-bottom:30px;
-    font-size:11px;
-
+    font-size:17px;
+    max-width:300px ;
     }
 
     
@@ -148,8 +149,8 @@ align-items: center;
   /* background-position: 46% 4%;
   background-size: 175%;  */
   @media only screen and (max-width: 991px) {
-      height:45vw;
-
+      height:135vw;
+      padding:10px;
     }
   
   .col-sectionAbout{

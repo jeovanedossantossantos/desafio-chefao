@@ -21,9 +21,10 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=success&labelColor=gey">
 </p>
 
-<p align="center">
+margin: 1em auto 2em;
 ![ezgif-5-a906cfcd3fd1](./animacao.gif)
-</p>
+  </p>
+
 
 <h1 align="center">Desafio Final</h1>
 

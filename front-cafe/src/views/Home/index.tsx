@@ -1,96 +1,66 @@
-import React, { useEffect, useState } from 'react';
-import { Header } from '../../components/Header';
-import { HomeHeaderBackground, 
-  BannerText, 
-  BannerTitle, 
-  BannerIcon, 
-  BannerDesc, 
-  BannerIconSpace, 
-  ButtonBottomMargin } from './style';
-import { Container, Row, Col, Nav } from 'react-bootstrap';
-import BannerLine from '../../assets/images/Rectangle5iconBanner.svg';
-import BannerIconImage from '../../assets/images/VectoriconBanner.svg';
-import { Button } from '../../components/Button';
-import { Footer } from '../../components/Footer';
-import { About } from '../../components/About';
-import { Slider } from '../../components/Slider';
-import { Link } from 'react-router-dom';
-
-
-// import {api} from '../../serve'
-
-interface DadosProps {
-  id: number,
-  nome: string,
-  descricao: string,
-}
-
+import { Header } from "../../components/Header";
+import {
+  HomeHeaderBackground,
+  BannerText,
+  BannerTitle,
+  BannerIcon,
+  BannerDesc,
+  BannerIconSpace,
+  ButtonBottomMargin,
+} from "./style";
+import { Container, Row, Col, Nav } from "react-bootstrap";
+import BannerLine from "../../assets/images/Rectangle5iconBanner.svg";
+import BannerIconImage from "../../assets/images/VectoriconBanner.svg";
+import { Button } from "../../components/Button";
+import { Footer } from "../../components/Footer";
+import { About } from "../../components/About";
+import { Slider } from "../../components/Slider";
 
 export const Home: React.FC = () => {
   return (
-    <div >
-      <HomeHeaderBackground >
-
-
+    <div>
+      <HomeHeaderBackground>
         <Header />
         <BannerText>
           <Container fluid>
             <Row>
-              <Col><BannerTitle>coffee experience</BannerTitle></Col>
+              <Col>
+                <BannerTitle>coffee experience</BannerTitle>
+              </Col>
             </Row>
             <Row>
-              <Col><BannerIcon><img src={BannerLine} alt='' width={'40px'} /><BannerIconSpace /><img src={BannerIconImage} alt='' width={'18vw'} /><BannerIconSpace /><img src={BannerLine} alt='' width={'40px'} /></BannerIcon></Col>
+              <Col>
+                <BannerIcon>
+                  <img src={BannerLine} alt="" width={"40px"} />
+                  <BannerIconSpace />
+                  <img src={BannerIconImage} alt="" width={"18vw"} />
+                  <BannerIconSpace />
+                  <img src={BannerLine} alt="" width={"40px"} />
+                </BannerIcon>
+              </Col>
             </Row>
             <Row>
-              <Col><BannerDesc>Nós produzimos cafés para coffee lovers que amam café em todos os sentidos, do olfato ao tato</BannerDesc></Col>
+              <Col>
+                <BannerDesc>
+                  Nós produzimos cafés para coffee lovers que amam café em todos
+                  os sentidos, do olfato ao tato
+                </BannerDesc>
+              </Col>
             </Row>
             <Row>
-              <Col><Nav.Link href="/searchpage"><Button /><ButtonBottomMargin /></Nav.Link></Col>
+              <Col>
+                <Nav.Link href="/searchpage">
+                  <Button />
+                  <ButtonBottomMargin />
+                </Nav.Link>
+              </Col>
             </Row>
           </Container>
-        </BannerText>        
-
+        </BannerText>
       </HomeHeaderBackground>
-       <About />
-
+      <About />
       <Slider />
       <Footer />
-
-
-
     </div>
-  )
-
-  // const [dados, setDados] = useState<DadosProps[]>([])
-
-  // const req = async ()=>{
-  //     try{
-  //         const resposta = await api.get("/listar-variedade")
-  //         const {data} = resposta
-  //         setDados(data)
-  //         console.log(resposta.data)
-  //     }catch(err){
-  //         console.log(err)
-  //     }
-  // }
-
-  // useEffect(()=>{
-  //     req()
-
-
-
-  // },[])
-  // return(
-  //     <div>
-  //         Olá, eu sou a home!!
-  //         <button onClick={()=>req()}>aqui</button>
-
-  //         {dados.map(d=>{
-  //             return <div>
-  //                 Nome: {d.nome}
-  //             </div>
-  //         })}
-  //     </div>
-  // )
-
-}
+  );
+};

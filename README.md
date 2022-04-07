@@ -33,7 +33,7 @@ O nosso desafio era criar um produto do zero. .
 
 
 <p align="center">
-  <img src="https://github.com/scillapinheiro/gama-academy-desafio-final/blob/main/src/assets/logotipo.svg" width="40%">
+  <img src="" width="40%">
 </p>
 
 ## :computer: Projeto

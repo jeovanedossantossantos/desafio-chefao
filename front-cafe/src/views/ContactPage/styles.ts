@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ContactHeaderBackground = styled.div`
     display: flex;
@@ -7,16 +7,12 @@ export const ContactHeaderBackground = styled.div`
     height: 950px;
     background: #131313;
     background-repeat: no-repeat;
-
     background-position: center; 
-    
+
     @media only screen and (min-width: 1920px) {
         background-size: cover;
-
     }
     @media only screen and (min-width: 2120px) {
         height: 1080px;
-
     }
-    
-`
+`;

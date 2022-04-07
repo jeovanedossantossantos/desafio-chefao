@@ -1,10 +1,8 @@
 import axios from "axios";
-import {API, Authorization} from "./const"
+import { API } from "./const"
+
 export const api = axios.create({
     baseURL: API,
-    // headers: {
-    //     Authorization:Authorization
-    // }
 })
 
 export {}

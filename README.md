@@ -21,9 +21,8 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=success&labelColor=gey">
 </p>
 
-<p align="center">
- ![ezgif-5-a906cfcd3fd1](./desafiochefao.gif)
-</p>
+
+ <div class="responsive-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/A-i1Dx9DnKM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 <h1 align="center">Desafio Final</h1>
 
@@ -45,20 +44,24 @@ encontrado no mercado.
 
 
 ## :green_heart: Desenvolvedores
-[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos)<br> | [<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst)<br> | [<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee)<br> | [<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian)<br> |
-| :---: | :---: | :---: |
+[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos)<br> 
+[<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst)<br>  
+[<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee)<br>  
+[<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian)<br> 
+
 
 
 ## :rocket: Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-[JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)!
-[Reactjs](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)! 
-[Typescrypt](https://img.shields.io/badge/TS-Typescrypt-blue)!
-[Node](https://img.shields.io/badge/ND-Node-green)!
-[MySql](https://img.shields.io/badge/MySql-MySql-orange)!
-[StyledComponet](https://img.shields.io/badge/Styled-StyledComponet-lightgrey)![PWA](https://img.shields.io/badge/PWA-PROGRESSIVE%20WEB%20APP-lightgrey)!
-[MVC](https://img.shields.io/badge/MVC-padr%C3%A3o%20de%20arquitetura%20de%20software%20-lightgrey)
+![JavaScript](https://img.shields.io/badge/JS-JavaScript-blue) 
+![Reactjs](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+![Typescrypt](https://img.shields.io/badge/TS-Typescrypt-blue) 
+![Node](https://img.shields.io/badge/ND-Node-green)
+![MySql](https://img.shields.io/badge/MySql-MySql-orange) 
+![StyledComponet](https://img.shields.io/badge/Styled-StyledComponet-lightgrey) 
+![PWA](https://img.shields.io/badge/PWA-PROGRESSIVE%20WEB%20APP-lightgrey) 
+![MVC](https://img.shields.io/badge/MVC-padr%C3%A3o%20de%20arquitetura%20de%20software%20-lightgrey)
 
 ## :eyes: Site de demonstração
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)

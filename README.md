@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-![ezgif-5-a906cfcd3fd1](./desafiochefao.gif)
+![ezgif-5-a906cfcd3fd1](./animacao.gif)
 </p>
 
 <h1 align="center">Desafio Final</h1>

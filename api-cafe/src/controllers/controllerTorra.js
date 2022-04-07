@@ -1,10 +1,12 @@
-const {Torra} = require("../model")
+const { Torra } = require("../model");
 const Sequelize = require('sequelize');
 
 const controllerTorra = {
     async cadastrarTorra(req, res) {
-        const { nome, descricao} = req.body;
-
+        const {
+            nome,
+            descricao
+        } = req.body;
         try {
             const newTorra = await Torra.create({
                 nome,
@@ -15,7 +17,7 @@ const controllerTorra = {
             res.status(400).json(err)
         }
     },
-    async listarTorra(req, res){
+    async listarTorra(req, res) {
         try {
             const lista_torra = await Torra.findAll()
             res.status(200).json(lista_torra)
@@ -23,7 +25,7 @@ const controllerTorra = {
             res.status(400).json(err)
         }
     },
-    async buscarUmTorra(req, res){
+    async buscarUmTorra(req, res) {
         try {
             const item = await Torra.findOne({
                 where: {
@@ -33,46 +35,59 @@ const controllerTorra = {
             if (item !== null) {
                 res.status(200).json(item)
             } else {
-                res.status(402).json({ "Mensagem": "Nada foi encontrado" })
+                res.status(402).json({
+                    "Mensagem": "Nada foi encontrado"
+                })
             }
         } catch (err) {
             res.status(400).json(err)
         }
     },
     async deletarTorra(req, res) {
-        try{
+        try {
             const item = await Torra.destroy({
                 where: {
-                    id:req.params.id
+                    id: req.params.id
                 }
             })
-            res.status(201).json({"Mensagem":"Deletado com sucesso"})
-        }catch (err) {
-            res.status(401).json({ "Mensagem": "Erro ao tentar deletar região!" })
+            res.status(201).json({
+                "Mensagem": "Deletado com sucesso"
+            })
+        } catch (err) {
+            res.status(401).json({
+                "Mensagem": "Erro ao tentar deletar região!"
+            })
         }
     },
     async atualizarTorra(req, res) {
-        const {nome, descricao} = req.body
-        try{
+        const {
+            nome,
+            descricao
+        } = req.body
+        try {
             const item = await Torra.update({
                 nome,
                 descricao
-            },
-                {
-                    where: {
-                        id: req.params.id,
-                    }
+            }, {
+                where: {
+                    id: req.params.id,
                 }
-            )
-            if(item !== null){
-                res.status(201).json({ "Mensagem": "Atualizada como sucesso!" })
-            }else{
-                res.status(401).json({ "Mensagem": "Não exite esse id!" })
+            })
+            if (item !== null) {
+                res.status(201).json({
+                    "Mensagem": "Atualizada com sucesso!"
+                })
+            } else {
+                res.status(401).json({
+                    "Mensagem": "Não existe esse id!"
+                })
             }
-
-        }catch(err){
-            res.status(401).json({ "Mensagem": "Erro ao Atualizada!" })
+        } catch (err) {
+            res.status(401).json({
+                "Mensagem": "Erro ao Atualizada!"
+            })
         }
     }
 }
+
 module.exports = controllerTorra

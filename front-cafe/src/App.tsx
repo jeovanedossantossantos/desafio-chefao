@@ -1,5 +1,5 @@
 import Rotas from "./Routes";
-import ContextProvider from "./hooks/context"
+import ContextProvider from "./hooks/context";
 
 function App() {
   return (

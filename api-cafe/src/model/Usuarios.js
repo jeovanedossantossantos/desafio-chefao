@@ -17,16 +17,15 @@ const Usuarios = db.db.define("Usuarios", {
     senha: {
         type: DataTypes.STRING
     },
-    
+
     createdAt: {
         type: DataTypes.DATE,
     },
     updatedAt: {
         type: DataTypes.DATE,
     },
-    
 }, {
     tableName: "usuario",
-}
-);
+});
+
 module.exports = Usuarios

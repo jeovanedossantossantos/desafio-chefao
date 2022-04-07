@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import {Navbar, Container, Nav} from 'react-bootstrap';
+import {Container, Nav} from 'react-bootstrap';
 
 export const ContainerMain = styled.div`
-
   .mb{
     display:none;
   }
@@ -14,12 +13,8 @@ export const ContainerMain = styled.div`
       display:none;
     }
   }
-
 `
-
-
 export const StyledNav = styled(Nav)`
-
   font-family: 'Poppins';
   font-size:19px;
   color: white;
@@ -36,17 +31,16 @@ export const StyledNav = styled(Nav)`
 `;
 
 export const WrapBannerText = styled.div`
-max-width: 70%;
-margin: 0 auto;
-display:flex;
-align-items: center;
-
+  max-width: 70%;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
 `;
 
 export const CenterWrapperColorizer = styled(Container)`
-display: flex;
-justify-content:center;
-padding-left:19vh;
+  display: flex;
+  justify-content:center;
+  padding-left:19vh;
 @media only screen and (max-width: 991px) {
     display: flex;
     justify-content:left;

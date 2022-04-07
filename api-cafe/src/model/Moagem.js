@@ -1,14 +1,13 @@
 const db = require('../db')
-const {DataTypes} = require("sequelize")
+const { DataTypes } = require("sequelize")
 
-
-const Moagem = db.db.define("Moagem",{
-    id:{
+const Moagem = db.db.define("Moagem", {
+    id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
     },
-    nome:{
+    nome: {
         type: DataTypes.STRING,
     },
     createdAt: {
@@ -17,8 +16,8 @@ const Moagem = db.db.define("Moagem",{
     updatedAt: {
         type: DataTypes.DATE,
     },
-},{
-    tableName:"moagem"
+}, {
+    tableName: "moagem"
 })
 
 module.exports = Moagem

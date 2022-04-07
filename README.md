@@ -37,7 +37,11 @@ O nosso desafio era criar um produto do zero. .
 </p>
 
 ## :computer: Projeto
-A Amazonita Macramê é uma marca autônoma de peças de decoração de macramê artesanais. Foi criada pela Carol em uma disciplina de faculdade de Publicidade em 2016. Em 2021 houve uma mudança de mercado, de um contexto mais simples (meio hippie, segundo a Carol) para macramês mais rebuscados focados em decoração de interiores.
+Desde 2010 queremos facilitar que novos sabores da bebida mais
+brasileira de todas, nosso amado café, chegue no maior número de
+pessoas! Com essa missão nós queremos alcaçar o maior número de
+pessoas que ainda tomam o café amargo e de pouca qualidade
+encontrado no mercado.
 
 
 ## :green_heart: Desenvolvedores

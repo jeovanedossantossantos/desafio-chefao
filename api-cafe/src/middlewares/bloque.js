@@ -1,6 +1,5 @@
-const secret = require('../configs/secret')
-const expressJWT = require('express-jwt')
-
+const secret = require('../configs/secret');
+const expressJWT = require('express-jwt');
 
 module.exports = expressJWT({
    

@@ -50,16 +50,16 @@ Nesse documento mostraremos o passo a passo para fazer a documentão de uma api 
 <li>yarn add cors</li>
   </ol>
   
-  <h1>ATENÇÃO: se você fizer o git clone desse projeto apenas execute o "yarn" que ele instalarar todas as dependencias.</h1>
+  <h1>ATENÇÃO: se você fizer o git clone desse projeto apenas execute o "yarn" que ele instalará todas as dependencias.</h1>
   
   <h3>Orientação para criação do .env</h3>
       
-        BANCO=nome_do_seu_banco_de_dados
-        USER=nome_do_seu_usuario(Geralmente é o root)
-        PORTA=porta(Geralmete é o localhost)
-        DIALECT=mysql(Deixe mysql que é o tipo de banco de dados que estamos usando)
-        PASWORD=coloque_sua_senha
-  
+        HOSTNAME=nome_do_seu_banco_de_dados
+        USERNAME=nome_do_seu_usuario(Geralmente é o root)
+        PORT=porta(Geralmete é o localhost)
+        PASSWORD=coloque_sua_senha
+         
+ 
   Apos essas configurações rode sua aplicação
   
   <h3>Mudando de Branch e Mesclando com outra Branch</h3>

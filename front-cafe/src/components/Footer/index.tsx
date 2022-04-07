@@ -61,4 +61,4 @@ export const Footer: React.FC = () => {
       </FooterStyle>
     </div>
   );
-};
+}

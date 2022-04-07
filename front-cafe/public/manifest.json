@@ -1,11 +1,12 @@
 
 
 {
-  "name": "Coffe Experience",
-  "short_name": "Coffe Experience",
+  "name": "Coffee Experience",
+  "short_name": "Coffee XP",
   "theme_color": "#5e3c2b",
   "background_color": "#f6fcfc",
   "display": "standalone",
+  "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   "icons": [

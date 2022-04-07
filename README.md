@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/jeovanedossantossantos/desafio-chefao/blob/main/front-cafe/src/assets/images/homePageHeaderBackgroundn.webp" width="100%">
+ ![ezgif-5-a906cfcd3fd1](./desafiochefao.gif)
 </p>
 
 <h1 align="center">Desafio Final</h1>
@@ -45,7 +45,7 @@ encontrado no mercado.
 
 
 ## :green_heart: Desenvolvedores
-[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos) | [<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst) | [<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee) | [<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian) |
+[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos)<br> | [<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst)<br> | [<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee)<br> | [<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian)<br> |
 | :---: | :---: | :---: |
 
 
@@ -64,6 +64,9 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 Você pode acessar o site [aqui.](https://coffeexp.vercel.app/)
+
+## :green_heart: Designers
+
 
 ## :bookmark: Layout
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/3bcNuV2QxvIwtEjIY262vt/Desafio-Chef%C3%A3o?node-id=0%3A1). Lembrando que você precisa ter uma conta no [Figma](https://www.figma.com/) para acessá-lo.

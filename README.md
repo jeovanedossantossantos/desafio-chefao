@@ -21,8 +21,9 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=success&labelColor=gey">
 </p>
 
-
+<p align="center">
 ![ezgif-5-a906cfcd3fd1](./desafiochefao.gif)
+</p>
 
 <h1 align="center">Desafio Final</h1>
 
@@ -55,7 +56,7 @@ encontrado no mercado.
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ![JavaScript](https://img.shields.io/badge/JS-JavaScript-blue) 
-![Reactjs](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+![Reactjs](https://img.shields.io/badge/-React-blue) 
 ![Typescrypt](https://img.shields.io/badge/TS-Typescrypt-blue) 
 ![Node](https://img.shields.io/badge/ND-Node-green)
 ![MySql](https://img.shields.io/badge/MySql-MySql-orange) 

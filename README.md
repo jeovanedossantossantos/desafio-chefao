@@ -15,8 +15,10 @@
   <img alt="Gama XP 40" src="https://img.shields.io/static/v1?label=xp&message=40&color=success&labelColor=grey">
   
   <img alt="Stack Hacker" src="https://img.shields.io/static/v1?label=stack&message=hacker&color=success&labelColor=grey">
+
+  <img alt="Stack Hypster" src="https://img.shields.io/static/v1?label=stack&message=hypster&color=success&labelColor=grey">
   
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=success&labelColor=grey">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=success&labelColor=gey">
 </p>
 
 <p align="center">
@@ -28,3 +30,32 @@
 O nosso desafio era criar um produto do zero. .
 
 ---
+
+
+<p align="center">
+  <img src="https://github.com/scillapinheiro/gama-academy-desafio-final/blob/main/src/assets/logotipo.svg" width="40%">
+</p>
+
+## :computer: Projeto
+A Amazonita Macramê é uma marca autônoma de peças de decoração de macramê artesanais. Foi criada pela Carol em uma disciplina de faculdade de Publicidade em 2016. Em 2021 houve uma mudança de mercado, de um contexto mais simples (meio hippie, segundo a Carol) para macramês mais rebuscados focados em decoração de interiores.
+
+
+## :green_heart: Desenvolvedores
+[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos) | [<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst) | [<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee)[<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian) |
+| :---: | :---: | :---: |
+
+
+## :rocket: Tecnologias
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+[JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Reactjs](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)! [Typescrypt](https://img.shields.io/badge/TS-Typescrypt-blue) ![Node](https://img.shields.io/badge/ND-Node-green) ![MySql](https://img.shields.io/badge/MySql-MySql-orange) ![StyledComponet](https://img.shields.io/badge/Styled-StyledComponet-lightgrey) ![PWA](https://img.shields.io/badge/PWA-PROGRESSIVE%20WEB%20APP-lightgrey) ![MVC](https://img.shields.io/badge/MVC-padr%C3%A3o%20de%20arquitetura%20de%20software%20-lightgrey)
+
+## :eyes: Site de demonstração
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+
+Você pode acessar o site [aqui.](https://coffeexp.vercel.app/)
+
+## :bookmark: Layout
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/3bcNuV2QxvIwtEjIY262vt/Desafio-Chef%C3%A3o?node-id=0%3A1). Lembrando que você precisa ter uma conta no [Figma](https://www.figma.com/) para acessá-lo.
+

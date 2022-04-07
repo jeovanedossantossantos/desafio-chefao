@@ -46,11 +46,7 @@ export const Footer: React.FC = () => {
 
               </SocialMediaIconStyle>
 
-<<<<<<< HEAD
-              <FooterLinkStyle  style={{ maxWidth:360, float:'right', marginTop: 15}}>
-=======
               <FooterLinkStyle style={{ maxWidth: 230, float: 'right', marginTop: 15 }}>
->>>>>>> e0e46517f1c3da8602b0c1058954788d806f79a8
                 <FooterCopyrigthStyle style={{}} >Av. República do Libano, 235  </FooterCopyrigthStyle>
                 <FooterLine style={{ marginLeft: 20 }}> | </FooterLine>
               </FooterLinkStyle>

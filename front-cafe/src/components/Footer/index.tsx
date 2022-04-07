@@ -51,15 +51,8 @@ export const Footer: React.FC = () => {
                 </div>
               </SocialMediaIconStyle>
 
-<<<<<<< HEAD
-              <FooterLinkStyle style={{ maxWidth: 230, float: "right", marginTop: 15 }}>
-                <FooterCopyrigthStyle style={{}}>
-                  Av. República do Libano, 235{" "}
-                </FooterCopyrigthStyle>
-=======
               <FooterLinkStyle  style={{ maxWidth:360, float:'right', marginTop: 15}}>
                 <FooterCopyrigthStyle style={{}} >Av. República do Libano, 235  </FooterCopyrigthStyle>
->>>>>>> 8a4ba4710b160c871991c46cbf1555cdf5b7f56f
                 <FooterLine style={{ marginLeft: 20 }}> | </FooterLine>
               </FooterLinkStyle>
             </Col>

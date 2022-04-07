@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components';
-import NavFontPoppinsBold from '../../assets/fonts/Poppins/Poppins-Bold.ttf'
-import NavFontPoppinsLight from '../../assets/fonts/Poppins/Poppins-Light.ttf'
-import NavFontPoppinsMedium from '../../assets/fonts/Poppins/Poppins-Medium.ttf'
-import NavFontPoppinsRegular from '../../assets/fonts/Poppins/Poppins-Regular.ttf'
-import NavFontPoppinsSemiBold from '../../assets/fonts/Poppins/Poppins-SemiBold.ttf'
+import { createGlobalStyle } from "styled-components";
+import NavFontPoppinsBold from "../../assets/fonts/Poppins/Poppins-Bold.ttf";
+import NavFontPoppinsLight from "../../assets/fonts/Poppins/Poppins-Light.ttf";
+import NavFontPoppinsMedium from "../../assets/fonts/Poppins/Poppins-Medium.ttf";
+import NavFontPoppinsRegular from "../../assets/fonts/Poppins/Poppins-Regular.ttf";
+import NavFontPoppinsSemiBold from "../../assets/fonts/Poppins/Poppins-SemiBold.ttf";
 
 export const FontStyles = createGlobalStyle`
     @font-face {
@@ -41,4 +41,3 @@ export const FontStyles = createGlobalStyle`
         font-weight: 400;
     }
 `;
-

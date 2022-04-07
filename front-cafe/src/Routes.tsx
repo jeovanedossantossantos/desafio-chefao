@@ -1,10 +1,8 @@
 import { BrowserRouter, Routes as RoutesWrapper, Route, Navigate } from 'react-router-dom'
-import PrivateRoute from "./private.routes";
 import { Cadastra } from './views/DeashBordRoot/Cadastro';
 import { Formulario } from './views/DeashBordRoot/Formulario';
 import Login from './views/DeashBordRoot/Login';
 import { Home } from './views/Home'
-
 import { SearchPage } from './views/SearchPage'
 import { ProductPage } from './views/ProductPage'
 import { ContactPage } from './views/ContactPage'
@@ -31,14 +29,12 @@ function Rotas() {
         <BrowserRouter>
             <RoutesWrapper>
                 <Route path="/" element={<Home />}></Route>
-                {/* <Route path="/#about" element={<Home />}></Route> */}
                 <Route path="/searchpage" element={<SearchPage />}/>
                 <Route path="/productpage/:id" element={<ProductPage />}></Route>
                 <Route path="/contact" element={<ContactPage />}></Route>
                 <Route path="/cadastra" element={<Cadastra />}></Route>
                 <Route path="/login" element={<Login />}></Route>
-                <Route path={`/detalhes/:id`} element={<ProductPage />}/>
-                
+                <Route path={`/detalhes/:id`} element={<ProductPage />}/>                
                 {isSectionActive() && 
                  <Route path="/formulario" element={<Navigate to="/"/>}/>
                  }
@@ -47,20 +43,10 @@ function Rotas() {
                     <Route path="/formulario" element={<Formulario />} />
                     <Route path="/lista" element={<Lista />}/>
                    </>
-                }
-               
-                
-
-                {/* {!isSectionActive() ? 
-                <Route path="/formulario" element={<Navigate to="/"/>}/>: 
-                <Route path="/formulario" element={<Formulario/>}/>} */}
-
-                {/* <PrivateRoute path="/formulariio" component={<Formulario/>}></PrivateRoute> */}
+                }               
             </RoutesWrapper>
-
         </BrowserRouter>
     )
-
 }
 
 export default Rotas

@@ -1,41 +1,24 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.footer`
-
    display: flex;
    flex-direction: column; 
    width: 100%;
-   /* height: 44.116vh;    */
-   /* Height of the footer */
-   /* height: 16vh; */
    background: #438B70;
-   /* margin-top: 28vh; */ /* distance between slider and the footer */
-   /* padding-left: 9.9vw; */
 
-
-   @media (min-width: 1274px) {
-    
-<<<<<<< HEAD
-   /* height: 24vh; */
-=======
-   height: 30vh;
->>>>>>> e0e46517f1c3da8602b0c1058954788d806f79a8
-  
-   }
-
-
+   @media (min-width: 1274px) 
+   {    
+   height: 30vh;  
+   }  
 `;
 
 export const FooterLogoStyle = styled.div`
-padding-top: 5vh;
-
+   padding-top: 5vh;
 `;
 
 export const FooterTextStyle = styled.div`
-
-
-font-family: 'Poppins-Light';
-font-weight: 300;
+   font-family: 'Poppins-Light';
+   font-weight: 300;
    font-size:  14px;
    line-height: 24px;
    color:#DACFCE;
@@ -52,77 +35,62 @@ export const FooterLink = styled.div`
   
 `
 export const FooterLinkStyle = styled.div`
-display: flex;
-flex-wrap:wrap;
-font-family: 'Poppins';
-font-weight: 500;
-font-size: 16px;
-color: #F5F1F1;
-margin-top: 8vh;
-font-weight: 400;
-font-size: 14px;
-line-height: 21px;
-width: 100%;
+   display: flex;
+   flex-wrap:wrap;
+   font-family: 'Poppins';
+   font-weight: 500;
+   font-size: 16px;
+   color: #F5F1F1;
+   margin-top: 8vh;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 21px;
+   width: 100%;
+   margin: 10px;
+   font-family: 'Poppins-Medium';
 
-margin: 10px;
-font-family: 'Poppins-Medium';
-.no-copy{ //Col é igual a uma div
-  
-   margin: 5px;
-   width:50px;
-}
-.copy{
-   margin: 5px;
-   width:200px;
-   text-align: right;
-  
-}
+   .no-copy
+   {   
+      margin: 5px;
+      width:50px;
+   }
+   .copy
+   {
+      margin: 5px;
+      width:200px;
+      text-align: right;  
+   }
 
 @media (max-width: 428px) {
-    font-size: 11px;
-   display: flex;
-
-  
+   font-size: 11px;
+   display: flex; 
 }
 
 
-@media (max-width: 393px) {
-   width:55vw;
-
-  
+@media (max-width: 393px) 
+{
+   width:55vw;  
 }
 
-@media (max-width: 1275px) {
+@media (max-width: 1275px)
+ {
    font-size: 12px;
    width:55vw;
-   display: flex;
-
-  
+   display: flex;  
 }
-
-
-
 `;
 
 export const FooterCopyrigthStyle = styled.div`
-   /* margin-right: -36vw;
-   margin-left: 27.4vw; */
-   /* width: 50%; */
   
 `;
-export const FooterLine = styled.div`
 
- width: 8px;
-  
+export const FooterLine = styled.div`
+ width: 8px;  
 `;
 
 export const SocialMediaIconStyle = styled.div`
-display: flex;
-
-width: 100px;
-
-/* padding-left: -1vw; */
-
+   display: flex;
+   width: 100px;
 
 img {
    width: 39px;

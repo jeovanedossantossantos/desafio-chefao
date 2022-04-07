@@ -1,5 +1,3 @@
-
-
 export interface DataProps {
     id?: number,
     nome: string,

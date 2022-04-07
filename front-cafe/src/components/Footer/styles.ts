@@ -5,7 +5,7 @@ export const FooterStyle = styled.footer`
    flex-direction: column; 
    width: 100%;
    background: #438B70;
-
+   
    @media (min-width: 1274px) {
    height: 15vh;
    }

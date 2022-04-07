@@ -1,10 +1,12 @@
-
-const {Variedade} = require("../model")
+const {Variedade} = require("../model");
 const Sequelize = require('sequelize');
-
 const controllerVariedade = {
+    
     async cadastrarVariedade(req, res) {
-        const { nome, descricao} = req.body;
+        const {
+            nome,
+            descricao
+        } = req.body;
 
         try {
             const newVariedade = await Variedade.create({
@@ -16,17 +18,17 @@ const controllerVariedade = {
             res.status(400).json(err)
         }
     },
-    async listarVariedade(req, res){
+    async listarVariedade(req, res) {
         try {
-            
+
             const lista_variedade = await Variedade.findAll()
             res.status(200).json(lista_variedade)
-            
+
         } catch (err) {
             res.status(400).json(err)
         }
     },
-    async buscarUmVariedade(req, res){
+    async buscarUmVariedade(req, res) {
         try {
             const item = await Variedade.findOne({
                 where: {
@@ -36,51 +38,67 @@ const controllerVariedade = {
             if (item !== null) {
                 res.status(200).json(item)
             } else {
-                res.status(402).json({ "Mensagem": "Nada foi encontrado" })
+                res.status(402).json({
+                    "Mensagem": "Nada foi encontrado"
+                })
             }
         } catch (err) {
             res.status(400).json(err)
         }
     },
     async deletarVariedade(req, res) {
-        try{
+        try {
             const item = await Variedade.destroy({
                 where: {
-                    id:req.params.id
+                    id: req.params.id
                 }
             })
-          
-           if(item === 1){
-            res.status(201).json({"Mensagem":"Deletado com sucesso"})
-           }else{
-            res.status(401).json({"Mensagem":"Não encontrado"})
-           }
-        }catch (err) {
-            res.status(401).json({ "Mensagem": "Erro ao tentar deletar região!" })
+
+            if (item === 1) {
+                res.status(201).json({
+                    "Mensagem": "Deletado com sucesso"
+                })
+            } else {
+                res.status(401).json({
+                    "Mensagem": "Não encontrado"
+                })
+            }
+        } catch (err) {
+            res.status(401).json({
+                "Mensagem": "Erro ao tentar deletar!"
+            })
         }
     },
     async atualizarVariedade(req, res) {
-        const {nome, descricao} = req.body
-        try{
+        const {
+            nome,
+            descricao
+        } = req.body
+        try {
             const item = await Variedade.update({
                 nome,
                 descricao
-            },
-                {
-                    where: {
-                        id: req.params.id,
-                    }
+            }, {
+                where: {
+                    id: req.params.id,
                 }
-            )
-            if(item !== null){
-                res.status(201).json({ "Mensagem": "Atualizada como sucesso!" })
-            }else{
-                res.status(401).json({ "Mensagem": "Não exite esse id!" })
+            })
+            if (item !== null) {
+                res.status(201).json({
+                    "Mensagem": "Atualizada com sucesso!"
+                })
+            } else {
+                res.status(401).json({
+                    "Mensagem": "Não existe esse id!"
+                })
             }
 
-        }catch(err){
-            res.status(401).json({ "Mensagem": "Erro ao Atualizada!" })
+        } catch (err) {
+            res.status(401).json({
+                "Mensagem": "Erro ao Atualizar!"
+            })
         }
     }
 }
+
 module.exports = controllerVariedade

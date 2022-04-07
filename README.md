@@ -45,15 +45,20 @@ encontrado no mercado.
 
 
 ## :green_heart: Desenvolvedores
-[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos) | [<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst) | [<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee)[<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian) |
+[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos) | [<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst) | [<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee) | [<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian) |
 | :---: | :---: | :---: |
 
 
 ## :rocket: Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-[JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Reactjs](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)! [Typescrypt](https://img.shields.io/badge/TS-Typescrypt-blue) ![Node](https://img.shields.io/badge/ND-Node-green) ![MySql](https://img.shields.io/badge/MySql-MySql-orange) ![StyledComponet](https://img.shields.io/badge/Styled-StyledComponet-lightgrey) ![PWA](https://img.shields.io/badge/PWA-PROGRESSIVE%20WEB%20APP-lightgrey) ![MVC](https://img.shields.io/badge/MVC-padr%C3%A3o%20de%20arquitetura%20de%20software%20-lightgrey)
+[JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)!
+[Reactjs](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)! 
+[Typescrypt](https://img.shields.io/badge/TS-Typescrypt-blue)!
+[Node](https://img.shields.io/badge/ND-Node-green)!
+[MySql](https://img.shields.io/badge/MySql-MySql-orange)!
+[StyledComponet](https://img.shields.io/badge/Styled-StyledComponet-lightgrey)![PWA](https://img.shields.io/badge/PWA-PROGRESSIVE%20WEB%20APP-lightgrey)!
+[MVC](https://img.shields.io/badge/MVC-padr%C3%A3o%20de%20arquitetura%20de%20software%20-lightgrey)
 
 ## :eyes: Site de demonstração
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)

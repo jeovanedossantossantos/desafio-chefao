@@ -5,8 +5,6 @@ export const FooterStyle = styled.footer`
    flex-direction: column; 
    width: 100%;
    background: #438B70;
-<<<<<<< HEAD
-=======
    /* margin-top: 28vh; */ /* distance between slider and the footer */
    /* padding-left: 9.9vw; */
 
@@ -16,7 +14,6 @@ export const FooterStyle = styled.footer`
    height: 15vh;
    }
 
->>>>>>> 8a4ba4710b160c871991c46cbf1555cdf5b7f56f
 
    @media (min-width: 1274px) 
    {    

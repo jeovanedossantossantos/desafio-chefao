@@ -1,10 +1,12 @@
 # Banco de dados 
 
-<h4>Esquema</h4>
-<img src="./img/2.png"/>
+<h4>Modelo Entidade Relacionamento</h4>
+<img src="https://i.imgur.com/N7vOgOM.jpg"/>
+
+
 <h4>Scripts</h4>
 
-            -- MySQL Workbench Forward Engineering
+```sql        -- MySQL Workbench Forward Engineering
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
@@ -162,4 +164,4 @@ ENGINE = InnoDB;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
-SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;```

@@ -5,20 +5,10 @@ export const FooterStyle = styled.footer`
    flex-direction: column; 
    width: 100%;
    background: #438B70;
-   /* margin-top: 28vh; */ /* distance between slider and the footer */
-   /* padding-left: 9.9vw; */
-
-
+   
    @media (min-width: 1274px) {
-    
    height: 15vh;
    }
-
-
-   @media (min-width: 1274px) 
-   {    
-   height: 30vh;  
-   }  
 `;
 
 export const FooterLogoStyle = styled.div`

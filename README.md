@@ -14,7 +14,6 @@ Projeto desenvolvido durante o Gama Experience XP40 oferecida pela  <a href="htt
 ## 🎨 Layout
 
 > [Acesso ao Figma](https://www.figma.com/file/3bcNuV2QxvIwtEjIY262vt/Desafio-Chefão?node-id=2%3A2) 
-<br>
 
 ### :boom: Demonstração em produção:
 <table align="center">

@@ -1,6 +1,9 @@
 
 
-<h1 align="center">Desafio Chefão </h1>
+<h1 align="center">DESAFIO CHEFÃO</h1><BR>
+  
+  ![image](https://user-images.githubusercontent.com/85361518/162359670-0786ba04-4a5f-4acb-9521-9506665945bb.png)
+
 
 ## 💻 Qual o objetivo do projeto?
 

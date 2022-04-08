@@ -21,7 +21,7 @@ Projeto desenvolvido durante o Gama Experience XP40 oferecida pela  <a href="htt
   <tr>
      <td align="center">
         <img src="https://i.imgur.com/bhTZ0eJ.png" width="500px;" alt="github"/><br>
-            <img alt="gamaacademy" title="#gamaacademy" src="https://i.imgur.com/dQFG4fA.png" width="500px">
+            <img alt="gamaacademy" title="#gamaacademy" src="https://i.imgur.com/gvdCkcd.png" width="500px">
         <sub>
         </sub>
       </a>

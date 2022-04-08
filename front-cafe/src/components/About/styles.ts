@@ -127,7 +127,7 @@ export const SectionAbout = styled.main`
     }
   
   .col-sectionAbout{
-  @media(max-width:900px)
+  @media (max-width:1024px)
   {
     width:90%;
     max-width:400px;

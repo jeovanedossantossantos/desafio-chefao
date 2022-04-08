@@ -1,77 +1,156 @@
-<p align="center">
-  <img src="./logo-gama-academy.png" width="50%">
-</p>
 
-<p align="center">
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-desenvolvedores">Desenvolvedores</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-site-de-demonstracao">Site de demonstração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-designer">Designers</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>
-</p>
 
-<p align="center">
-  <img alt="Gama XP 40" src="https://img.shields.io/static/v1?label=xp&message=40&color=success&labelColor=grey">
+<h1 align="center">DESAFIO CHEFÃO</h1><BR>
   
-  <img alt="Stack Hacker" src="https://img.shields.io/static/v1?label=stack&message=hacker&color=success&labelColor=grey">
-
-  <img alt="Stack Hypster" src="https://img.shields.io/static/v1?label=stack&message=hypster&color=success&labelColor=grey">
-  
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=success&labelColor=gey">
-</p>
-
-![ezgif-5-a906cfcd3fd1](./animacao.gif)
+  ![image](https://user-images.githubusercontent.com/85361518/162359670-0786ba04-4a5f-4acb-9521-9506665945bb.png)
 
 
+## 💻 Qual o objetivo do projeto?
 
-<h1 align="center">Desafio Final</h1>
+O objetivo é criar um produto do zero. Uma apresentação de portfólio navegável e interativo de um novo empreendimento.
 
-O nosso desafio era criar um produto do zero. .
+Projeto desenvolvido durante o Gama Experience XP40 oferecida pela  <a href="https://www.gama.academy/gama-experience/desenvolvimento-full-stack">[Gama Academy]</a>
 
----
+## 🎨 Layout
 
+> [Acesso ao Figma](https://www.figma.com/file/3bcNuV2QxvIwtEjIY262vt/Desafio-Chefão?node-id=2%3A2) 
+<br>
 
-<p align="center">
-  <img src="" width="40%">
-</p>
+### :boom: Demonstração em produção:
+<table align="center">
+  <tr>
+     <td align="center">
+        <img src="https://i.imgur.com/bhTZ0eJ.png" width="500px;" alt="github"/><br>
+            <img alt="gamaacademy" title="#gamaacademy" src="https://i.imgur.com/dQFG4fA.png" width="500px">
+        <sub>
+        </sub>
+      </a>
+    </td>
+      <td align="center">
+        <img src="https://i.imgur.com/iqLBwcP.png" width="500px;" alt="github"/><br>
+      <img alt="gamaacademy" title="#gamaacademy" src="https://i.imgur.com/A1nG7cn.png" width="500px">
+    </td>   
+</tr>
+<table/>
 
-## :computer: Projeto
-Desde 2010 queremos facilitar que novos sabores da bebida mais
-brasileira de todas, nosso amado café, chegue no maior número de
-pessoas! Com essa missão nós queremos alcaçar o maior número de
-pessoas que ainda tomam o café amargo e de pouca qualidade
-encontrado no mercado.
+### :boom: Demonstração mobile PWA:
 
+<table align="center">
+  <tr>
+     <td align="center">
+        <img src="https://i.imgur.com/OGPzu6Y.jpg" width="150px;" alt="github"/>
+         <img src="https://i.imgur.com/5ooelnH.jpg" width="150px;" alt="github"/><br>
+        <sub>
+        </sub>
+      </a>
+    </td>
+       <td align="center">
+        <img src="https://i.imgur.com/JJnh5gv.jpg" width="150px;" alt="github"/>
+      <img alt="gamaacademy" title="#gamaacademy" src="https://i.imgur.com/jVUauSh.jpg" width="150px">
+   <img alt="gamaacademy" title="#gamaacademy" src="https://i.imgur.com/6oMb85m.jpg" width="150px">
+    </td>   
 
-## :green_heart: Desenvolvedores
-[<img src="https://avatars.githubusercontent.com/jeovanedossantossantos" width=115> <br> <sub>Jeovane dos Santos</sub>](https://github.com/jeovanedossantossantos)<br> 
-[<img src="https://avatars.githubusercontent.com/lenamsst" width=115> <br> <sub>Milena </sub>](https://github.com/lenamsst)<br>  
-[<img src="https://avatars.githubusercontent.com/knziee" width=115> <br> <sub>Rhuan</sub>](https://github.com/Knziee)<br>  
-[<img src="https://avatars.githubusercontent.com/thewillian" width=115> <br> <sub>Willian Monteiro</sub>](https://github.com/thewillian)<br> 
+</tr>
+<table/>
 
+## 🛠 Tecnologias
 
+As seguintes ferramentas foram usadas na construção do projeto:
 
-## :rocket: Tecnologias
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+- REACT
+- JAVASCRIPT
+- NODEJS
+- TYPESCRIPT
+- MYSQL
+- STYLED-COMPONENTS
+- REACT-BOOTSTRAP
 
-![JavaScript](https://img.shields.io/badge/JS-JavaScript-blue) 
-![Reactjs](https://img.shields.io/badge/-React-blue) 
-![Typescrypt](https://img.shields.io/badge/TS-Typescrypt-blue) 
-![Node](https://img.shields.io/badge/ND-Node-green)
-![MySql](https://img.shields.io/badge/MySql-MySql-orange) 
-![StyledComponet](https://img.shields.io/badge/Styled-StyledComponet-lightgrey) 
-![PWA](https://img.shields.io/badge/PWA-PROGRESSIVE%20WEB%20APP-lightgrey) 
-![MVC](https://img.shields.io/badge/MVC-padr%C3%A3o%20de%20arquitetura%20de%20software%20-lightgrey)
+## 🤝 Colaboradores
 
-## :eyes: Site de demonstração
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+Pessoas que contribuíram para este projeto:
+<table align="center">
+  <tr>
+     <td align="center">
+      <a href="https://github.com/lenamsst">
+        <img src="https://avatars.githubusercontent.com/u/85361518?v=4" width="80px;" alt="github"/><br>
+        <sub>
+          <b> Milena Garcia Software Developer :woman_technologist:</b>
+        </sub>
+      </a>       
+    </td>
+      <td align="center">
+      <a href="https://github.com/jeovanedossantossantos">
+        <img src="https://i.imgur.com/drwsBzm.jpg" width="80px;" alt="github"/><br>
+        <sub>
+          <b>Jeovane dos Santos Software Developer :man_technologist:</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Knziee">
+        <img src="https://avatars.githubusercontent.com/u/89425394?v=4" width="80px;" alt="github"/><br>
+        <sub>
+          <b>Rhuan Texeira Software Developer :man_technologist:</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/thewillian">
+        <img src="https://avatars.githubusercontent.com/u/94011078?v=4" width="80px;" alt="github"/><br>
+        <sub>
+          <b>Willian Monteiro Software Developer :man_technologist:</b>
+        </sub>
+      </a>
+    </td> 
+      <td align="center">
+      <a href="https://github.com/Wandrade38">
+        <img src="https://avatars.githubusercontent.com/u/94203285?v=4" width="80px;" alt="github"/><br>
+        <sub>
+          <b>Washington Carvalho Software Developer :man_technologist:</b>
+        </sub>
+      </a>
+    </td> 
+      </tr>
+</table>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="">
+        <img src="https://i.imgur.com/01ywrcN.png" width="80px;" alt="semfoto"/><br>
+        <sub>
+          <b>Endrix Gomes - Product Design :woman_technologist:</b>
+        </sub>
+      </a>
+    </td> 
+    <td align="center">
+      <a href="">
+        <img src="https://i.imgur.com/01ywrcN.png" width="80px;" alt="semfoto"/><br>
+        <sub>
+          <b>Thaissa Lopes - Product Design :man_technologist:</b>
+        </sub>
+      </a>
+    </td> 
+    <td align="center">
+      <a href="">
+        <img src="https://i.imgur.com/01ywrcN.png" width="80px;" alt="semfoto"/><br>
+        <sub>
+          <b>Ila Yasmin - Product Design :man_technologist:</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="">
+        <img src="https://i.imgur.com/01ywrcN.png" width="80px;" alt="semfoto"/><br>
+        <sub>
+          <b>Katia Lisboa - Product Design :man_technologist:</b>
+        </sub>
+      </a>
+    </td> 
+                                                                                                                      
+                                                                                                                      
+  </tr>
+</table>
 
-Você pode acessar o site [aqui.](https://coffeexp.vercel.app/)
+## :rocket: Deploy da aplicação:
 
-## :green_heart: Designers
-
-
-## :bookmark: Layout
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/3bcNuV2QxvIwtEjIY262vt/Desafio-Chef%C3%A3o?node-id=0%3A1). Lembrando que você precisa ter uma conta no [Figma](https://www.figma.com/) para acessá-lo.
-
+> [coffeexperience.com.br](https://coffeexp.vercel.app/)

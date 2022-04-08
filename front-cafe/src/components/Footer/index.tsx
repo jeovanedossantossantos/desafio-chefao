@@ -34,9 +34,7 @@ export const Footer: React.FC = () => {
                 Politica de Privacidade
               </Col>
               <Col style={{ maxWidth: "3vh" }}>
-                <Link to="/login">
                   <img src={LockIcon} alt="" />
-                </Link>
               </Col>
             </FooterLinkStyle>
 

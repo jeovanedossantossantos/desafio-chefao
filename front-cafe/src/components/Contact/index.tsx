@@ -22,9 +22,9 @@ export const Contact: React.FC = () => {
 
           <Col>
             <ContentContact>financeiro</ContentContact>
-            <Contentv2Contact>nome sobrenome</Contentv2Contact>
-            <Contentv2Contact>+51 9 0000 0000</Contentv2Contact>
-            <Contentv2Contact>nome@email.com</Contentv2Contact>
+            <Contentv2Contact>Cláudia Pinheiro</Contentv2Contact>
+            <Contentv2Contact>+55 11 9 8156 5522</Contentv2Contact>
+            <Contentv2Contact>claudiapinheiro@coffeexp.com</Contentv2Contact>
           </Col>
 
           <Col>
@@ -32,13 +32,13 @@ export const Contact: React.FC = () => {
               <SpaceContactFinans>pessoas</SpaceContactFinans>
             </ContentContact>
             <Contentv2Contact>
-              <SpaceContact>nome sobrenome</SpaceContact>
+              <SpaceContact>Ayra Guerra</SpaceContact>
             </Contentv2Contact>
             <Contentv2Contact>
-              <SpaceContact>+51 9 0000 0000</SpaceContact>
+              <SpaceContact>+55 11 9 9544 6558</SpaceContact>
             </Contentv2Contact>
             <Contentv2Contact>
-              <SpaceContact>nome@email.com</SpaceContact>
+              <SpaceContact>ayraguerra@coffeexp.com</SpaceContact>
             </Contentv2Contact>
           </Col>
         </Container>

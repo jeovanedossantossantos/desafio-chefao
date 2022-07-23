@@ -22,7 +22,7 @@ export const Cadastra: React.FC = () => {
           authorization: codigoAuthorization,
         },
       });
-      console.log("ok");
+     
       push("/login");
     } catch (err) {
       Toastify({

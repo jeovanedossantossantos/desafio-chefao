@@ -11,7 +11,9 @@ export const SearchPage: React.FC = () => {
       <GlobalCSSFixSearchPage />
       <BackgroundColorFill>
         <SearchHeaderBackground>
+
           <Header />
+          
           <SearchBar />
           <SearchCard />
           <Footer />

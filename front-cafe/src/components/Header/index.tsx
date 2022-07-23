@@ -16,9 +16,10 @@ import {
 } from "./styles";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { useAuth } from "../../hooks/auth";
 
 export const Header: React.FC = () => {
-
+ const auth = useAuth()
   return (
     <div>
       <Link to="/">
@@ -42,6 +43,10 @@ export const Header: React.FC = () => {
                   <StyledNav>
                     <Link to="/contact">Contato</Link>
                   </StyledNav>
+                  {auth && 
+                  <StyledNav>
+                  <Link to="/formulario">Formulario</Link>
+                </StyledNav>}
                 </Nav>
               </Navbar>
             </Container>

@@ -16,18 +16,27 @@ const SignIn: React.FC = () => {
   const push = useNavigate();
   const hadleSumbmit = async () => {
     setLoad(true);
-    await api
+    if(!localStorage.getItem("@cafeToken")){
+      await api
       .post("/login", data)
       .then((response) => {
         const sessionToken = JSON.stringify(response.data.tokem);
         localStorage.setItem("@cafeToken", sessionToken);
         setLoad(false);
-        push("/formulario");
+        if(localStorage.getItem("@cafeToken")){
+          push("/formulario");
+        }else{
+          push("/login")
+        }
       })
       .catch((e) => {
         toast.error("Oops, algo deu errado!");
       })
       .finally(() => setLoad(false));
+    }else{
+      push("/formulario");
+    }
+    
   };
   if (load) {
     return <Loader />;

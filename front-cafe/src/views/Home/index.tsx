@@ -15,12 +15,20 @@ import { Button } from "../../components/Button";
 import { Footer } from "../../components/Footer";
 import { About } from "../../components/About";
 import { Slider } from "../../components/Slider";
+import { useContext, useEffect } from "react";
+import { AuthorizationContext } from "../../hooks/context";
 
 export const Home: React.FC = () => {
+  const { setPaginaAtual } = useContext(AuthorizationContext)
+  useEffect(() => {
+    setPaginaAtual("/home")
+  },[])
   return (
     <div>
       <HomeHeaderBackground>
+        
         <Header />
+
         <BannerText>
           <Container fluid>
             <Row>

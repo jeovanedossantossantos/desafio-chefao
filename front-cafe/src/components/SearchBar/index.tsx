@@ -29,8 +29,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
     try {
       const resposta = await api.get("/cafes");
       setData(resposta.data);
-      console.log("=============================");
-      console.log(data);
+     
       setLoading(true);
     } catch (err) {
       console.log(err);
@@ -41,8 +40,7 @@ export const SearchBar: React.FC<SearchBarProps> = ({
       const resposta = await api.get("/search-cafe?valorDaPesquisa=" + palavra);
 
       setData(resposta.data);
-      console.log("Pesquisa");
-      console.log(data);
+     
     } catch (err) {
       console.log(err);
     }

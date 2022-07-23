@@ -1,22 +1,28 @@
 import React, { createContext, useState } from "react";
+import { useAuth } from "./auth";
 
 type PropsAuthorization = {
-  authorization: string;
-  setAuthorization: React.Dispatch<React.SetStateAction<string>>;
+  paginaAtual: string;
+  authorization2:boolean;
+  setPaginaAtual: React.Dispatch<React.SetStateAction<string>>;
 };
 const DEFAULT_VALUE = {
-  authorization: "",
-  setAuthorization: () => {},
+  paginaAtual: "",
+  authorization2:false,
+  setPaginaAtual: () => {},
 };
 
 export const AuthorizationContext =
   createContext<PropsAuthorization>(DEFAULT_VALUE);
 const ContextProvider = ({ children }: any) => {
-  const [authorization, setAuthorization] = useState(
-    DEFAULT_VALUE.authorization
+  const [paginaAtual, setPaginaAtual] = useState(
+    DEFAULT_VALUE.paginaAtual
   );
+  const authorization2 = useAuth()
+  
+
   return (
-    <AuthorizationContext.Provider value={{ authorization, setAuthorization }}>
+    <AuthorizationContext.Provider value={{ paginaAtual,authorization2, setPaginaAtual }}>
       {children}
     </AuthorizationContext.Provider>
   );

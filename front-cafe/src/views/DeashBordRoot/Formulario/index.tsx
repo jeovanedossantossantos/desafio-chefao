@@ -13,7 +13,7 @@ export const Formulario: React.FC = () => {
   const [acidez, setAcidez] = useState<AcidezProps[]>([]);
   const buscarItens = async () => {
     const variedade = await api.get("/listar-acidez");
-    console.log(variedade.data);
+    
     setAcidez(variedade.data);
   };
   useEffect(() => {

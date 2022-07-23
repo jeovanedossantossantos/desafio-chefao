@@ -20,7 +20,6 @@ export const Slider: React.FC = () => {
       const resposta = await api.get("/cafes");
       setData(resposta.data);
       setVetor(resposta.data[getRandomInt(0, resposta.data.length)]);
-      console.log(getRandomInt(0, resposta.data.length));
     } catch (error) {
       console.log(error);
     }

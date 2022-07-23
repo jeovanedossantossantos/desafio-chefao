@@ -27,7 +27,6 @@ export const ProductPage: React.FC = () => {
     try {
       const resposta = await api.get("/cafes/" + id);
       setData(resposta.data);
-      console.log(resposta.data[0]);
       setLoading(true);
     } catch (err) {
       console.log(err);
